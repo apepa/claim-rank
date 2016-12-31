@@ -5,6 +5,7 @@ from src.utils.config import get_config
 
 CONFIG = get_config()
 FILE_EXT = "_ann.tsv"
+CB_FILE_EXT = '_cb.tsv'
 SEP = "\t"
 
 
@@ -13,6 +14,28 @@ class Debate(Enum):
     VP = 2
     SECOND = 3
     THIRD = 4
+
+
+def read_all_debates(source='ann'):
+    """
+    :param source:
+    - 'ann' - annotations from different journalists' sources
+    - 'cb' - label is the score from Claim Buster engine
+    :return: a list of all sentences said in the debates
+    """
+    sentences = []
+    if source == 'ann':
+        sentences += read_debates(Debate.FIRST)
+        sentences += read_debates(Debate.VP)
+        sentences += read_debates(Debate.SECOND)
+        sentences += read_debates(Debate.THIRD)
+
+    elif source == 'cb':
+        sentences += read_cb_scores(Debate.FIRST)
+        sentences += read_cb_scores(Debate.VP)
+        sentences += read_cb_scores(Debate.SECOND)
+        sentences += read_cb_scores(Debate.THIRD)
+    return sentences
 
 
 def read_debates(debate, use_label='sum_all'):
@@ -48,3 +71,15 @@ def read_debates(debate, use_label='sum_all'):
 
     return sentences
 
+
+def read_cb_scores(debate):
+    sentences = []
+    debate_file_name = join(CONFIG['tr_cb_anns'], CONFIG[debate.name] + CB_FILE_EXT)
+    debate_file = open(debate_file_name)
+    debate_file.readline()
+    for line in debate_file:
+        line = line.strip()
+        columns = line.split(SEP)
+        s = Sentence(columns[0], columns[-1], float(columns[2]), columns[1], debate)
+        sentences.append(s)
+    return sentences

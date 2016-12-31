@@ -1,18 +1,11 @@
-from src.data.debates import read_debates
-from src.data.debates import Debate
+from src.data.debates import read_all_debates
 from src.utils.config import get_config
 
 CONFIG = get_config()
 
 output_file = open("../../reports/all_sources.txt", "w")
 
-all_sentences = []
-all_sentences = all_sentences+read_debates(Debate.FIRST)
-all_sentences = all_sentences+read_debates(Debate.VP)
-all_sentences = all_sentences+read_debates(Debate.SECOND)
-all_sentences = all_sentences+read_debates(Debate.THIRD)
-
-
+all_sentences = read_all_debates()
 
 output_file.write("Overall sentences annotated: "+str(len(all_sentences))+"\n\n")
 
