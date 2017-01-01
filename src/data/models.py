@@ -5,3 +5,4 @@ class Sentence(object):
         self.label = label
         self.speaker = speaker
         self.debate = debate
+        self.features = {}
