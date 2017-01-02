@@ -18,8 +18,19 @@ def get_datasets():
 
     return sentences_train, sentences_test
 
+def run_svm_rank_crossval(C=1):
+    test_res = []
+    for i, debate in enumerate(debates):
+        test_sents = read_debates(debate)
+        train_sents = []
+        temp_debates = debates[:]
+        temp_debates.pop(i)
+        for train_debate in temp_debates:
+            train_sents += read_debates(train_debate)
+        test_res += run_svm_rank(sentences_train=train_sents, sentences_test=test_sents, new_features=True, C=C)
+    return test_res
 
-def run_svm_rank(new_features=False, C=3):
+def run_svm_rank(sentences_train, sentences_test, new_features=False, C=3):
     """
     Calls command line the svm_rank classifier.
     :param new_features: whether to generate new features or use already generated.
@@ -29,7 +40,6 @@ def run_svm_rank(new_features=False, C=3):
     >>>print_results(run_svm_rank(new_features=True, C=1.5))
     """
 
-    sentences_train, sentences_test = get_datasets()
 
     if new_features:
         generate_new_features(sentences_test, sentences_train)
