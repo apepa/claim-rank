@@ -1,6 +1,6 @@
 import operator
 import os
-
+from sklearn.preprocessing.data import MinMaxScaler
 ATTR_SEP = " "
 INST_SEP = "\n"
 
@@ -25,8 +25,10 @@ def read_svm_pred(test_sent, input_file):
     ranks = []
     for line in input:
         ranks.append(float(line.strip()))
+
+    ranks = MinMaxScaler().fit_transform(ranks)
     for i, sent in enumerate(test_sent):
         test_sent[i].rank = ranks[i]
 
-    sorted_test = sorted(test_sent, key=operator.attrgetter("rank"), reverse=True)
-    return sorted_test
+    # sorted_test = sorted(test_sent, key=operator.attrgetter("rank"), reverse=True)
+    return test_sent
