@@ -15,6 +15,8 @@ class Debate(Enum):
     SECOND = 3
     THIRD = 4
 
+DEBATES = [Debate.FIRST, Debate.VP, Debate.SECOND, Debate.THIRD]
+
 
 def read_all_debates(source='ann'):
     """
@@ -82,6 +84,23 @@ def read_cb_scores(debate):
         columns = line.split(SEP)
         sentences[i].pred = float(columns[2])
     return sentences
+
+
+def get_for_crossvalidation():
+    """
+    Splits the debates into four cross-validation sets.
+    One of the debates is a test set at each cross validation.
+    :return: test and train sets
+    """
+    data_sets = []
+    for debate in DEBATES:
+        train_debates = DEBATES[:]
+        train = []
+        test = read_debates(debate)
+        for train_debate in train_debates:
+            train += read_debates(train_debate)
+        data_sets.append((debate, test, train))
+    return data_sets
 
 
 
