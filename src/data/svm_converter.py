@@ -28,7 +28,7 @@ def read_svm_pred(test_sent, input_file):
 
     ranks = MinMaxScaler().fit_transform(ranks)
     for i, sent in enumerate(test_sent):
-        test_sent[i].rank = ranks[i]
+        test_sent[i].pred = ranks[i]
 
     # sorted_test = sorted(test_sent, key=operator.attrgetter("rank"), reverse=True)
     return test_sent
