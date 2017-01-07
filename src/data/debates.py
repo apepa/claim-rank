@@ -73,13 +73,15 @@ def read_debates(debate, use_label='sum_all'):
 
 
 def read_cb_scores(debate):
-    sentences = []
+    sentences = read_debates(debate)
     debate_file_name = join(CONFIG['tr_cb_anns'], CONFIG[debate.name] + CB_FILE_EXT)
     debate_file = open(debate_file_name)
     debate_file.readline()
-    for line in debate_file:
+    for i, line in enumerate(debate_file):
         line = line.strip()
         columns = line.split(SEP)
-        s = Sentence(columns[0], columns[-1], float(columns[2]), columns[1], debate)
-        sentences.append(s)
+        sentences[i].pred = float(columns[2])
     return sentences
+
+
+
