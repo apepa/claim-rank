@@ -180,7 +180,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 178	CLINTON	0	0	0	0	0	0	0	0	0	0	Instead of answering people's questions, talking about our agenda, laying out the plans that we have that we think can make a better life and a better country, that's his choice.
 179	CLINTON	0	0	0	0	0	0	0	0	0	0	When I hear something like that, I am reminded of what my friend, Michelle Obama, advised us all: When they go low, you go high.
 180	SYSTEM	0	0	0	0	0	0	0	0	0	0	(APPLAUSE)
-181	CLINTON	0	0	0	0	0	0	0	0	0	0	And, look, if this were just about one video, maybe what he's saying tonight would be understandable, but everyone can draw their own conclusions at this point about whether or not the man in the video or the man on the stage respects women.
+181	CLINTON	0	0	0	0	0	0	0	0	0	0	 And, look, if this were just about one video, maybe what he's saying tonight would be understandable, but everyone can draw their own conclusions at this point about whether or not the man in the video or the man on the stage respects women.
 182	CLINTON	1	0	0	0	0	0	0	1	0	0	But he never apologizes for anything to anyone.
 183	CLINTON	2	0	0	0	1	1	0	0	0	0	He never apologized to Mr. and Mrs. Khan, the Gold Star family whose son, Captain Khan, died in the line of duty in Iraq.
 184	CLINTON	2	0	0	0	1	1	0	0	0	0	And Donald insulted and attacked them for weeks over their religion.
@@ -272,7 +272,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 270	TRUMP	0	0	0	0	0	0	0	0	0	0	Wait a minute.
 271	TRUMP	0	0	0	0	0	0	0	0	0	0	One second.
 272	COOPER	0	0	0	0	0	0	0	0	0	0	Secretary Clinton, you can respond, and then we got to move on.
-273	RADDATZ	0	0	0	0	0	0	0	0	0	0	We want to give the audience a chance
+273	RADDATZ	0	0	0	0	0	0	0	0	0	0	We want to give the audience a chance.
 274	TRUMP	0	0	0	0	0	0	0	0	0	0	If you did that in the private sector, you'd be put in jail, let alone after getting a subpoena from the United States Congress.
 275	COOPER	0	0	0	0	0	0	0	0	0	0	Secretary Clinton, you can respond.
 276	COOPER	0	0	0	0	0	0	0	0	0	0	Then we have to move on to an audience question.
@@ -320,7 +320,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 318	QUESTION	0	0	0	0	0	0	0	0	0	0	Prescriptions have gone up.
 319	QUESTION	0	0	0	0	0	0	0	0	0	0	And the coverage has gone down.
 320	QUESTION	0	0	0	0	0	0	0	0	0	0	What will you do to bring the cost down and make coverage better?
-321	COOPER	0	0	0	0	0	0	0	0	0	0	That first one goes to Secretary Clinton, because you started out the last one to the audience
+321	COOPER	0	0	0	0	0	0	0	0	0	0	That first one goes to Secretary Clinton, because you started out the last one to the audience.
 322	CLINTON	0	0	0	0	0	0	0	0	0	0	If he wants to start, he can start.
 323	CLINTON	0	0	0	0	0	0	0	0	0	0	No, go ahead, Donald.
 324	TRUMP	0	0	0	0	0	0	0	0	0	0	No, I'm a gentlemen, Hillary.
@@ -489,7 +489,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 487	TRUMP	0	0	0	0	0	0	0	0	0	0	Hillary Clinton wants to allow hundreds of thousands -- excuse me.
 488	TRUMP	0	0	0	0	0	0	0	0	0	0	Excuse me..
 489	RADDATZ	0	0	0	0	0	0	0	0	0	0	And why did it morph into that?
-490	RADDATZ	0	0	0	0	0	0	0	0	0	0	No, did you answer the question?
+490	RADDATZ	0	0	0	0	0	0	0	0	0	0	No, did you -- no, answer the question.
 491	RADDATZ	0	0	0	0	0	0	0	0	0	0	Do you still believe...
 492	TRUMP	0	0	0	0	0	0	0	0	0	0	Why don't you interrupt her?
 493	TRUMP	0	0	0	0	0	0	0	0	0	0	You interrupt me all the time.
@@ -538,7 +538,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 536	TRUMP	0	0	0	0	0	0	0	0	0	0	And you shouldn't have.
 537	TRUMP	0	0	0	0	0	0	0	0	0	0	Well, I just want to say...
 538	RADDATZ	0	0	0	0	0	0	0	0	0	0	There's been lots of fact-checking on that.
-539	RADDATZ	0	0	0	0	0	0	0	0	0	0	I'd like to move on to an online question
+539	RADDATZ	0	0	0	0	0	0	0	0	0	0	I'd like to move on to an online question...
 540	TRUMP	0	0	0	0	0	0	0	0	0	0	Excuse me.
 541	TRUMP	0	0	0	0	0	0	0	0	0	0	She just went about 25 seconds over her time.
 542	RADDATZ	0	0	0	0	0	0	0	0	0	0	She did not.
@@ -884,7 +884,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 882	TRUMP	0	0	0	0	0	0	0	0	0	0	I think you have to knock out ISIS.
 883	TRUMP	0	0	0	0	0	0	0	0	0	0	Right now, Syria is fighting ISIS.
 884	TRUMP	0	0	0	0	0	0	0	0	0	0	We have people that want to fight both at the same time.
-885	TRUMP	0	0	0	0	0	0	0	0	0	0	Syria Syria
+885	TRUMP	0	0	0	0	0	0	0	0	0	0	But Syria is no longer Syria.
 886	TRUMP	0	0	0	0	0	0	0	0	0	0	Syria is Russia and it's Iran, who she made strong and Kerry and Obama made into a very powerful nation and a very rich nation, very, very quickly, very, very quickly.
 887	TRUMP	0	0	0	0	0	0	0	0	0	0	I believe we have to get ISIS.
 888	TRUMP	0	0	0	0	0	0	0	0	0	0	We have to worry about ISIS before we can get too much more involved.
@@ -1003,7 +1003,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 1001	TRUMP	0	0	0	0	0	0	0	0	0	0	And she's been talking about the inner cities for 25 years.
 1002	TRUMP	0	0	0	0	0	0	0	0	0	0	Nothing's going to ever happen.
 1003	TRUMP	0	0	0	0	0	0	0	0	0	0	Let me tell you, if she's president of the United States, nothing's going to happen.
-1004	TRUMP	0	0	0	0	0	0	0	0	0	0	It's just going to be talk
+1004	TRUMP	0	0	0	0	0	0	0	0	0	0	It's just going to be talk.
 1005	TRUMP	0	0	0	0	0	0	0	0	0	0	And all of her friends, the taxes we were talking about, and I would just get it by osmosis.
 1006	TRUMP	0	0	0	0	0	0	0	0	0	0	She's not doing any me favors.
 1007	TRUMP	0	0	0	0	0	0	0	0	0	0	But by doing all the others' favors, she's doing me favors.
