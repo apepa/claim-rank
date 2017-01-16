@@ -1,52 +1,52 @@
 
 04_10_2016 debate info:
-25 annotations from The New York Times 
-39 annotations from The Guardian 
-29 annotations from Chicago Tribune 
-47 annotations from FactCheck.org 
-92 annotations from NPR 
-19 annotations from The Washington Post 
 50 annotations from ABC News 
-30 annotations from CNN 
+92 annotations from NPR 
+29 annotations from Chicago Tribune 
+19 annotations from The Washington Post 
+25 annotations from The New York Times 
 62 annotations from PolitiFact 
-393 annotations overall 
-237 annotated sentences overall
+45 annotations from FactCheck.org 
+30 annotations from CNN 
+39 annotations from The Guardian 
+391 annotations overall 
+235 annotated sentences overall
 
 19_10_2016 debate info:
-52 annotations from The New York Times 
-72 annotations from The Guardian 
-38 annotations from Chicago Tribune 
-60 annotations from FactCheck.org 
-89 annotations from NPR 
-18 annotations from The Washington Post 
 28 annotations from ABC News 
-60 annotations from CNN 
+89 annotations from NPR 
+38 annotations from Chicago Tribune 
+17 annotations from The Washington Post 
+52 annotations from The New York Times 
 57 annotations from PolitiFact 
-474 annotations overall 
-245 annotated sentences overall
+60 annotations from FactCheck.org 
+60 annotations from CNN 
+72 annotations from The Guardian 
+473 annotations overall 
+244 annotated sentences overall
 
 26_09_2016 debate info:
-26 annotations from The New York Times 
-27 annotations from The Guardian 
-30 annotations from Chicago Tribune 
-15 annotations from FactCheck.org 
-99 annotations from NPR 
-26 annotations from The Washington Post 
 35 annotations from ABC News 
-46 annotations from CNN 
+99 annotations from NPR 
+30 annotations from Chicago Tribune 
+26 annotations from The Washington Post 
+26 annotations from The New York Times 
 74 annotations from PolitiFact 
-401 annotations overall 
-224 annotated sentences overall
+15 annotations from FactCheck.org 
+46 annotations from CNN 
+27 annotations from The Guardian 
+378 annotations overall 
+218 annotated sentences overall
 
 09_10_2016 debate info:
-46 annotations from The New York Times 
-54 annotations from The Guardian 
-31 annotations from Chicago Tribune 
-47 annotations from FactCheck.org 
-91 annotations from NPR 
-33 annotations from The Washington Post 
 29 annotations from ABC News 
-37 annotations from CNN 
+91 annotations from NPR 
+31 annotations from Chicago Tribune 
+33 annotations from The Washington Post 
+46 annotations from The New York Times 
 60 annotations from PolitiFact 
+47 annotations from FactCheck.org 
+37 annotations from CNN 
+54 annotations from The Guardian 
 428 annotations overall 
 183 annotated sentences overall

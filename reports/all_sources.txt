@@ -1,25 +1,25 @@
-Overall sentences annotated: 5414
+Overall sentences annotated: 5415
 
 Agreement:
-4525 sentences with 0 annotators agreed
-496 sentences with 1 annotators agreed
-194 sentences with 2 annotators agreed
-99 sentences with 3 annotators agreed
+4535 sentences with 0 annotators agreed
+492 sentences with 1 annotators agreed
+191 sentences with 2 annotators agreed
+100 sentences with 3 annotators agreed
 40 sentences with 4 annotators agreed
-27 sentences with 5 annotators agreed
+26 sentences with 5 annotators agreed
 19 sentences with 6 annotators agreed
-7 sentences with 7 annotators agreed
+5 sentences with 7 annotators agreed
 6 sentences with 8 annotators agreed
 1 sentences with 9 annotators agreed
 
 Accumulated Agreement:
-889 sentences with at least 1 annotators agreed
-393 sentences with at least 2 annotators agreed
-199 sentences with at least 3 annotators agreed
-100 sentences with at least 4 annotators agreed
-60 sentences with at least 5 annotators agreed
-33 sentences with at least 6 annotators agreed
-14 sentences with at least 7 annotators agreed
+880 sentences with at least 1 annotators agreed
+388 sentences with at least 2 annotators agreed
+197 sentences with at least 3 annotators agreed
+97 sentences with at least 4 annotators agreed
+57 sentences with at least 5 annotators agreed
+31 sentences with at least 6 annotators agreed
+12 sentences with at least 7 annotators agreed
 7 sentences with at least 8 annotators agreed
 1 sentences with at least 9 annotators agreed
 
@@ -35,8 +35,6 @@ You ran the State Department, $6 billion was either stolen.
 It's gone, $6 billion.
 
 Sentences with 7 agreed annotators:
-Donald thinks that climate change is a hoax perpetrated by the Chinese.
-I do not say that.
 When I watch the deals being made, when I watch what's happening with some horrible things like Obamacare, where your health insurance and health care is going up by numbers that are astronomical, 68 percent, 59 percent, 71 percent, when I look at the Iran deal and how bad a deal it is for us, it's a one-sided transaction where we're giving back $150 billion to a terrorist state, really, the number one terror state, we've made them a strong country from really a very weak country just three years ago.
 Her client she represented got him off, and she's seen laughing on two separate occasions, laughing at the girl who was raped.
 No, there wasn't check out a sex tape.
@@ -46,8 +44,8 @@ I do not add a penny to the national debt.
 Sentences with 6 agreed annotators:
 Well, for one thing -- and before we start on that -- my father gave me a very small loan in 1975, and I built it into a company that's worth many, many billions of dollars, with some of the greatest assets in the world, and I say that only because that's the kind of thinking that our country needs.
 Independent experts have looked at what I've proposed and looked at what Donald's proposed, and basically they've said this, that if his tax plan, which would blow up the debt by over $5 trillion and would in some instances disadvantage middle-class families compared to the wealthy, were to go into effect, we would lose 3.5 million jobs and maybe have another recession.
-I did not.
-I did not.
+Donald thinks that climate change is a hoax perpetrated by the Chinese.
+I do not say that.
 No wonder you've been fighting -- no wonder you've been fighting ISIS your entire adult life.
 They were pressing it very hard.
 She worked a tough negotiation with nations around the world to eliminate the Iranian nuclear weapons program without firing a shot.
@@ -66,12 +64,11 @@ But what is really troubling is that we learned in the last debate he has not pa
 
 Sentences with 5 agreed annotators:
 Thousands of jobs leaving Michigan, leaving Ohio.
-And we have a Fed that's doing political things.
+I did not.
+I did not.
 You even at one time suggested that you would try to negotiate down the national debt of the United States.
 No, you're wrong.
 Murders are up.
-I know Donald's very praiseworthy of Vladimir Putin, but Putin is playing a really...
-Wrong.
 Hillary Clinton and Tim Kaine want to continue the policies of open borders, amnesty, catch and release, sanctuary cities, all the things that are driving -- that are driving wages down in this country, Senator, and also too often with criminal aliens in the country, it's bringing heartbreak.
 I mean, to be honest with you, if Donald Trump had said all of the things that you've said he said in the way you said he said them, he still wouldn't have a fraction of the insults that Hillary Clinton leveled when she said that half of our supporters were a basket of deplorables.
 We had an $800 billion deficit.
@@ -94,13 +91,13 @@ She wants 550 percent more people than Barack Obama, and he has thousands and th
 They don't know.
 
 Sentences with 4 agreed annotators:
-So Ford is leaving.
 The facts are -- I did say I hoped it would be a good deal, but when it was negotiated...
-The Fed is doing political -- by keeping the interest rates at this level.
+And we have a Fed that's doing political things.
 Wrong.
 It went before a judge, who was a very against-police judge.
 Sidney Blumenthal works for the campaign and close -- very close friend of Secretary Clinton.
-He actually advocated for the actions we took in Libya and urged that Gadhafi be taken out, after actually doing some business with him one time.
+I know Donald's very praiseworthy of Vladimir Putin, but Putin is playing a really...
+Wrong.
 I did not support the war in Iraq.
 And Iraq has been overrun by ISIS, because Hillary Clinton failed to renegotiate...
 First, Donald Trump said wages are too high.
@@ -138,10 +135,11 @@ Next year they're going to go up over 100 percent.
 Sentences with 3 agreed annotators:
 Our jobs are fleeing the country.
 They're going to Mexico.
-NAFTA is the worst trade deal maybe ever signed anywhere, but certainly ever signed in this country.
+So Ford is leaving.
 You called it the gold standard.
 You called it the gold standard of trade deals.
 And by the way, my tax cut is the biggest since Ronald Reagan.
+The Fed is doing political -- by keeping the interest rates at this level.
 When we have a country that's doing so badly, that's being ripped off by every single country in the world, it's the kind of thinking that our country needs, because everybody -- Lester, we have a trade deficit with all of the countries that we do business with, of almost $800 billion a year.
 Or maybe he doesn't want the American people, all of you watching tonight, to know that he's paid nothing in federal taxes, because the only years that anybody's ever seen were a couple of years when he had to turn them over to state authorities when he was trying to get a casino license, and they showed he didn't pay any federal income tax.
 And when we talk about your business, you've taken business bankruptcy six times.
@@ -154,7 +152,7 @@ Blumenthal sent McClatchy, highly respected reporter at McClatchy, to Kenya to f
 Well, nobody was pressing it, nobody was caring much about it.
 In addition, I was just endorsed by ICE.
 Well, President Obama and Secretary Clinton created a vacuum the way they got out of Iraq, because they got out -- what, they shouldn't have been in, but once they got in, the way they got out was a disaster.
-Donald supported the invasion of Iraq.
+He actually advocated for the actions we took in Libya and urged that Gadhafi be taken out, after actually doing some business with him one time.
 We have not been updating from the new standpoint.
 But this is a man who has called women pigs, slobs and dogs, and someone who has said pregnancy is an inconvenience to employers, who has said...
 We've seen an economy stifled by more taxes, more regulation, a war on coal, and a failing health care reform come to be known as Obamacare, and the American people know that we need to make a change.
@@ -194,7 +192,7 @@ People are coming into our country like we have no idea who they are, where they
 And the final thing I would say, this is the 10th or 12th time that he's denied being for the war in Iraq.
 That's not been debunked.
 Has not been debunked.
-As I recall, that was something I said about Abraham Lincoln after having seen the wonderful Steven Spielberg movie called "Lincoln."
+"As I recall, that was something I said about Abraham Lincoln after having seen the wonderful Steven Spielberg movie called ""Lincoln."""
 And a lot of it has to do with the fact that our taxes are so high, just about the highest in the world.
 And it is sort of amusing to hear somebody who hasn't paid federal income taxes in maybe 20 years talking about what he's going to do.
 And, indeed, the way that he talks about his tax cuts would end up raising taxes on middle-class families, millions of middle-class families.
@@ -231,19 +229,17 @@ We've lost our businesses.
 I started with a $1 million loan.
 Well, he held a number of big rallies where he said that he could not possibly have done those things to those women because they were not attractive enough for them to be assaulted.
 The money goes 100 percent -- 100 percent goes to different charities, including a lot of military.
-... the money -- the money went to Fisher House, where they build houses -- the money that you're talking about went to Fisher House, where they build houses for veterans and disabled vets.
+the money -- the money went to Fisher House, where they build houses -- the money that you're talking about went to Fisher House, where they build houses for veterans and disabled vets.
 And all of her donors -- just about all of them -- I know Buffett took hundreds of millions of dollars, Soros, George Soros, took hundreds of millions of dollars...
 If you look -- excuse me, Chris -- if you look at your voter rolls, you will see millions of people that are registered to vote -- millions, this isn't coming from me -- this is coming from Pew Report and other places -- millions of people that are registered to vote that shouldn't be registered to vote.
 Wrong.
 
 Sentences with 2 agreed annotators:
 They're devaluing their currency, and there's nobody in our government to fight them.
-Under my plan, I'll be reducing taxes tremendously, from 35 percent to 15 percent for companies, small and big businesses.
 He started his business with $14 million, borrowed from his father, and he really believes that the more you help wealthy people, the better off we'll be and that everything will work out from there.
 In fact, Donald was one of the people who rooted for the housing crisis.
 He's doubled it in a course of almost eight years, seven-and-a-half years, to be semi- exact.
-You go to New England, you go to Ohio, Pennsylvania, you go anywhere you want, Secretary Clinton, and you will see devastation where manufacture is down 30, 40, sometimes 50 percent.
-That's why I said new jobs with rising incomes, investments, not in more tax cuts that would add $5 trillion to the debt.
+NAFTA is the worst trade deal maybe ever signed anywhere, but certainly ever signed in this country.
 You are going to approve one of the biggest tax increases in history.
 I think building the middle class, investing in the middle class, making college debt-free so more young people can get their education, helping people refinance their -- their debt from college at a lower rate.
 Now, look, we have the worst revival of an economy since the Great Depression.
@@ -263,10 +259,9 @@ Well, it's also fair to say, if we're going to talk about mayors, that under the
 No, you're wrong.
 And if you look at CNN this past week, Patti Solis Doyle was on Wolf Blitzer saying that this happened.
 You were after him, you were trying to -- you even sent out or your campaign sent out pictures of him in a certain garb, very famous pictures.
-... tough, long game here.
-And one of the things he's done is to let loose cyber attackers to hack into government files, to hack into personal files, hack into the Democratic National Committee.
 And that's why I was so -- I was so shocked when Donald publicly invited Putin to hack into Americans.
 And ISIS was formed.
+Donald supported the invasion of Iraq.
 Number one, the 28 countries of NATO, many of them aren't paying their fair share.
 I was against the war in Iraq.
 And my successor, John Kerry, and President Obama got a deal that put a lid on Iran's nuclear program without firing a single shot.
@@ -343,7 +338,7 @@ But it's not only women, and it's not only this video that raises questions abou
 There's never been anybody in the history politics in this nation that's been so abusive to women.
 He never apologized to Mr. and Mrs. Khan, the Gold Star family whose son, Captain Khan, died in the line of duty in Iraq.
 And Donald insulted and attacked them for weeks over their religion.
-He never apologized to the distinguished federal judge who was born in Indiana, but Donald said he couldn't be trusted to be a judge because his parents were, quote, "Mexican."
+"He never apologized to the distinguished federal judge who was born in Indiana, but Donald said he couldn't be trusted to be a judge because his parents were, quote, ""Mexican."""
 He never apologized to the reporter that he mimicked and mocked on national television and our children were watching.
 And he never apologized for the racist lie that President Obama was not born in the United States of America.
 He owes the president an apology, he owes our country an apology, and he needs to take responsibility for his actions and his words.
@@ -438,13 +433,9 @@ They're going to many other countries.
 You look at what China is doing to our country in terms of making our product.
 You see that, their small car division leaving.
 So many hundreds and hundreds of companies are doing this.
-That's going to be a job creator like we haven't seen since Ronald Reagan.
+Under my plan, I'll be reducing taxes tremendously, from 35 percent to 15 percent for companies, small and big businesses.
 In fact, it would be the most extreme version, the biggest tax cuts for the top percent of the people in this country than we've ever had.
 You know, Donald was very fortunate in his life, and that's all to his benefit.
-When we sell into Mexico, there's a tax.
-When they sell in -- automatic, 16 percent, approximately.
-When they sell into us, there's no tax.
-It's a defective agreement.
 They're leaving, and they're leaving in bigger numbers than ever.
 Well, let's stop for a second and remember where we were eight years ago.
 We had the worst financial crisis, the Great Recession, the worst since the 1930s.
@@ -463,6 +454,7 @@ Some of them I voted for.
 The biggest one, a multinational one known as CAFTA, I voted against.
 And because I hold the same standards as I look at all of these trade deals.
 When I was secretary of state, we actually increased American exports globally 30 percent.
+You go to New England, you go to Ohio, Pennsylvania, you go anywhere you want, Secretary Clinton, and you will see devastation where manufacture is down 30, 40, sometimes 50 percent.
 And now you want to approve Trans-Pacific Partnership.
 You were totally in favor of it.
 Then you heard what I was saying, how bad it is, and you said, I can't win that debate.
@@ -470,6 +462,7 @@ Well, that is just not accurate.
 I was against it once it was finally negotiated and the terms were laid out.
 And then you heard what I said about it, and all of a sudden you were against it.
 ... which I was not responsible for, I concluded it wasn't.
+That's why I said new jobs with rising incomes, investments, not in more tax cuts that would add $5 trillion to the debt.
 And people have looked at both of our plans, have concluded that mine would create 10 million jobs and yours would lose us 3.5 million jobs, and explode the debt which would have a recession.
 You are going to approve one of the biggest tax cuts in history.
 You are going to drive business out.
@@ -520,7 +513,8 @@ We settled the suit with zero -- with no admission of guilt.
 Because I settled that lawsuit with no admission of guilt, but that was a lawsuit brought against many real estate firms, and it's just one of those things.
 In Palm Beach, Florida, tough community, a brilliant community, a wealthy community, probably the wealthiest community there is in the world, I opened a club, and really got great credit for it.
 No discrimination against African- Americans, against Muslims, against anybody.
-And we recently have learned that, you know, that this is one of their preferred methods of trying to wreak havoc and collect information.
+... tough, long game here.
+And one of the things he's done is to let loose cyber attackers to hack into government files, to hack into personal files, hack into the Democratic National Committee.
 I do want to say that I was just endorsed -- and more are coming next week -- it will be over 200 admirals, many of them here -- admirals and generals endorsed me to lead this country.
 I was just endorsed by ICE.
 I was just recently endorsed -- 16,500 Border Patrol agents.
@@ -563,7 +557,7 @@ China should go into North Korea.
 One of the great giveaways of all time, of all time, including $400 million in cash.
 This is one of the worst deals ever made by any country in history.
 If he's going to criticize a deal that has been very successful in giving us access to Iranian facilities that we never had before, then he should tell us what his alternative would be.
-I mean, can you imagine, we're defending Saudi Arabia?
+I mean, can you imagine, we're defending Saudi Arabia
 And with all of the money they have, we're defending them, and they're not paying?
 All you have to do is speak to them.
 Well, as soon as he travels to 112 countries and negotiates a peace deal, a cease-fire, a release of dissidents, an opening of new opportunities in nations around the world, or even spends 11 hours testifying in front of a congressional committee, he can talk to me about stamina.
@@ -610,8 +604,6 @@ Donald Trump must give the American public his tax returns to show that he's qua
 And he's breaking his promise.
 They're going to raise your taxes.
 We're going to cut your taxes.
-Gentlemen...
-If you can't meet Nixon's standard...
 Senator Kaine, on the issue of Social Security, in 18 years, when the Social Security Trust Funds run out of money, you'll be 76.
 Even after President Bush stopped pushing for it, Congressman Pence kept pushing for it.
 And we'll look for ways to keep it solvent going forward, focusing primarily on the payroll tax cap.
@@ -641,7 +633,7 @@ Senator, we have a deportation force.
 And the union for Immigrations and Customs Enforcement for the first time in their history endorsed Donald Trump to be the next president of the United States of America.
 Look, what you just heard is they have a plan for open borders, amnesty.
 Our plan is like Ronald Reagan's plan from 1986.
-They call it comprehensive immigration reform -- they call it comprehensive immigration reform on Capitol Hill.
+They call it comprehensive immigration reform on Capitol Hill.
 The reality is that there's heartbreak and tragedy that has struck American families because people that came into this country illegally are now involved in criminal enterprise and activity.
 And we don't have the resources or the will to deport them systemically.
 They will all be gone.
@@ -695,7 +687,7 @@ But the Clintons figured out a way to create a foundation where foreign governme
 The foundation was just fined for illegally contributing foundation dollars to a political campaign of a Florida attorney general.
 They made an illegal contribution, and then they tried to hide it by disguising it to somebody else.
 And the person they donated to was somebody whose office was charged with investigating Trump University.
-Political contributions?
+Political
 Senator Kaine, if you had intelligence that North Korea was about to launch a missile, a nuclear-armed missile capable of reaching the United States, would you take preemptive action?
 Often China will use their veto in the Security Council to veto a package like that.
 They're starting to get worried about North Korea, too.
@@ -749,7 +741,7 @@ The whole thing was a fraud, and it doesn't work.
 But when we get rid of those lines, you will have competition, and we will be able to keep pre-existing, we'll also be able to help people that can't get -- don't have money because we are going to have people protected.
 Look at that horrible -- these are radical Islamic terrorists.
 And she won't even mention the word and nor will President Obama.
-He won't use the term "radical Islamic terrorism."
+"He won't use the term ""radical Islamic terrorism."""
 She won't say the name and President Obama won't say the name.
 We know nothing about their values and we know nothing about their love for our country.
 But it is important for us as a policy, you know, not to say, as Donald has said, we're going to ban people based on a religion.
@@ -802,7 +794,6 @@ Well, I was upset because, unfortunately, dozens of toddlers injure themselves, 
 Well, if we put another two or perhaps three justice on, that's really what's going to be -- that will happen.
 And that'll happen automatically, in my opinion, because I am putting pro-life justices on the court.
 So many states are putting very stringent regulations on women that block them from exercising that choice to the extent that they are defunding Planned Parenthood, which, of course, provides all kinds of cancer screenings and other benefits for women in our country.
-And I could just not be more opposed to that kind of thinking.
 Secretary Clinton, you have offered no specific plan for how you want to secure our southern border.
 Hillary wants to give amnesty.
 It's just pouring and destroying their youth.
@@ -1003,6 +994,7 @@ All you have to do is take a look at Carrier air conditioning in Indianapolis.
 They left -- fired 1,400 people.
 They're going to Mexico.
 We cannot let it happen.
+That's going to be a job creator like we haven't seen since Ronald Reagan.
 It's going to be a beautiful thing to watch.
 Companies will come.
 They will build.
@@ -1034,7 +1026,7 @@ How are you going to bring back the industries that have left this country for c
 How, specifically, are you going to tell American manufacturers that you have to come back?
 Our country's in deep trouble.
 We don't know what we're doing when it comes to devaluations and all of these countries all over the world, especially China.
-They're the best, the best ever at it.
+They're the best, the best ever at it
 What they're doing to us is a very, very sad thing.
 So we have to do that.
 We have to renegotiate our trade deals.
@@ -1042,6 +1034,10 @@ And, Lester, they're taking our jobs, they're giving incentives, they're doing t
 Let me give you the example of Mexico.
 They have a VAT tax.
 We're on a different system.
+When we sell into Mexico, there's a tax.
+When they sell in -- automatic, 16 percent, approximately.
+When they sell into us, there's no tax.
+It's a defective agreement.
 It's been defective for a long time, many years, but the politicians haven't done anything about it.
 Now, in all fairness to Secretary Clinton -- yes, is that OK?
 Good.
@@ -1064,7 +1060,7 @@ Well, the first thing you do is don't let the jobs leave.
 The companies are leaving.
 I could name, I mean, there are thousands of them.
 And what you do is you say, fine, you want to go to Mexico or some other country, good luck.
-We wish you a lot of luck.
+We wish you a lot of luck
 But if you think you're going to make your air conditioners or your cars or your cookies or whatever you make and bring them into our country without a tax, you're wrong.
 And once you say you're going to have to tax them coming in, and our politicians never do this, because they have special interests and the special interests want those companies to leave, because in many cases, they own the companies.
 So what I'm saying is, we can stop them from leaving.
@@ -1279,7 +1275,7 @@ Typical politician.
 All talk, no action.
 Sounds good, doesn't work.
 Never going to happen.
-Our country is suffering because people like Secretary Clinton have made such bad decisions in terms of our jobs and in terms of what's going on.
+Secretary Clinton
 And believe me: We're in a bubble right now.
 And the only thing that looks good is the stock market, but if you raise interest rates even a little bit, that's going to come crashing down.
 We are in a big, fat, ugly bubble.
@@ -1553,7 +1549,7 @@ When a person is on a watch list or a no-fly list, and I have the endorsement of
 These are very, very good people, and they're protecting the Second Amendment.
 But I think we have to look very strongly at no-fly lists and watch lists.
 And when people are on there, even if they shouldn't be on there, we'll help them, we'll help them legally, we'll help them get off.
-But I tend to agree with that quite strongly.
+But I tend to agree with that quite strongly
 And that's a term that I think was a -- it's -- it's been horribly met, as you know.
 I think you've apologized for it.
 But I think it was a terrible thing to say.
@@ -1598,7 +1594,7 @@ You decided to stay home, and that's OK.
 But I will tell you, I've been all over.
 And I've met some of the greatest people I'll ever meet within these communities.
 And they are very, very upset with what their politicians have told them and what their politicians have done.
-Mr. Trump, I...
+Mr. Trump, I
 I think -- I think -- I think Donald just criticized me for preparing for this debate.
 And, yes, I did.
 And you know what else I prepared for?
@@ -1698,6 +1694,7 @@ But increasingly, we are seeing cyber attacks coming from states, organs of stat
 The most recent and troubling of these has been Russia.
 There's no doubt now that Russia has used cyber attacks against all kinds of organizations in our country, and I am deeply concerned about this.
 (CROSSTALK)
+And we recently have learned that, you know, that this is one of their preferred methods of trying to wreak havoc and collect information.
 We need to make it very clear -- whether it's Russia, China, Iran or anybody else -- the United States has much greater capacity.
 And we are not going to sit idly by and permit state actors to go after our information, our private-sector information or our public-sector information.
 And we're going to have to make it clear that we don't want to use the kinds of tools that we have.
@@ -1827,7 +1824,7 @@ And you're going to stop them?
 I don't think so.
 Mr. Trump, a lot of these are judgment questions.
 You had supported the war in Iraq before the invasion.
-What makes your...
+What makes your
 In 2002...
 That is a mainstream media nonsense put out by her, because she -- frankly, I think the best person in her campaign is mainstream media.
 My question is, since you supported it...
@@ -2163,7 +2160,7 @@ I have to tell you, I'm a -- I'm a small-town boy from a place not too different
 I grew up with a cornfield in my backyard.
 My grandfather had immigrated to this country when he was about my son's age.
 My mom and dad built a -- everything that matters in a small town in Southern Indiana.
-They built a family and -- and a good name and a business.
+They built a family and -- and a good name and a business
 And they raised a family.
 And I dreamed some day of representing my home town in Washington, D.C., but I -- honestly, Elaine, I never imagined -- never imagined I'd have the opportunity to be governor of the state that I love, let alone be sitting at a table like this in this kind of a position.
 So to answer your question, I would say I -- I would hope that if -- if the responsibility ever fell to me in this role, that I would meet it with the way that I'm going to meet the responsibility should I be elected vice president of the United States.
@@ -2248,7 +2245,7 @@ Gentlemen, we'll get to...
 (CROSSTALK)
 But I'd like to correct...
 We need to move on to the next topic, gentlemen.
-If Governor Pence wants to put more troops back in Iraq, that's...
+If Governor Pence wants to put more troops back in Iraq, that's
 There are a lot of people wondering in this country about the economy.
 Let's turn to the issue of the economy.
 OK.
@@ -2341,6 +2338,8 @@ All right, Gentlemen...
 The American people can review that.
 And he's going -- Senator, he's going to release his tax returns when the audit is over...
 ... I need to ask you about Social Security...
+Gentlemen...
+If you can't meet Nixon's standard...
 The people at home cannot understand either one of you when you speak over each other.
 I would please ask you to wait until it is that the other is finished.
 All right.
@@ -2434,7 +2433,7 @@ I mean, I -- we -- we mourn with those who mourn.
 We -- we grieve with those who grieve.
 And we're saddened at the loss of life.
 I just think...
-Can I -- can I explain...
+Can I explain
 ... I just think what we ought to do is we ought to stop seizing on these moments of tragedy.
 We ought to assure the public that we'll have a full and complete and transparent investigation whenever there's a loss of life because of police action.
 But, Senator, please, you know, enough of this seeking every opportunity to demean law enforcement broadly by making the accusation of implicit bias every time tragedy occurs.
@@ -2472,7 +2471,7 @@ I worked when I was Congress on a second chance act.
 We have got to do a better job recognizing and correcting the errors in the system that do reflect on institutional bias in criminal justice.
 But what -- what -- what Donald Trump and I are saying is let's not have the reflex of assuming the worst of men and women in law enforcement.
 We truly do believe that law enforcement is not a force for racism or division in our country...
-Elaine, can I...
+Elaine, can I
 So what would you say to Senator Scott, Governor?
 Law enforcement in this country is a force for good.
 They are the -- they truly are people that put their lives on the line every single day.
@@ -2630,7 +2629,7 @@ And I want to give this president credit for bringing Osama bin Laden to justice
 But the truth is, Osama bin Laden led Al Qaida.
 Our primary threat today is ISIS.
 My heart breaks for the likes of Lance Cpl.
-Scott Zubowski.
+Scott Zubowski
 He fell in Fallujah in 2005.
 He fought hard through some of the most difficult days in Operation Iraqi Freedom, and he paid the ultimate sacrifice to defend our freedom and secure that nation.
 And that nation was secured in 2009.
@@ -2891,9 +2890,9 @@ If he wants to take these one at a time, I'll take them one at a time.
 I will give you an opportunity to do that.
 Try to defend that.
 He absolutely said it.
-Saudi Arabia, South Korea, Japan.
+Saudi Arabia, South Korea and Japan
 Most of the stuffy you've said, he's never said.
-Gentlemen, Russia.
+Russia
 Russian President Vladimir Putin invaded Ukraine, annexed Crimea, and has provided crucial military support to the Assad regime.
 What steps, if any, would your administration take to counter these actions?
 Senator Kaine?
@@ -2922,7 +2921,7 @@ Every president since Richard Nixon has done it, and Donald Trump has said I'm d
 The only way the American public will see whether he has a conflict of interest...
 No, he hasn't said that.
 He has, actually.
-Senator, your time is up.
+Senator, your time is up
 Governor?
 Well, thanks.
 I'm just trying to keep up with the insult-driven campaign on the other side of the table.
@@ -2989,10 +2988,10 @@ And with Donald Trump -- Donald Trump's sons say that they have all these busine
 Those could be disclosed with tax returns, but they refuse to do them.
 Americans need to worry about whether Donald Trump will be watching out for America's bottom line or his own bottom line.
 Senator Kaine, what went wrong with the Russia reset?
-Vladimir Putin.
-Vladimir Putin is a dictator.
+Vladimir Putin
+Vladimir Putin
 And what would do you differently?
-Vladimir Putin is a dictator.
+Vladimir Putin
 He's not a leader.
 Anybody who thinks otherwise doesn't know Russian history and they don't know Vladimir Putin.
 Hillary Clinton knows exactly who this guy is.
@@ -3063,7 +3062,7 @@ Ninety percent.
 It has been a platform for the Clintons to travel the world, to have staff.
 All right, let's turn back to North Korea...
 ... that she refused to turn over in her private server...
-Senator Kaine...
+Senator Kaine
 ... and we'd have a much better picture of what the Clinton Foundation was about.
 If we -- look, a president should take action to defend the United States against imminent threat.
 You have to.
@@ -3134,7 +3133,7 @@ But we really feel like you should live fully and with enthusiasm the commands o
 But it is not the role of the public servant to mandate that for everybody else.
 So let's talk about abortion and choice.
 Let's talk about them.
-We support Roe v. Wade.
+We support Roe Wade
 We support the constitutional right of American women to consult their own conscience, their own supportive partner, their own minister, but then make their own decision about pregnancy.
 That's something we trust American women to do that.
 Governor Pence wants to repeal Roe v. Wade.
@@ -3248,7 +3247,7 @@ And I think it is very important for us to make clear to our children that our c
 And we are going to respect one another, lift each other up.
 We are going to be looking for ways to celebrate our diversity, and we are going to try to reach out to every boy and girl, as well as every adult, to bring them in to working on behalf of our country.
 I have a very positive and optimistic view about what we can do together.
-That's why the slogan of my campaign is "Stronger Together," because I think if we work together, if we overcome the divisiveness that sometimes sets Americans against one another, and instead we make some big goals -- and I've set forth some big goals, getting the economy to work for everyone, not just those at the top, making sure that we have the best education system from preschool through college and making it affordable, and so much else.
+"That's why the slogan of my campaign is ""Stronger Together,"" because I think if we work together, if we overcome the divisiveness that sometimes sets Americans against one another, and instead we make some big goals -- and I've set forth some big goals, getting the economy to work for everyone, not just those at the top, making sure that we have the best education system from preschool through college and making it affordable, and so much else."
 If we set those goals and we go together to try to achieve them, there's nothing in my opinion that America can't do.
 So that's why I hope that we will come together in this campaign.
 Obviously, I'm hoping to earn your vote, I'm hoping to be elected in November, and I can promise you, I will work with every American.
@@ -3357,8 +3356,8 @@ Sounds fair.
 This tape is generating intense interest.
 In just 48 hours, it's become the single most talked about story of the entire 2016 election on Facebook, with millions and millions of people discussing it on the social network.
 As we said a moment ago, we do want to bring in questions from voters around country via social media, and our first stays on this topic.
-Jeff from Ohio asks on Facebook, "Trump says the campaign has changed him.
-When did that happen?"
+"Jeff from Ohio asks on Facebook, ""Trump says the campaign has changed him."
+"When did that happen?"""
 So, Mr. Trump, let me add to that.
 When you walked off that bus at age 59, were you a different man or did that behavior continue until just recently?
 And you have two minutes for this.
@@ -3382,7 +3381,8 @@ Well, first, let me start by saying that so much of what he's just said is not r
 He gets to decide what he wants to talk about.
 Instead of answering people's questions, talking about our agenda, laying out the plans that we have that we think can make a better life and a better country, that's his choice.
 When I hear something like that, I am reminded of what my friend, Michelle Obama, advised us all: When they go low, you go high.
-(APPLAUSE) And, look, if this were just about one video, maybe what he's saying tonight would be understandable, but everyone can draw their own conclusions at this point about whether or not the man in the video or the man on the stage respects women.
+(APPLAUSE)
+And, look, if this were just about one video, maybe what he's saying tonight would be understandable, but everyone can draw their own conclusions at this point about whether or not the man in the video or the man on the stage respects women.
 So you really owe him an apology.
 That was long before I was ever involved, so you actually owe an apology.
 Number two, Michelle Obama.
@@ -3420,7 +3420,7 @@ Please do not applaud.
 You're just wasting time.
 And, Secretary Clinton, I do want to follow up on e- mails.
 You've said your handing of your e-mails was a mistake.
-You disagreed with FBI Director James Comey, calling your handling of classified information, quote, "extremely careless."
+"You disagreed with FBI Director James Comey, calling your handling of classified information, quote, ""extremely careless."""
 The FBI said that there were 110 classified e-mails that were exchanged, eight of which were top secret, and that it was possible hostile actors did gain access to those e-mails.
 You don't call that extremely careless?
 Well, Martha, first, let me say -- and I've said before, but I'll repeat it, because I want everyone to hear it -- that was a mistake, and I take responsibility for using a personal e-mail account.
@@ -3457,7 +3457,7 @@ You did that.
 Wait a minute.
 One second.
 Secretary Clinton, you can respond, and then we got to move on.
-We want to give the audience a chance.
+We want to give the audience a chance
 If you did that in the private sector, you'd be put in jail, let alone after getting a subpoena from the United States Congress.
 Secretary Clinton, you can respond.
 Then we have to move on to an audience question.
@@ -3505,7 +3505,7 @@ Copays have gone up.
 Prescriptions have gone up.
 And the coverage has gone down.
 What will you do to bring the cost down and make coverage better?
-That first one goes to Secretary Clinton, because you started out the last one to the audience.
+That first one goes to Secretary Clinton, because you started out the last one to the audience
 If he wants to start, he can start.
 No, go ahead, Donald.
 No, I'm a gentlemen, Hillary.
@@ -3549,7 +3549,7 @@ Obamacare is a total disaster.
 Mr. Trump, your time...
 It is a disastrous plan, and it has to be repealed and replaced.
 Secretary Clinton, let me follow up with you.
-Your husband called Obamacare, quote, "the craziest thing in the world," saying that small-business owners are getting killed as premiums double, coverage is cut in half.
+"Your husband called Obamacare, quote, ""the craziest thing in the world,"" saying that small-business owners are getting killed as premiums double, coverage is cut in half."
 Was he mistaken or was the mistake simply telling the truth?
 No, I mean, he clarified what he meant.
 And it's very clear.
@@ -3644,7 +3644,7 @@ The Muslim ban is something that in some form has morphed into a extreme vetting
 Hillary Clinton wants to allow hundreds of thousands -- excuse me.
 Excuse me..
 And why did it morph into that?
-No, did you -- no, answer the question.
+No, did you answer the question?
 Do you still believe...
 Why don't you interrupt her?
 You interrupt me all the time.
@@ -3680,7 +3680,7 @@ And you voted for it.
 And you shouldn't have.
 Well, I just want to say...
 There's been lots of fact-checking on that.
-I'd like to move on to an online question...
+I'd like to move on to an online question
 Excuse me.
 She just went about 25 seconds over her time.
 She did not.
@@ -3864,7 +3864,7 @@ But you were not an effective senator.
 Please allow her to respond.
 She didn't interrupt you.
 You know, under our Constitution, presidents have something called veto power.
-Look, he has now said repeatedly, "30 years this and 30 years that."
+"Look, he has now said repeatedly, ""30 years this and 30 years that."""
 So let me talk about my 30 years in public service.
 I'm very glad to do so.
 Hundreds of thousands of kids now have a chance to be adopted because I worked to change our adoption and foster care system.
@@ -3967,7 +3967,7 @@ You disagree with your running mate?
 I think you have to knock out ISIS.
 Right now, Syria is fighting ISIS.
 We have people that want to fight both at the same time.
-But Syria is no longer Syria.
+Syria Syria
 Syria is Russia and it's Iran, who she made strong and Kerry and Obama made into a very powerful nation and a very rich nation, very, very quickly, very, very quickly.
 I believe we have to get ISIS.
 We have to worry about ISIS before we can get too much more involved.
@@ -4076,7 +4076,7 @@ It can't get any worse.
 And she's been talking about the inner cities for 25 years.
 Nothing's going to ever happen.
 Let me tell you, if she's president of the United States, nothing's going to happen.
-It's just going to be talk.
+It's just going to be talk
 And all of her friends, the taxes we were talking about, and I would just get it by osmosis.
 She's not doing any me favors.
 But by doing all the others' favors, she's doing me favors.
@@ -4116,9 +4116,9 @@ Your two minutes is up.
 I want to be the best president I can be for every American.
 Secretary Clinton, your two minutes is up.
 I want to follow up on something that Donald Trump actually said to you, a comment you made last month.
-You said that half of Donald Trump's supporters are, quote, "deplorables, racist, sexist, homophobic, xenophobic, Islamophobic."
+"You said that half of Donald Trump's supporters are, quote, ""deplorables, racist, sexist, homophobic, xenophobic, Islamophobic."""
 You later said you regretted saying half.
-You didn't express regret for using the term "deplorables."
+"You didn't express regret for using the term ""deplorables."""
 To Mr. Carter's question, how can you unite a country if you've written off tens of millions of Americans?
 It's with him and with the hateful and divisive campaign that he has run, and the inciting of violence at his rallies, and the very brutal kinds of comments about not just women, but all Americans, all kinds of Americans.
 And what he has said about African-Americans and Latinos, about Muslims, about POWs, about immigrants, about people with disabilities, he's never apologized for.
@@ -4145,7 +4145,7 @@ She's got tremendous -- she's got tremendous hatred.
 And this country cannot take another four years of Barack Obama, and that's what you're getting with her.
 Mr. Trump, let me follow up with you.
 In 2008, you wrote in one of your books that the most important characteristic of a good leader is discipline.
-You said, if a leader doesn't have it, quote, "he or she won't be one for very long."
+"You said, if a leader doesn't have it, quote, ""he or she won't be one for very long."""
 Is that the discipline of a good leader?
 It was just take a look at the person that she built up to be this wonderful Girl Scout who was no Girl Scout.
 You mentioned sex tape.
@@ -4470,6 +4470,7 @@ I will defend Planned Parenthood.
 I will defend Roe v. Wade, and I will defend women's rights to make their own health care decisions.
 Secretary Clinton…
 And we have come too far to have that turned back now.
+And I could just not be more opposed to that kind of thinking.
 I'm going to give you a chance to respond, but I want to ask you, Secretary Clinton, I want to explore how far you believe the right to abortion goes.
 You also voted against a ban on late-term, partial-birth abortions.
 Why?
@@ -4646,7 +4647,7 @@ I find that deeply disturbing.
 Secretary Clinton...
 And I think it's time you take a stand...
 I am not quoting myself.
-I am quoting 17...
+I am quoting
 Hillary, you have no idea.
 ... 17 intelligence -- do you doubt 17 military and civilian...
 ... agencies.
@@ -4693,7 +4694,7 @@ But here's the deal.
 The bottom line on nuclear weapons is that when the president gives the order, it must be followed.
 There's about four minutes between the order being given and the people responsible for launching nuclear weapons to do so.
 And that's why 10 people who have had that awesome responsibility have come out and, in an unprecedented way, said they would not trust Donald Trump with the nuclear codes or to have his finger on the nuclear button.
-I have 200 generals...
+200 generals
 Very quickly.
 ... and admirals, 21 endorsing me, 21 congressional Medal of Honor recipients.
 As far as Japan and other countries, we are being ripped off by everybody in the -- we're defending other countries.
@@ -4721,7 +4722,7 @@ Yes.
 We're going to drill down into this a little bit more.
 But in this overview, please explain to me why you believe that your plan will create more jobs and growth for this country and your opponent's plan will not.
 In this round, you go first, Secretary Clinton.
-Well, I think when the middle class thrives, America thrives.
+When the middle class grows, America grows
 And so my plan is based on growing the economy, giving middle-class families many more opportunities.
 I think we can compete with high-wage countries, and I believe we should.
 New jobs and clean energy, not only to fight climate change, which is a serious problem, but to create new opportunities and new businesses.
@@ -5018,8 +5019,8 @@ Right.
 But there was a penalty that was imposed by Palm Beach County, and the money came from your foundation...
 There was.
 There was.
-And, by the way...
-... instead of Mar-a-Lago or yourself, sir.
+And, by the way
+instead of Mar-a-Lago or yourself, sir.
 I want to get into one...
 But, of course, there's no way we can know whether any of that is true, because he hasn't released his tax returns.
 You can look at our tax returns.

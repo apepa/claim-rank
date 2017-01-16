@@ -138,7 +138,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 136	WALLACE	0	0	0	0	0	0	0	0	0	0	Secretary Clinton…
 137	CLINTON 	0	0	0	0	0	0	0	0	0	0	And we have come too far to have that turned back now.
 138	WALLACE	3	0	0	0	1	0	1	0	0	1	And, indeed, he said women should be punished, that there should be some form of punishment for women who obtain abortions.
-139	WALLACE	1	0	0	0	1	0	0	0	0	0	And I could just not be more opposed to that kind of thinking.
+139	WALLACE	0	0	0	0	0	0	0	0	0	0	And I could just not be more opposed to that kind of thinking.
 140	WALLACE	0	0	0	0	0	0	0	0	0	0	I'm going to give you a chance to respond, but I want to ask you, Secretary Clinton, I want to explore how far you believe the right to abortion goes.
 141	WALLACE	2	0	0	0	1	0	1	0	0	0	You have been quoted as saying that the fetus has no constitutional rights.
 142	WALLACE	0	0	0	0	0	0	0	0	0	0	You also voted against a ban on late-term, partial-birth abortions.
@@ -371,7 +371,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 369	TRUMP	4	1	0	0	0	1	0	1	0	1	She has no idea whether it's Russia, China, or anybody else.
 370	CLINTON	0	0	0	0	0	0	0	0	0	0	I am not quoting myself.
 371	TRUMP	2	0	0	0	0	1	0	1	0	0	She has no idea.
-372	CLINTON	0	0	0	0	0	0	0	0	0	0	I am quoting 17...
+372	CLINTON	0	0	0	0	0	0	0	0	0	0	I am quoting
 373	TRUMP	0	0	0	0	0	0	0	0	0	0	Hillary, you have no idea.
 374	CLINTON	0	0	0	0	0	0	0	0	0	0	... 17 intelligence -- do you doubt 17 military and civilian...
 375	TRUMP	3	1	0	0	0	0	0	1	1	0	And our country has no idea.
@@ -428,7 +428,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 426	CLINTON	0	0	0	0	0	0	0	0	0	0	The bottom line on nuclear weapons is that when the president gives the order, it must be followed.
 427	CLINTON	0	0	0	0	0	0	0	0	0	0	There's about four minutes between the order being given and the people responsible for launching nuclear weapons to do so.
 428	CLINTON	0	0	0	0	0	0	0	0	0	0	And that's why 10 people who have had that awesome responsibility have come out and, in an unprecedented way, said they would not trust Donald Trump with the nuclear codes or to have his finger on the nuclear button.
-429	TRUMP	0	0	0	0	0	0	0	0	0	0	I have 200 generals...
+429	TRUMP	0	0	0	0	0	0	0	0	0	0	200 generals
 430	WALLACE	0	0	0	0	0	0	0	0	0	0	Very quickly.
 431	TRUMP	0	0	0	0	0	0	0	0	0	0	... and admirals, 21 endorsing me, 21 congressional Medal of Honor recipients.
 432	TRUMP	0	0	0	0	0	0	0	0	0	0	As far as Japan and other countries, we are being ripped off by everybody in the -- we're defending other countries.
@@ -464,7 +464,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 462	WALLACE	0	0	0	0	0	0	0	0	0	0	We're going to drill down into this a little bit more.
 463	WALLACE	0	0	0	0	0	0	0	0	0	0	But in this overview, please explain to me why you believe that your plan will create more jobs and growth for this country and your opponent's plan will not.
 464	WALLACE	0	0	0	0	0	0	0	0	0	0	In this round, you go first, Secretary Clinton.
-465	CLINTON	0	0	0	0	0	0	0	0	0	0	Well, I think when the middle class thrives, America thrives.
+465	CLINTON	0	0	0	0	0	0	0	0	0	0	When the middle class grows, America grows
 466	CLINTON	0	0	0	0	0	0	0	0	0	0	And so my plan is based on growing the economy, giving middle-class families many more opportunities.
 467	CLINTON	1	0	0	0	0	0	1	0	0	0	I want us to have the biggest jobs program since World War II, jobs in infrastructure and advanced manufacturing.
 468	CLINTON	0	0	0	0	0	0	0	0	0	0	I think we can compete with high-wage countries, and I believe we should.
@@ -860,9 +860,9 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 858	WALLACE	0	0	0	0	0	0	0	0	0	0	But there was a penalty that was imposed by Palm Beach County, and the money came from your foundation...
 859	TRUMP	0	0	0	0	0	0	0	0	0	0	There was.
 860	TRUMP	0	0	0	0	0	0	0	0	0	0	There was.
-861	TRUMP	0	0	0	0	0	0	0	0	0	0	And, by the way...
-862	WALLACE	0	0	0	0	0	0	0	0	0	0	... instead of Mar-a-Lago or yourself, sir.
-863	TRUMP	3	0	0	1	0	1	0	0	0	1	... the money -- the money went to Fisher House, where they build houses -- the money that you're talking about went to Fisher House, where they build houses for veterans and disabled vets.
+861	TRUMP	0	0	0	0	0	0	0	0	0	0	And, by the way
+862	WALLACE	0	0	0	0	0	0	0	0	0	0	instead of Mar-a-Lago or yourself, sir.
+863	TRUMP	3	0	0	1	0	1	0	0	0	1	the money -- the money went to Fisher House, where they build houses -- the money that you're talking about went to Fisher House, where they build houses for veterans and disabled vets.
 864	WALLACE	0	0	0	0	0	0	0	0	0	0	I want to get into one...
 865	CLINTON	0	0	0	0	0	0	0	0	0	0	But, of course, there's no way we can know whether any of that is true, because he hasn't released his tax returns.
 866	CLINTON	1	0	0	0	0	0	1	0	0	0	He is the first candidate ever to run for president in the last 40-plus years who has not released his tax returns, so everything he says about charity or anything else, we can't prove it.
