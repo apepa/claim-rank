@@ -1,6 +1,39 @@
 from src.features.features import Feature
 
 
+class TalkingAboutTheOther(Feature):
+    """
+    Indicates whether the participant is talking about the opponent and
+    whether he is an opponent or a moderator.
+    """
+
+    MODERATORS = ['QUIJANO', 'COOPER', 'QUESTION', 'HOLT', 'WALLACE', 'RADDATZ']
+    OPPONENTS = {'CLINTON': ['Donald', 'Trump', 'Pence', 'Mike'],
+                 'TRUMP': ['Kaine', 'Hillary', 'Clinton', 'Tim'],
+                 'PENCE': ['Clinton', 'Hillary', 'Kaine', 'Tim'],
+                 'KAINE': ['Donald', 'Trump', 'Pence', 'Mike']}
+
+    FEATS = ['participant', 'opponent']
+
+    def transform(self, X):
+        for sent in X:
+            talking_about_opponent = False
+            is_participant = False
+
+            speaker = sent.speaker.strip()
+
+            if speaker not in self.MODERATORS:
+                is_participant = True
+
+            if speaker in self.OPPONENTS and \
+                    any(opponent in sent.text for opponent in self.OPPONENTS[speaker]):
+                    talking_about_opponent = True
+
+            sent.features['opponent'] = int(talking_about_opponent)
+            sent.features['participant'] = int(is_participant)
+        return X
+
+
 class Speaker(Feature):
     """Adds the speaker of the sentence as a feature."""
     FEATS = ['speaker']
