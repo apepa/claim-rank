@@ -1,12 +1,12 @@
 from sklearn.neural_network import MLPClassifier
 from sklearn.preprocessing.data import MinMaxScaler
 
-from features.feature_sets import get_one_feat_pipeline, get_experimential_pipeline, get_cb_pipeline
+from features.feature_sets import get_experimential_pipeline, get_cb_pipeline
 
 
 def run(test, train):
     # generate features
-    feats = get_one_feat_pipeline(train, test)
+    feats = get_experimential_pipeline(train)
     train_x = feats.fit_transform(train)
     test_x = feats.fit_transform(test)
 

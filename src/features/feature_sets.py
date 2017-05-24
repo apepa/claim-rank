@@ -1,12 +1,10 @@
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing.data import MinMaxScaler
 
-from features import embeddings_feat
+from features import alchemy_feat, counting_feat, \
+    dict_feat, metadata_feat, nltk_feat, topics, knn_similarity, embeddings_feat
 
-from src.features import alchemy_feat, counting_feat, \
-    dict_feat, metadata_feat, nltk_feat, topics, knn_similarity
-
-from src.features.features import ToMatrix
+from features.features import ToMatrix
 
 
 def get_cb_pipeline(train):
