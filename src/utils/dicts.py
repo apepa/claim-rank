@@ -39,3 +39,21 @@ def get_sentiment_lexicon():
             emotions_lex[columns[0]] = {}
         emotions_lex.get(columns[0])[columns[1]] = int(columns[2])
     return emotions_lex
+
+
+def get_negative_vocab():
+    negatives = set()
+    negative_vocab_file = open(CONFIG['negative_vocab'])
+    negative_vocab_file.readline()
+    for line in negative_vocab_file:
+        line = line.strip().lower()
+        negatives.add(line)
+    return negatives
+
+
+def get_contra_vocab():
+    contradictions = set()
+    contradictions_file = open(CONFIG['contradictions_file'])
+    for line in contradictions_file:
+        contradictions.add(line.strip().lower())
+    return contradictions
