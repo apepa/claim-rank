@@ -9,7 +9,7 @@ CONFIG = get_config()
 
 
 def main(test, train, dump=False, use_dump=False):
-    features = get_experimential_pipeline(train, test)
+    features = get_experimential_pipeline(train)
 
     if use_dump:
         X_train = np.load(join(CONFIG['feats_dump'], str(test[0].debate) + "_train.npy"))
