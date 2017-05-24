@@ -31,7 +31,9 @@ class BagOfTfIDFN(Feature):
         self.vectorizer = TfidfVectorizer(analyzer="word",
                                           tokenizer=None,
                                           preprocessor=None,
-                                          ngram_range=(1, 3),
+                                          ngram_range=(1, 4),
+                                          min_df=10,
+                                          max_df=0.4,
                                           stop_words="english",
                                           max_features=2000)
         vocab = [s.text for s in training]
@@ -64,8 +66,7 @@ class BagOfCounts(Feature):
 
 class TokenStat(Feature):
     """Adds specific token counts."""
-    FEATS = ['you are', 'never', 'always', 'said', '?', 'biggest', 'worst', 'most', 'best', 'she',
-             'will', 'going to', 'would', 'stop', 'have to', 'not', 'of course', 'he']
+    FEATS = ['America', 'Reagan', 'Mexico', 'tax', 'i ', 'said', 'have to', 'you ']
 
     def transform(self, X):
         for sent in X:
