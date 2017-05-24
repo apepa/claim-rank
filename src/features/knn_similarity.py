@@ -75,7 +75,7 @@ class TrainSearch(Feature):
             sim_with_person = 0
             for train_sent in self.train:
                 # how many tokens overlap in both claims
-                overlapping_tokens = len(set(clean_tokens).intersection(train_sent.filtered_tokens))
+                overlapping_tokens = len(set(clean_tokens).intersection(train_sent.clean_tokens))
                 if overlapping_tokens > 0:
                     # only take similarity to claim-worthy ones!
                     claim = 1 if train_sent.label > 0 else 0
