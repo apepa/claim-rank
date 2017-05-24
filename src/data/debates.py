@@ -10,10 +10,15 @@ SEP = "\t"
 
 
 class Debate(Enum):
-    FIRST = 1
-    VP = 2
-    SECOND = 3
-    THIRD = 4
+    NinthDem = 1
+    FIRST = 2
+    VP = 3
+    SECOND = 4
+    THIRD = 5
+    TRUMP_S = 6
+    CLINTON_S = 7
+    TRUMP_I = 8
+
 
 DEBATES = [Debate.FIRST, Debate.VP, Debate.SECOND, Debate.THIRD]
 
