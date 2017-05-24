@@ -97,6 +97,7 @@ def read_cb_scores(debate):
         line = line.strip()
         columns = line.split(SEP)
         sentences[i].pred = float(columns[2])
+        sentences[i].pred_label = 1 if sentences[i].pred >= 0.5 else 0
     return sentences
 
 
