@@ -41,7 +41,9 @@ class Sentiment(Feature):
         for line in serialized_sentiment:
             line = line.strip()
             columns = line.split("\t")
-            self.sentiment[columns[self.DEBATE_INDEX] + columns[self.ID_INDEX]] = columns[self.SENTIMENT_INDEX]
+            if columns[self.SENTIMENT_INDEX] == 'Type':
+                continue
+            self.sentiment[columns[self.DEBATE_INDEX] + columns[self.ID_INDEX]] = float(columns[self.SENTIMENT_INDEX])
 
     def transform(self, X):
         for sent in X:
