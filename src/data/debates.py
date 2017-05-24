@@ -9,6 +9,15 @@ CB_FILE_EXT = '_cb.tsv'
 SEP = "\t"
 
 
+dabates_dates = {1: "2016-04-14T00:00:00",
+                 2: "2016-09-25T00:00:00",
+                 3: "2016-10-03T00:00:00",
+                 4: "2016-10-08T00:00:00",
+                 5: "2016-10-18T00:00:00",
+                 6: "2016-07-21T00:00:00",
+                 7: "2016-07-28T00:00:00",
+                 8: "2017-01-20T00:00:00"}
+
 class Debate(Enum):
     NinthDem = 1
     FIRST = 2
@@ -73,7 +82,7 @@ def read_debates(debate, use_label='sum_all'):
         else:
             label = use_label(columns)
 
-        s = Sentence(columns[0], columns[-1], label, columns[1], debate)
+        s = Sentence(columns[0], columns[-1], label, columns[1], debate, dabates_dates[debate.value])
         sentences.append(s)
 
     return sentences
