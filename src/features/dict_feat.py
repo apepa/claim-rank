@@ -1,7 +1,8 @@
 from nltk.tokenize import word_tokenize
-from src.data.debates import DEBATES, read_debates
+from os.path import join
 from src.utils.dicts import *
 from src.features.features import Feature
+from nltk import pos_tag
 
 
 class Sentiment_NRC(Feature):
@@ -13,10 +14,8 @@ class Sentiment_NRC(Feature):
 
     def transform(self, X):
         for sent in X:
-            text = sent.text
-            tokens = word_tokenize(text.lower())
             emotions_vector = [0 for _ in range(len(emotions))]
-            for token in tokens:
+            for token in sent.tokens:
                 for i, emotion in enumerate(emotions):
                     emotions_vector[i] += self.sent_lext.get(token, {}).get(emotion, 0)
             sent.features['sent_nrc'] = emotions_vector
@@ -24,24 +23,46 @@ class Sentiment_NRC(Feature):
         return X
 
 
-class SyntacticParse(Feature):
-    """Adds the syntactic parse embedding of the sentence."""
-    FEATS = ['syntactic_parse']
-
-    def __init__(self):
-        self.syntactic_parses = {}
-
-        for debate in DEBATES:
-            parsed = open("../../data/parses/" + CONFIG[debate.name] + "_parsed.txt")
-            sentences = read_debates(debate)
-            for sentence in sentences:
-                parse = [float(x) for x in parsed.readline().strip().split()[1:]]
-
-                self.syntactic_parses[sentence.debate.name + sentence.id] = parse
+class Tense(Feature):
+    """
+    Adds the tense of the sentence as a feature.
+    """
+    FEATS = ['tense']
+    TENSES = {'present': 0, "future": 1, "past": 2, 'pp': 3}
 
     def transform(self, X):
         for sent in X:
-            sent.features['syntactic_parse'] = self.syntactic_parses[sent.debate.name + sent.id]
+            tags = pos_tag(sent.tokens)
+            sent.features['tense'] = self.TENSES['present']
+            for tag in tags:
+                if tag[1] in ['VBD']:
+                    sent.features['tense'] = self.TENSES['past']
+                if tag[0] in ['will']:
+                    sent.features['tense'] = self.TENSES['future']
+            if 'have' in sent.tokens and 'to' in sent.tokens:
+                sent.features['tense'] = self.TENSES['future']
+
+        return X
+
+
+class SentimentLexicons(Feature):
+    """
+    Adds as feature the number of words in each sentence that appear in each of the sentiment lexicons.
+    """
+    FEATS = ['lexicons']
+
+    def __init__(self):
+        qatar_lexicon_files = ["negative-words-Liu05.txt", "negations.txt", "bias-lexicon-RecasensACL13.txt"]
+        self.lexicons = []
+        for lexicon in qatar_lexicon_files:
+            self.lexicons.append(set(open(join(CONFIG['sentiment_lexicons'], lexicon), encoding='iso-8859-1').
+                                     read().split("\n")))
+
+    def transform(self, X):
+        for sent in X:
+            sent.features['lexicons'] = []
+            for lexicon in self.lexicons:
+                sent.features['lexicons'].append(sum([sent.tokens.count(lex_word) for lex_word in lexicon]))
         return X
 
 
