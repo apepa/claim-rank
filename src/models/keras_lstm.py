@@ -78,7 +78,7 @@ def run(test, train, dump=False, use_dump=False):
     batch_size = 32
     maxlen = 80
 
-    features = get_experimential_pipeline(train, test)
+    features = get_experimential_pipeline(train)
 
     if use_dump:
         X_train_feats = np.load(join(CONFIG['feats_dump'], str(test[0].debate) + "_train.npy"))
