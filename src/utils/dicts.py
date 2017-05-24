@@ -1,4 +1,5 @@
 from src.utils.config import *
+from string import punctuation
 CONFIG = get_config()
 
 emotions = ["anger", "fear", "anticipation", "trust", "surprise", "sadness",
@@ -13,6 +14,10 @@ def get_stopwords():
     stopwords = set()
     for line in stopwords_file:
         stopwords.add(line.strip())
+
+    stopwords.update([s for s in punctuation])
+
+    stopwords.update(['...', 'mr.', 'sir', "will", "--", "well", "question"])
     return stopwords
 
 
