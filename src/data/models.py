@@ -10,3 +10,9 @@ class Sentence(object):
         self.features = {}
         self.date = date
         self.tokens = word_tokenize(text)
+
+    def __init__(self):
+        self.text = ""
+        self.label = ""
+        self.features = {}
+        self.score = 0

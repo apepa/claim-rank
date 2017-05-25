@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Claim Rank Demo</title>
+</head>
+<body style="text-align: center;">
+    <p>results for the entered transcript:</p>
+{# python comment injected in html #}
+
+    <table style=" font-size: small; border-style:inset; border-width:1px; height:400px; width:800px; margin:20%; overflow:scroll; margin-top:0px; margin-bottom:20px;  text-align: left;">
+        {% for sentence in transSentenceList %}
+                <tr>
+                    <td style="line-height:0px;">{{ sentence.score }}</td> <td style="margin-left: 10px;">: {{ sentence.text }}</td>
+                </tr>
+        {% endfor %}
+    </table>
+
+    <form action="http://localhost:5000/" method="get">
+        <input type="submit" value="enter another transcript"/>
+    </form>
+</body>
+</html>
