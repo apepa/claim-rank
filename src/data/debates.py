@@ -108,14 +108,12 @@ def get_for_crossvalidation():
     :return: test and train sets
     """
     data_sets = []
-    for debate in DEBATES:
+    for i, debate in enumerate(DEBATES):
         train_debates = DEBATES[:]
+        train_debates.pop(i)
         train = []
         test = read_debates(debate)
         for train_debate in train_debates:
             train += read_debates(train_debate)
         data_sets.append((debate, test, train))
     return data_sets
-
-
-
