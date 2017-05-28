@@ -2,7 +2,7 @@ from src.features.features import Feature
 from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 from nltk.tokenize import word_tokenize
 
-
+#extracts sentence level features / ClaimBuster-based features TF-IDF, weighed bag of words
 class BagOfTfIDF(Feature):
     """Adds Bag of TF-IDF scores of words.
     This is used in ClaimBuster approach."""
@@ -63,7 +63,7 @@ class BagOfCounts(Feature):
             sent.features['bag'] = self.vectorizer.transform([sent.text]).toarray().tolist()[0]
         return X
 
-
+# extracts sentence-level features/ claimBuster based: no of tokens in the target sentence
 class TokenStat(Feature):
     """Adds specific token counts."""
     FEATS = ['America', 'Reagan', 'Mexico', 'tax', 'i ', 'said', 'have to', 'you ']
@@ -74,7 +74,7 @@ class TokenStat(Feature):
                 sent.features[word] = sent.text.count(word)
         return X
 
-
+# extracts the length of the sentence feature measured in words, characters
 class SentenceLength(Feature):
     FEATS = ['tokens_num', 'text_len']
 

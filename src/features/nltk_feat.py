@@ -3,7 +3,7 @@ from nltk.data import load
 from nltk.tokenize import word_tokenize
 from nltk import pos_tag, ne_chunk, tag
 
-
+# extracts POS used to define the Tense features in contextual features /Tense
 class POS(Feature):
     """Adds a vector of POS tag counts."""
     FEATS = ['pos']
@@ -25,7 +25,7 @@ class POS(Feature):
             sent.features['pos'] = tag_vector
         return X
 
-
+# extracts contextual features / Named Entities (using different tool called NLTK) , unlike named entities in the claimBuster based (used Alchemy)
 class NER(Feature):
     """Adds NEs count"""
     FEATS = ['ner_count_nltk']

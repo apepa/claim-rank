@@ -1,3 +1,10 @@
+#####################################################################################
+# this file does the following:                                                     #
+# 1. run claimBuster on the debates files,                                          #
+# 2. extracts the scores of ClaimBuster  for each sentence in the debate files      #
+# 3. annotates the debate files with the scores from claimBuster                    #
+#####################################################################################
+
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from os.path import join

@@ -4,7 +4,7 @@ from src.utils.dicts import *
 from src.features.features import Feature
 from nltk import pos_tag
 
-
+# extracts sentence-level features / Sentiment
 class Sentiment_NRC(Feature):
     """Adds sentiment of the text with NRC emotion lexicon"""
     FEATS = ['sent_nrc']
@@ -65,7 +65,7 @@ class SentimentLexicons(Feature):
                 sent.features['lexicons'].append(sum([sent.tokens.count(lex_word) for lex_word in lexicon]))
         return X
 
-
+# extracts mixed features / contradictions
 class Negatives(Feature):
     """Adds negative words and contradictions counts in current and next sentence."""
     FEATS = ['negs', 'contras', 'negs_next', 'contras_next']

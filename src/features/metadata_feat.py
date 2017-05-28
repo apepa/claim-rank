@@ -33,7 +33,7 @@ class TalkingAboutTheOther(Feature):
             sent.features['participant'] = int(is_participant)
         return X
 
-
+# extracts contextual features / metadata: who is the speaker, whether the target sentenc ementions the opponents' name , ...
 class Speaker(Feature):
     """Adds the speaker of the sentence as a feature."""
     FEATS = ['speaker']
@@ -48,7 +48,7 @@ class Speaker(Feature):
             sent.features['speaker'] = self.speakers[sent.speaker.strip()]
         return X
 
-
+# extracts contextual features / metadata: whether the target sentence is followed by a system message (cross-talk, applause ,.. )
 class System(Feature):
     """Adds indication whether the next chunk contains audience reaction or crosstalk."""
     FEATS = ['(laugh', '(crosstalk', '(applause', '(laughter']

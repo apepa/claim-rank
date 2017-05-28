@@ -3,7 +3,7 @@ from src.utils.config import *
 from src.data.debates import Debate
 from src.data.debates import read_debates
 from src.data.svm_converter import save_for_svm_rank, read_svm_pred
-from src.features.features import get_pipeline
+from src.features.features import get_pipeline #get_pipeline
 
 CONFIG = get_config()
 
@@ -30,6 +30,8 @@ def run_svm_rank_crossval(C=1):
         test_res += run_svm_rank(sentences_train=train_sents, sentences_test=test_sents, new_features=True, C=C)
     return test_res
 
+
+# This is the main function responsible for training a model (classifier), and testing the model with testing data, then produce predictions file
 def run_svm_rank(sentences_train, sentences_test, new_features=False, C=3):
     """
     Calls command line the svm_rank classifier.
@@ -44,12 +46,15 @@ def run_svm_rank(sentences_train, sentences_test, new_features=False, C=3):
     if new_features:
         generate_new_features(sentences_test, sentences_train)
 
+    # runs the SVM_Rank algorithm command to learn a classifier from the training data
     run_cmd("{} -c {} {} {}".format(CONFIG['svm_rank_learn'], C,
                                     CONFIG['svm_rank_train'], CONFIG['svm_rank_model']))
 
+    # runs a command that uses the classifier learned above to classify the testing data (produce prediction scores for the testing examples)
     run_cmd("{} {} {} {}".format(CONFIG['svm_rank_classify'], CONFIG['svm_rank_test'],
                                  CONFIG['svm_rank_model'], CONFIG['svm_rank_pred'],))
 
+    # read the predictions produced above and save them in the variable results
     results = read_svm_pred(sentences_test, CONFIG['svm_rank_pred'])
     return results
 
@@ -74,3 +79,7 @@ def generate_new_features(sentences_test, sentences_train):
 
     X_test = pipeline.transform(sentences_test)
     save_for_svm_rank(X_test, [], CONFIG['svm_rank_test'])
+
+# CONFIG['somehting'] means get the value from the config.ini file for the variable named 'something'
+# X the training set (array of sentences with their features )
+# Y classification labels (array of classification labels) for each sentence from X

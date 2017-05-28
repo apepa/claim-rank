@@ -3,7 +3,7 @@ from src.utils.config import get_config
 
 CONFIG = get_config()
 
-
+# alchemy API is used o extract sentence level features / ClaimBuster based features : named entities (NER = Named Entities Recognition)
 class NER(Feature):
     """Adds Named Entities from Alchemy API"""
     FEATS = ['ner']
@@ -24,7 +24,7 @@ class NER(Feature):
             sent.features['ner'] = self.ner[str(sent.id) + " " + sent.debate.name]
         return X
 
-
+#extracts Sentence-level features/claimBuster based : sentiment
 class Sentiment(Feature):
     """Adds Sentiment score from Alchemy API."""
     SENTIMENT_INDEX = 3

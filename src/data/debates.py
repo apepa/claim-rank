@@ -1,3 +1,12 @@
+##########################################################################################
+# this file does the following:                                                          #
+# 1. reads debate files and returns all the sentences in an array                        #
+# ( a sentence is an object from the class sentence )                                    #
+# 2. reads claimBuster scores (the process of getting CB scores is in file "cb_scrape.py #
+# 3. split the data (sentences) into training and testing sets for corss-validation      #
+##########################################################################################
+
+
 from enum import Enum
 from os.path import join
 from src.data.models import Sentence
@@ -31,7 +40,7 @@ class Debate(Enum):
 
 DEBATES = [Debate.FIRST, Debate.VP, Debate.SECOND, Debate.THIRD]
 
-
+# reads all debate files and return an array of all sentences, (sentences are objects from the class sentence)
 def read_all_debates(source='ann'):
     """
     :param source:
@@ -46,14 +55,14 @@ def read_all_debates(source='ann'):
         sentences += read_debates(Debate.SECOND)
         sentences += read_debates(Debate.THIRD)
 
-    elif source == 'cb':
+    elif source == 'cb': # reads the claimBuster scores annotations
         sentences += read_cb_scores(Debate.FIRST)
         sentences += read_cb_scores(Debate.VP)
         sentences += read_cb_scores(Debate.SECOND)
         sentences += read_cb_scores(Debate.THIRD)
     return sentences
 
-
+# reads a separate debate file and returns an array of its sentences (sentences are objects from the class sentence).
 def read_debates(debate, use_label='sum_all'):
     """
     Reads the debate transcripts data.
@@ -87,7 +96,7 @@ def read_debates(debate, use_label='sum_all'):
 
     return sentences
 
-
+# reads the scores from the transcript file and saves them to the sentence object ,sentence.score attribute
 def read_cb_scores(debate):
     sentences = read_debates(debate)
     debate_file_name = join(CONFIG['tr_cb_anns'], CONFIG[debate.name] + CB_FILE_EXT)
@@ -100,7 +109,7 @@ def read_cb_scores(debate):
         sentences[i].pred_label = 1 if sentences[i].pred >= 0.5 else 0
     return sentences
 
-
+# 4-fold cross validation
 def get_for_crossvalidation():
     """
     Splits the debates into four cross-validation sets.
