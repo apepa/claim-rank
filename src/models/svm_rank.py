@@ -1,36 +1,21 @@
+
 import subprocess
-from src.utils.config import *
-from src.data.debates import Debate
-from src.data.debates import read_debates
-from src.data.svm_converter import save_for_svm_rank, read_svm_pred
-from src.features.features import get_pipeline
+from utils.config import *
+from data.debates import get_for_crossvalidation
+from data.svm_converter import save_for_svm_rank, read_svm_pred
+from features.feature_sets import get_cb_pipeline, get_experimential_pipeline
+# from features.cb_features import get_pipeline
+from os.path import join
 
 CONFIG = get_config()
 
-debates = [Debate.FIRST, Debate.VP, Debate.SECOND, Debate.THIRD]
-
-
-def get_datasets():
-    sentences_train = []
-    for i in range(len(debates)-1):
-        sentences_train += read_debates(debates[i])
-    sentences_test = read_debates(debates[-1])
-
-    return sentences_train, sentences_test
-
 def run_svm_rank_crossval(C=1):
     test_res = []
-    for i, debate in enumerate(debates):
-        test_sents = read_debates(debate)
-        train_sents = []
-        temp_debates = debates[:]
-        temp_debates.pop(i)
-        for train_debate in temp_debates:
-            train_sents += read_debates(train_debate)
-        test_res += run_svm_rank(sentences_train=train_sents, sentences_test=test_sents, new_features=True, C=C)
+    for debate_name, test, train in get_for_crossvalidation():
+        test_res += run_svm_rank(train, test, new_features=True, C=C)
     return test_res
 
-def run_svm_rank(sentences_train, sentences_test, new_features=False, C=3):
+def run_svm_rank(sentences_train, sentences_test, new_features=False, C=3, test_name=None):
     """
     Calls command line the svm_rank classifier.
     :param new_features: whether to generate new features or use already generated.
@@ -40,17 +25,21 @@ def run_svm_rank(sentences_train, sentences_test, new_features=False, C=3):
     >>>print_results(run_svm_rank(new_features=True, C=1.5))
     """
 
-
     if new_features:
         generate_new_features(sentences_test, sentences_train)
+
+    if test_name is None:
+        test_name = CONFIG['svm_rank_pred']
+    else:
+        test_name = join(CONFIG['svm_rank'], test_name)
 
     run_cmd("{} -c {} {} {}".format(CONFIG['svm_rank_learn'], C,
                                     CONFIG['svm_rank_train'], CONFIG['svm_rank_model']))
 
     run_cmd("{} {} {} {}".format(CONFIG['svm_rank_classify'], CONFIG['svm_rank_test'],
-                                 CONFIG['svm_rank_model'], CONFIG['svm_rank_pred'],))
+                                 CONFIG['svm_rank_model'], test_name,))
 
-    results = read_svm_pred(sentences_test, CONFIG['svm_rank_pred'])
+    results = read_svm_pred(sentences_test, test_name)
     return results
 
 
@@ -66,9 +55,9 @@ def run_cmd(cmd):
 
 
 def generate_new_features(sentences_test, sentences_train):
-    pipeline = get_pipeline(sentences_train)
+    pipeline = get_experimential_pipeline(sentences_train)
 
-    X = pipeline.transform(sentences_train)
+    X = pipeline.fit_transform(sentences_train)
     y = [sent.label for sent in sentences_train]
     save_for_svm_rank(X, y, CONFIG['svm_rank_train'])
 
