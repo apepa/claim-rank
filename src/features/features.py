@@ -1,4 +1,6 @@
 from sklearn.pipeline import TransformerMixin
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing.data import MinMaxScaler
 
 
 class Feature(TransformerMixin):
@@ -27,3 +29,16 @@ class ToMatrix(Feature):
 
 # X : numpy array of shape [n_samples, n_features] - Training set
 # numpy array : multidimensional array   (read on numpy arrays) unlike built in python one dimensional arrays
+
+def get_pipeline(features):
+    """
+    Constructs a pipeline with the given features.
+    Adds dict to matrix of features transformer and a scaler.
+    """
+    feature_names = []
+    for feature in features:
+        feature_names += feature[1].FEATS
+    print(feature_names)
+    return Pipeline(features + [('transform', ToMatrix(features=feature_names)),
+                                ('norm', MinMaxScaler())
+                                ])

@@ -3,7 +3,7 @@ from src.utils.config import *
 from src.data.debates import Debate
 from src.data.debates import read_debates
 from src.data.svm_converter import save_for_svm_rank, read_svm_pred
-from src.features.features import get_pipeline #get_pipeline
+from src.features.features import get_pipeline
 
 CONFIG = get_config()
 
@@ -39,7 +39,7 @@ def run_svm_rank(sentences_train, sentences_test, new_features=False, C=3):
     :param C: C param for SVM alg.
     :return: test instances sorted by their rank, given by svm_rank alg.
 
-    >>>print_results(run_svm_rank(new_features=True, C=1.5))
+    >>>print_results(run_svm_rank(new_features = True, C = 1.5))
     """
 
 
@@ -80,6 +80,6 @@ def generate_new_features(sentences_test, sentences_train):
     X_test = pipeline.transform(sentences_test)
     save_for_svm_rank(X_test, [], CONFIG['svm_rank_test'])
 
-# CONFIG['somehting'] means get the value from the config.ini file for the variable named 'something'
+# CONFIG['something'] means get the value from the config.ini file for the variable named 'something'
 # X the training set (array of sentences with their features )
 # Y classification labels (array of classification labels) for each sentence from X
