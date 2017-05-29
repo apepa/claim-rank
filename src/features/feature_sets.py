@@ -15,11 +15,11 @@ def get_cb_pipeline(train):
     Set of features used by Claim Buster.
     """
     features = [
-        ('sentiment', alchemy_feat.Sentiment()),
-        ('sent_len', counting_feat.SentenceLength()),
-        ('tfidf', counting_feat.BagOfTfIDF(train)),
-        ('ner', alchemy_feat.NER()),
-        ('pos', nltk_feat.POS())
+        ('sentiment', alchemy_feat.Sentiment()),   # 1f
+        ('sent_len', counting_feat.SentenceLength()),   # 1f no of tokens
+        ('tfidf', counting_feat.BagOfTfIDF(train)),     # 998f TF-IDF weighted BOW
+        ('ner', alchemy_feat.NER()),    # 20f named entities (alchemy)
+        ('pos', nltk_feat.POS())    # 25f POS tags
     ]
     return get_pipeline(features)
 
@@ -38,8 +38,19 @@ def get_experimential_pipeline(train):
     ]
     return get_pipeline(experimential_features)
 
-
-
+# this function constructs a pipeline from the features that can be put into a fast demo (IQJ)
+def get_demo_pipeline(train):
+    demo_features = [
+        ('',),
+        ('',),
+        ('',),
+        ('',),
+        ('',),
+        ('',),
+        ('',),
+        ('',),
+    ]
+    return get_pipeline(demo_features)
 
 # this function takes a training set (features), and returns a pipeline of features ready to be transformed and trained
 def get_pipeline(features):

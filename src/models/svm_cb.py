@@ -87,6 +87,7 @@ def run_svm_decision_distance(test, train, agreement=1):
     return test
 
 # creates a new training set of equal number of positive and negative examples (balanced training set)
+# allows for the hyperplane to adjust more correctly (get a better hyperplane when the training set is balanced)
 def balance(X_train, y, scale='up'):
     print("Start balancing.")
     train_0 = [i for i, t in enumerate(y) if t == 0]
