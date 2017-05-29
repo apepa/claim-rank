@@ -1,3 +1,5 @@
+# this file does the follwiing:
+# calculates the level of agreements from the 9 annotators on a sentence to be classified as a check-worthy sentence
 from src.data.debates import read_all_debates
 from src.utils.config import get_config
 
