@@ -3,7 +3,7 @@ from sklearn.metrics import precision_score, recall_score, average_precision_sco
 from src.utils.config import get_config
 from operator import itemgetter
 import numpy as np
-from math import log2
+from math import *
 from copy import deepcopy
 from data.debates import get_for_crossvalidation
 from src.models.sklearn_nn import run
@@ -73,7 +73,7 @@ def dcg(dataset, agreement=True, agreement_num=1):
         else:
             reli = 2**(1 if instance.label >= agreement_num else 0) - 1
 
-        denom = log2(i+2)
+            denom = log(i + 2,2) #denom = log2(i+2)
 
         result += reli / denom
     return result
@@ -187,10 +187,10 @@ def get_metrics_for_plot(agreement, ranks):
 
     return av_p, precision, recall, thresholds
 
-
+# main function to construct the pipeline of features and run a classifier
 if __name__ == '__main__':
         results = []
         for test_deb, test, train in get_for_crossvalidation():
-            results.append(run(train=train, test=test))
+            results.append(run(train=train, test=test)) # running the neural network main function to train and predict
             get_all_metrics(results, agreement=1)
         get_all_metrics(results, agreement=1)

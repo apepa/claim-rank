@@ -6,7 +6,7 @@
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing.data import MinMaxScaler
 
-from features import alchemy_feat, counting_feat, dict_feat, metadata_feat, nltk_feat, topics, knn_similarity, embeddings_feat
+from . import alchemy_feat, counting_feat, dict_feat, metadata_feat, nltk_feat, topics, knn_similarity, embeddings_feat
 from features.features import ToMatrix
 
 

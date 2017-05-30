@@ -63,7 +63,7 @@ class BagOfCounts(Feature):
             sent.features['bag'] = self.vectorizer.transform([sent.text]).toarray().tolist()[0]
         return X
 
-# extracts sentence-level features/ claimBuster based: no of tokens in the target sentence
+
 class TokenStat(Feature):
     """Adds specific token counts."""
     FEATS = ['America', 'Reagan', 'Mexico', 'tax', 'i ', 'said', 'have to', 'you ']

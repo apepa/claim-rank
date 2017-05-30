@@ -14,7 +14,7 @@ def run_svm_prob(test, train, agreement=1, C=1, gamma=0.0001):
     # Assumed you have, X (predictor) and Y (target) for training data set and x_test(predictor) of test_dataset
     # Create SVM classification object
     svc = SVC(class_weight='balanced', kernel='rbf', C=C, gamma=gamma, probability=True, random_state=0)
-    features = get_experimential_pipeline(train)
+    features = get_cb_pipeline(train)
     # X_train is the list of training examples (features values / assembled vectors of features values)
     # X_train is an array of vectors (each vector represents an example from the training set )
     X_train = features.fit_transform(train)
@@ -60,7 +60,7 @@ def run_svm_decision_distance(test, train, agreement=1):
     svc = Pipeline([
         ("svm", SVC(class_weight='balanced', kernel='rbf', C=0.7, gamma=0.001, random_state=0))])
 
-    features = get_experimential_pipeline(train)
+    features = get_cb_pipeline(train)
     X_train = features.fit_transform(train)
 
     y = [1 if sent.label >= agreement else 0 for sent in train]

@@ -1,6 +1,7 @@
 from nltk.tokenize import sent_tokenize
 import random
-from src.data.models import *
+from data.models import *
+from models.svm_cb import *
 class mainclass:
     def __init__(self):
         return None
@@ -29,3 +30,9 @@ class mainclass:
             sentence.score = round(random.uniform(0, 1),2)
         return sentenceVec
 
+
+    def trainModel(self):
+        # this is the main gate (call) to the svm ranker (training, testing)
+        test =
+        train =
+        run_svm_prob(test, train)
