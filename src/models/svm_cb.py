@@ -2,6 +2,33 @@ from sklearn.svm import SVC
 from sklearn.metrics.ranking import average_precision_score
 from features.feature_sets import *
 from random import shuffle, randint
+import pickle
+from sklearn.externals import joblib
+def run_demo_svm(test):
+    # PREDICTING RESULTS fOR DATA ENTERED BY THE USER
+    agreement=1
+    # load the trained model saved as a python "pickle" file
+    svc = joblib.load('trainedModel.pkl')
+    # calculate features
+    features = get_cb_pipeline(test)
+    X = features.fit_transform(test)
+    y_pred_proba = svc.predict_proba(X)
+    y_pred_proba = MinMaxScaler().fit_transform([pred[1] for pred in y_pred_proba]).tolist()
+    # Predict Output for the "end-user input" dataset
+    y_pred = svc.predict(X)
+
+    # now after getting the predictions and the prob. of the predictions , attach these values to each sentence object in the testing set
+    # in other words, annotate the testing set with the predicted values and the prob.s
+    for sent, prob, pred_label in zip(test, y_pred_proba, y_pred):
+        sent.pred = prob
+        sent.pred_label = pred_label
+
+    y_true = [1 if s.label >= agreement else 0 for s in test]
+
+    print(average_precision_score(y_true, y_pred_proba))
+    return test  # return annotated testing set ( array of sentence objects but with sentence.label values filled)
+
+
 
 # test and train are arrays of "sentence objects" of the testing and training sets
 def run_svm_prob(test, train, agreement=1, C=1, gamma=0.0001):
@@ -27,8 +54,14 @@ def run_svm_prob(test, train, agreement=1, C=1, gamma=0.0001):
     svc.fit(X_train, y)
     print("Finished training SVM.")
 
+    # After training a scikit - learn model, it is desirable to have a way to persist the model for future use without having to retrain.
+    # built-in Python serializaton function "Pickle" can be used for this purpose
+    # In the specific case of the scikit, it may be more interesting to use joblib’s replacement of pickle (joblib.dump & joblib.load),
+    # which is more efficient on objects that carry large numpy arrays internally as is often the case for fitted scikit-learn estimators,
+    # but can only pickle to the disk and not to a string
+    joblib.dump(svc, 'trainedModel.pkl')
     # TESTING
-    X = features.fit_transform(test)
+    X = features.fit_transform(test) # testing the trained model (features=get_pipeline(train))
     y_pred_proba = svc.predict_proba(X)
     y_pred_proba = MinMaxScaler().fit_transform([pred[1] for pred in y_pred_proba]).tolist()
     # Predict Output for the testing set

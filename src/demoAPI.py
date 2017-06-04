@@ -1,5 +1,6 @@
 import sys
 import re
+# for Arabic encoding purposes
 reload(sys)
 sys.setdefaultencoding('utf-8')
 import codecs

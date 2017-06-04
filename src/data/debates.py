@@ -92,6 +92,7 @@ def read_debates(debate, use_label='sum_all'):
             label = use_label(columns)
 
         s = Sentence(columns[0], columns[-1], label, columns[1], debate, dabates_dates[debate.value])
+        #s = Sentence(columns[0],label) #(IQJ)  #creating a new instance from the class sentence
         sentences.append(s)
 
     return sentences
@@ -126,3 +127,6 @@ def get_for_crossvalidation():
             train += read_debates(train_debate)
         data_sets.append((debate, test, train))
     return data_sets
+
+
+get_for_crossvalidation()

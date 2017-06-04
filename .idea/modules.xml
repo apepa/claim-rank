@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/claim-rank.iml" filepath="$PROJECT_DIR$/.idea/claim-rank.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../claimrank/.idea/claimrank.iml" filepath="$PROJECT_DIR$/../claimrank/.idea/claimrank.iml" />
     </modules>
   </component>
 </project>

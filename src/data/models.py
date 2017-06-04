@@ -11,8 +11,23 @@ class Sentence(object):
         self.date = date
         self.tokens = word_tokenize(text)
 
-    def __init__(self):
-        self.text = ""
-        self.label = ""
+class demoSentence():
+    def __init__(self, text, prediction = 0):
+        self.text = text
+        self.prediction = prediction
         self.features = {}
-        self.score = 0
+        self.tokens = word_tokenize(text)
+
+
+'''
+class Sentence(object):
+    def __init__(self,text,label=-1):
+        #self.id = id
+        self.text = text
+        self.label =label                 #integer : level of agreement from the 9 resources
+        #self.speaker = speaker
+        #self.debate = debate
+        self.features = {}
+        #self.date = date
+        self.tokens = word_tokenize(text)
+'''

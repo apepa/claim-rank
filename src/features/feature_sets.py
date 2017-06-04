@@ -6,8 +6,8 @@
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing.data import MinMaxScaler
 
-from . import alchemy_feat, counting_feat, dict_feat, metadata_feat, nltk_feat, topics, knn_similarity, embeddings_feat
-from features.features import ToMatrix
+import alchemy_feat, counting_feat, dict_feat, metadata_feat, nltk_feat, topics, knn_similarity, embeddings_feat
+from features import *
 
 
 def get_cb_pipeline(train):
@@ -39,6 +39,7 @@ def get_experimential_pipeline(train):
     return get_pipeline(experimential_features)
 
 # this function constructs a pipeline from the features that can be put into a fast demo (IQJ)
+'''
 def get_demo_pipeline(train):
     demo_features = [
         ('',),
@@ -51,7 +52,7 @@ def get_demo_pipeline(train):
         ('',),
     ]
     return get_pipeline(demo_features)
-
+'''
 # this function takes a training set (features), and returns a pipeline of features ready to be transformed and trained
 def get_pipeline(features):
     """
