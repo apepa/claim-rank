@@ -133,13 +133,13 @@ def get_for_crossvalidation():
 # getting all 4 debates as training data , for Demo only (for demo no testing set needed , thus no cross validation needed (IQJ)
 def prepare_train_data_for_demo():
 
-    data_sets = []
-    for i, debate in enumerate(DEBATES):
-        train_debates = DEBATES[:]
-        #train_debates.pop(i)
-        train = []
-        #test = read_debates(debate)
-        for train_debate in train_debates:
-            train += read_debates(train_debate)
-        #data_sets.append((debate, train))
+    #data_sets = []
+    #for i, debate in enumerate(DEBATES):
+    train_debates = DEBATES[:]
+    #train_debates.pop(i)
+    train = []
+    #test = read_debates(debate)
+    for train_debate in train_debates:
+        train += read_debates(train_debate)
+    #data_sets.append((debate, train))
     return train
