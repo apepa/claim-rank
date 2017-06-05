@@ -102,7 +102,7 @@ class Negatives(Feature):
 
 class NegationNextChunk(Negatives):
     """Adds negavie words count and contradictions in next chunk.
-    Chunk is a sequence of sentences said by one person."""
+    Chunk is a sequence of sentences said by one person - term "segment" used in paper instead of "chunck"."""
     FEATS = ['negs_next_chunk', 'contras_next_chunk']
 
     def transform(self, X):

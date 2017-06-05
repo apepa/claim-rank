@@ -1,5 +1,5 @@
 import sys
-import re
+#import re
 # for Arabic encoding purposes
 reload(sys)
 sys.setdefaultencoding('utf-8')
@@ -14,7 +14,15 @@ app = Flask(__name__)
 def showResults():
     text = request.form['transcript']
     obj = mainclass()
-    sentenceVec = obj.mainproc(text)
+
+
+    #                               M A I N        C A L L
+    #########################################################################################################################################################
+    # send the text, if you want to train the model set second param to True, if you want to predict scores for the entered text set thirs param to True    #
+    sentenceVec = obj.mainproc(text,True,False)                                                                                                             #
+    #########################################################################################################################################################
+
+
     sentenceCount = len(sentenceVec)
     # extract two separate arrays from
     return render_template('results.html', transSentenceList = sentenceVec, sentenceCount= sentenceCount)

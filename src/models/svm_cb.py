@@ -19,7 +19,7 @@ def run_svm_prob(test, train, agreement=1, C=1, gamma=0.0001):
     # Assumed you have, X (predictor) and Y (target) for training data set and x_test(predictor) of test_dataset
     # Create SVM classification object
     svc = SVC(class_weight='balanced', kernel='rbf', C=C, gamma=gamma, probability=True, random_state=0)
-    features = get_cb_pipeline(train)
+    features = get_demo_pipeline(train)
     # X_train is the list of training examples (features values / assembled vectors of features values)
     # X_train is an array of vectors (each vector represents an example from the training set )
     X_train = features.fit_transform(train)
@@ -34,7 +34,7 @@ def run_svm_prob(test, train, agreement=1, C=1, gamma=0.0001):
 
     # After training a scikit - learn model, it is desirable to have a way to persist the model for future use without having to retrain.
     # built-in Python serializaton function "Pickle" can be used for this purpose
-    # In the specific case of the scikit, it may be more interesting to use joblib’s replacement of pickle (joblib.dump & joblib.load),
+    # In the specific case of the scikit, it may be more interesting to use joblib's replacement of pickle (joblib.dump & joblib.load),
     # which is more efficient on objects that carry large numpy arrays internally as is often the case for fitted scikit-learn estimators,
     # but can only pickle to the disk and not to a string
     joblib.dump(svc, 'trainedModel.pkl')
@@ -71,7 +71,7 @@ def run_svm_decision_distance(test, train, agreement=1):
     svc = Pipeline([
         ("svm", SVC(class_weight='balanced', kernel='rbf', C=0.7, gamma=0.001, random_state=0))])
 
-    features = get_cb_pipeline(train)
+    features = get_demo_pipeline(train)
     X_train = features.fit_transform(train)
 
     y = [1 if sent.label >= agreement else 0 for sent in train]

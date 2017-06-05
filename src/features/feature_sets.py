@@ -6,11 +6,13 @@
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing.data import MinMaxScaler
 
-import alchemy_feat, counting_feat, dict_feat, metadata_feat, nltk_feat, topics, knn_similarity, embeddings_feat
+
 from features import *
 
 
 def get_cb_pipeline(train):
+    import alchemy_feat, counting_feat, dict_feat, metadata_feat, nltk_feat, topics, knn_similarity, embeddings_feat, \
+        textblob_feat
     """
     Set of features used by Claim Buster.
     """
@@ -25,6 +27,8 @@ def get_cb_pipeline(train):
 
 
 def get_experimential_pipeline(train):
+    import alchemy_feat, counting_feat, dict_feat, metadata_feat, nltk_feat, topics, knn_similarity, embeddings_feat, \
+        textblob_feat
     experimential_features = [
         ("pf_search", knn_similarity.PolitiFactSearch()),
         ("train_search", knn_similarity.TrainSearch(train=train)),
@@ -39,20 +43,16 @@ def get_experimential_pipeline(train):
     return get_pipeline(experimential_features)
 
 # this function constructs a pipeline from the features that can be put into a fast demo (IQJ)
-'''
+
 def get_demo_pipeline(train):
+    import counting_feat
+    import dict_feat
     demo_features = [
-        ('',),
-        ('',),
-        ('',),
-        ('',),
-        ('',),
-        ('',),
-        ('',),
-        ('',),
+        ("sent_length", counting_feat.SentenceLength()),
+        ("tense", dict_feat.Tense())
     ]
     return get_pipeline(demo_features)
-'''
+
 # this function takes a training set (features), and returns a pipeline of features ready to be transformed and trained
 def get_pipeline(features):
     """

@@ -9,7 +9,7 @@
 
 from enum import Enum
 from os.path import join
-from src.data.models import Sentence
+from src.data.models import demoSentence
 from src.utils.config import get_config
 
 CONFIG = get_config()
@@ -91,8 +91,8 @@ def read_debates(debate, use_label='sum_all'):
         else:
             label = use_label(columns)
 
-        s = Sentence(columns[0], columns[-1], label, columns[1], debate, dabates_dates[debate.value])
-        #s = Sentence(columns[0],label) #(IQJ)  #creating a new instance from the class sentence
+        #s = Sentence(columns[0], columns[-1], label, columns[1], debate, dabates_dates[debate.value])
+        s = demoSentence(columns[0],label) #(IQJ):creating a new instance from the class demoSentence, because old class "Sentence" has extra members like "Speaker", that we don't use in the demo
         sentences.append(s)
 
     return sentences
@@ -129,4 +129,17 @@ def get_for_crossvalidation():
     return data_sets
 
 
-get_for_crossvalidation()
+
+# getting all 4 debates as training data , for Demo only (for demo no testing set needed , thus no cross validation needed (IQJ)
+def prepare_train_data_for_demo():
+
+    data_sets = []
+    for i, debate in enumerate(DEBATES):
+        train_debates = DEBATES[:]
+        #train_debates.pop(i)
+        train = []
+        #test = read_debates(debate)
+        for train_debate in train_debates:
+            train += read_debates(train_debate)
+        #data_sets.append((debate, train))
+    return train

@@ -5,7 +5,7 @@ CONFIG = get_config()
 
 # alchemy API is used o extract sentence level features / ClaimBuster based features : named entities (NER = Named Entities Recognition)
 class NER(Feature):
-    """Adds Named Entities from Alchemy API"""
+    """Adds Named Entities from Alchemy API - [ 20 f ]  """
     FEATS = ['ner']
 
     def __init__(self):
