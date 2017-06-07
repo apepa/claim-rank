@@ -19,7 +19,7 @@ def showResults():
     #                               M A I N        C A L L
     #########################################################################################################################################################
     # send the text, if you want to train the model set second param to True, if you want to predict scores for the entered text set thirs param to True    #
-    sentenceVec = obj.mainproc(text,True,False)                                                                                                             #
+    sentenceVec = obj.mainproc(text, False, True)                                                                                                             #
     #########################################################################################################################################################
 
 

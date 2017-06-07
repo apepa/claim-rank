@@ -12,7 +12,7 @@
     <table style=" font-size: small; border-style:inset; border-width:1px; height:400px; width:800px; margin:20%; overflow:scroll; margin-top:0px; margin-bottom:20px;  text-align: left;">
         {% for sentence in transSentenceList %}
                 <tr>
-                    <td style="line-height:0px;">{{ sentence.score }}</td> <td style="margin-left: 10px;">: {{ sentence.text }}</td>
+                    <td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px;">: {{ sentence.text }}</td>
                 </tr>
         {% endfor %}
     </table>

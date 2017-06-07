@@ -56,7 +56,7 @@ class mainclass:
             sent.pred = prob
             sent.pred_label = pred_label
 
-        y_true = [1 if s.label >= agreement else 0 for s in test]
+        #y_true = [1 if s.label >= agreement else 0 for s in test]
 
         #print(average_precision_score(y_true, y_pred_proba))
         return test  # return annotated data set ( array of sentence objects but with sentence.label values filled)

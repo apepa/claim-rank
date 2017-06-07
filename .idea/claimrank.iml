@@ -11,7 +11,7 @@
   <component name="TemplatesService">
     <option name="TEMPLATE_FOLDERS">
       <list>
-        <option value="$MODULE_DIR$/../claim-rank/src/templates" />
+        <option value="$MODULE_DIR$/src/templates" />
       </list>
     </option>
   </component>

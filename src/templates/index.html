@@ -1,22 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <script src="../static/js/jquery-3.2.1.js"></script>
+        <script src="../static/js/js/bootstrap.js"></script>
+        <link rel="stylesheet" href="../static/js/css/bootstrap.css">
+        <link rel="stylesheet" href="../static/js/css/bootstrap-theme.css">
         <title> Claim Rank Demo </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- to include static files (i.e. js and css files in an html page in a Flask environment:
+        1. set src="/static/js/xxx.js"; 2. static folder is in the same directly with yourapp.py -->
     </head>
     <body>
 
 
         <div style="text-align:center;">
-            <p style="font-size:large;"> Welcome to Claim Rank ! </p>
+            <p id ="testp" style="font-size:large;"> Welcome to Claim Rank ! </p>
             <br>
             <p>Enter transcript below:</p>
             <form action="showResults" method="POST">
                 <textarea type="text" name="transcript" cols="100" rows="100" style="overflow:scroll; height: 400px; width:800px; "></textarea>
                 <br>
-                <input type="submit" name="showResults" value="Submit">
+                <input id="testbtn" type="submit" name="showResults" value="Submit">
             </form>
         </div>
 
+
+
+        <script>
+
+            $(document).ready(function()
+            {
+                window.alert("hello");
+
+            });
+
+        </script>
     </body>
 </html>
 
