@@ -3,22 +3,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Claim Rank Demo</title>
+    <script src="../static/js/jquery-3.2.1.js"></script>
+    <script src="../static/js/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../static/js/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/js/css/bootstrap-theme.css">
+    <title> Claim Rank Demo </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- to include static files (i.e. js and css files in an html page in a Flask environment:
+    1. set src="/static/js/xxx.js"; 2. static folder is in the same directly with yourapp.py -->
 </head>
 <body style="text-align: center;">
-    <p>results for the entered transcript:</p>
-{# python comment injected in html #}
+    <div class="container-fluid" style="height: 100vh; width: 100vw;">
+        <div class="row">
+            <div class="col-md-12">
+                <p>results for the entered transcript:</p>
+            </div>
+        </div>
 
-    <table style=" font-size: small; border-style:inset; border-width:1px; height:400px; width:800px; margin:20%; overflow:scroll; margin-top:0px; margin-bottom:20px;  text-align: left;">
-        {% for sentence in transSentenceList %}
-                <tr>
-                    <td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px;">: {{ sentence.text }}</td>
-                </tr>
-        {% endfor %}
-    </table>
+        <div class="row" style="text-align:center;">
+            <div class="col-md-12">
+                <table style=" font-size: small; border-style:inset; border-width:1px; overflow:scroll; text-align: left;">
+                    {% for sentence in transSentenceList %}
+                            <tr>
+                                <td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px;">: {{ sentence.text }}</td>
+                            </tr>
+                    {% endfor %}
+                </table>
+                <form action="http://localhost:5000/" method="get">
+                    <input type="submit" value="enter another transcript"/>
+                </form>
+            </div>
+        </div>
 
-    <form action="http://localhost:5000/" method="get">
-        <input type="submit" value="enter another transcript"/>
-    </form>
+
+    </div>
 </body>
 </html>

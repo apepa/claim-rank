@@ -12,25 +12,44 @@
     </head>
     <body>
 
+        <div class="container-fluid" style="height: 100vh; width: 100vw;">
 
-        <div style="text-align:center;">
-            <p id ="testp" style="font-size:large;"> Welcome to Claim Rank ! </p>
-            <br>
-            <p>Enter transcript below:</p>
-            <form action="showResults" method="POST">
-                <textarea type="text" name="transcript" cols="100" rows="100" style="overflow:scroll; height: 400px; width:800px; "></textarea>
-                <br>
-                <input id="testbtn" type="submit" name="showResults" value="Submit">
-            </form>
+            <div class="row">
+                <div class="col-md-12">
+
+                    <div style="text-align:center;">
+                        <div style="margin-top: 50px;">
+                            <p style="font-size:large;">Claim Rank</p>
+                        </div>
+                        <br>
+                        <p>Enter text below:</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12" style="text-align:center;">
+                    <form action="showResults" method="POST">
+                        <textarea id="inputBox" type="text" name="transcript" cols="120" rows="100" style="overflow:scroll; height:0px; "></textarea>
+                        <br>
+                        <input id="testbtn" type="submit" name="showResults" value="Submit">
+                    </form>
+                </div>
+            </div>
+
+
+
+
+
+
         </div>
-
 
 
         <script>
 
             $(document).ready(function()
             {
-                window.alert("hello");
+                $("#inputBox").animate({height: "500px"},900);
 
             });
 
