@@ -9,32 +9,34 @@
     <link rel="stylesheet" href="../static/js/css/bootstrap-theme.css">
     <title> Claim Rank Demo </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Gudea" rel="stylesheet">
     <!-- to include static files (i.e. js and css files in an html page in a Flask environment:
     1. set src="/static/js/xxx.js"; 2. static folder is in the same directly with yourapp.py -->
 </head>
 <body style="height:100vh;  background: #fff url('/static/images/bodyBG.jpg')">
-            <div class="row" style="border-style: solid; border-color:red; background-color:#333333;color:lightgrey">
+            <div class="row" style=" background-color:#333333;color:lightgrey;font-family: 'Gudea', sans-serif;">
                 <div class="col-lg-2"></div>
-                <div class="col-lg-3" style="border-style:solid;border-color:green; font-size:small; line-height:25px;padding-top:15px; padding-left:50px;">
+                <div class="col-lg-3" style=" font-size:11pt; line-height:25px;padding-top:15px; padding-left:45px;">
                     <p>Qatar Computing Research Institute</p>
                     <p>Arabic Language Technologies</p>
                 </div>
-                <div class="col-lg-2" style="border-style:solid;border-color:green; text-align:center; padding-top:30px;">
-                    <p style="font-size:large; ">Claim Rank</p>
+                <div class="col-lg-2" style="text-align:center; padding-top:30px;">
+                    <p style="font-size:x-large; font-weight: 900 ">Claim Rank</p>
                 </div>
-                <div class="col-lg-3" style="border-style:solid;border-color:green; text-align:right; padding-right:40px;">
-                    <img src="../static/images/graylogo.png" alt="HBKU logo" height="90" width="150">
+                <div class="col-lg-3" style="text-align:right; padding-right:40px;">
+                    <img src="../static/images/graylogo.png" alt="HBKU logo" height="90" width="160">
                 </div>
                 <div class="col-lg-2"></div>
             </div>
-            <div class="row" style="border-style: solid; border-color:red; ">
-                <div class="col-lg-12" style="text-align:center;border-style:solid;border-color:green;">
+
+            <div class="row" style="">
+                <div class="col-lg-12" style="text-align:center;">
                     <div class="container" style="background-color:white; width:calc(100% - 400px) ; margin-top:20px; padding:15px;
                     -moz-box-shadow:    0px 0px 10px 0px #333333;
                     -webkit-box-shadow: 0px 0px 10px 0px #333333;
                     box-shadow:         0px 0px 10px 0px #333333;">
                         <p>This tool identifies automatically which claims in a given document are most worthy and should be prioritized for fact-checking, e.g., by invetsigative journalists.</p>
-                        <table style="width:calc(100% - 400px); height:20px;border-style:solid; margin-left:200px;">
+                        <table style="width:calc(100% - 400px); height:20px;margin-left:200px; border-style: solid; border-width: 0.5px;">
                             <tr>
                                 <td style="background-color:#ffffff; width:10%;"></td>
                                 <td style="background-color:#ffe6e6; width:10%;"></td>
@@ -48,7 +50,7 @@
                                 <td style="background-color:#ff1a1a;width:10%;"></td>
                             </tr>
                         </table>
-                        <table style="width:calc(100% - 400px); height:20px;border-style:solid; margin-left:200px;">
+                        <table style="width:calc(100% - 400px); height:20px;margin-left:200px;">
                             <tr>
                                 <td style="width:50%; text-align:left;">0.0 (least check-worthy)</td>
                                 <td style="width:50%; text-align:right;">(most check worthy) 1.0 </td>
@@ -57,13 +59,32 @@
                         <br>
                 <table id="inputBox" style=" font-size: small; border-style:inset; border-width:1px; overflow:scroll; text-align:left;">
                     {% for sentence in transSentenceList %}
-                            <tr>
-                                <td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px;">: {{ sentence.text }}</td>
-                            </tr>
+                        {% if sentence.pred >= 0.0 and sentence.pred < 0.1 %}
+                            <tr><td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px; background-color:#ffffff">: {{ sentence.text }}</td></tr>
+                        {% elif sentence.pred >=0.1 and sentence.pred <0.2 %}
+                            <tr><td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px; background-color:#ffe6e6">: {{ sentence.text }}</td></tr>
+                        {% elif sentence.pred >=0.2 and sentence.pred <0.3 %}
+                            <tr><td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px; background-color:#ffcccc">: {{ sentence.text }}</td></tr>
+                        {% elif sentence.pred >=0.3 and sentence.pred <0.4 %}
+                            <tr><td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px; background-color:#ffb3b3">: {{ sentence.text }}</td></tr>
+                        {% elif sentence.pred >=0.4 and sentence.pred <0.5 %}
+                            <tr><td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px; background-color:#ff9999">: {{ sentence.text }}</td></tr>
+                        {% elif sentence.pred >=0.5 and sentence.pred <0.6 %}
+                            <tr><td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px; background-color:#ff8080">: {{ sentence.text }}</td></tr>
+                        {% elif sentence.pred >=0.6 and sentence.pred <0.7 %}
+                            <tr><td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px; background-color:#ff6666">: {{ sentence.text }}</td></tr>
+                        {% elif sentence.pred >=0.7 and sentence.pred <0.8 %}
+                            <tr><td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px; background-color:#ff4d4d">: {{ sentence.text }}</td></tr>
+                        {% elif sentence.pred >=0.8 and sentence.pred <0.9 %}
+                            <tr><td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px; background-color:#ff3333">: {{ sentence.text }}</td></tr>
+                        {% elif sentence.pred >=0.9 and sentence.pred <=1.0 %}
+                            <tr><td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px; background-color:#ff1a1a">: {{ sentence.text }}</td></tr>
+                        {% endif %}
                     {% endfor %}
+
                 </table>
                 <form action="http://localhost:5000/" method="get">
-                    <input type="submit" value="enter another transcript"/>
+                    <input type="submit" value="Enter new text"/>
                 </form>
                    </div>
                 </div>
