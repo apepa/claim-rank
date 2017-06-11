@@ -12,16 +12,49 @@
     <!-- to include static files (i.e. js and css files in an html page in a Flask environment:
     1. set src="/static/js/xxx.js"; 2. static folder is in the same directly with yourapp.py -->
 </head>
-<body style="text-align: center;">
-    <div class="container-fluid" style="height: 100vh; width: 100vw;">
-        <div class="row">
-            <div class="col-md-12">
-                <p>results for the entered transcript:</p>
+<body style="height:100vh;  background: #fff url('/static/images/bodyBG.jpg')">
+            <div class="row" style="border-style: solid; border-color:red; background-color:#333333;color:lightgrey">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-3" style="border-style:solid;border-color:green; font-size:small; line-height:25px;padding-top:15px; padding-left:50px;">
+                    <p>Qatar Computing Research Institute</p>
+                    <p>Arabic Language Technologies</p>
+                </div>
+                <div class="col-lg-2" style="border-style:solid;border-color:green; text-align:center; padding-top:30px;">
+                    <p style="font-size:large; ">Claim Rank</p>
+                </div>
+                <div class="col-lg-3" style="border-style:solid;border-color:green; text-align:right; padding-right:40px;">
+                    <img src="../static/images/graylogo.png" alt="HBKU logo" height="90" width="150">
+                </div>
+                <div class="col-lg-2"></div>
             </div>
-        </div>
-
-        <div class="row" style="text-align:center;">
-            <div class="col-md-12" style="text-align:center;">
+            <div class="row" style="border-style: solid; border-color:red; ">
+                <div class="col-lg-12" style="text-align:center;border-style:solid;border-color:green;">
+                    <div class="container" style="background-color:white; width:calc(100% - 400px) ; margin-top:20px; padding:15px;
+                    -moz-box-shadow:    0px 0px 10px 0px #333333;
+                    -webkit-box-shadow: 0px 0px 10px 0px #333333;
+                    box-shadow:         0px 0px 10px 0px #333333;">
+                        <p>This tool identifies automatically which claims in a given document are most worthy and should be prioritized for fact-checking, e.g., by invetsigative journalists.</p>
+                        <table style="width:calc(100% - 400px); height:20px;border-style:solid; margin-left:200px;">
+                            <tr>
+                                <td style="background-color:#ffffff; width:10%;"></td>
+                                <td style="background-color:#ffe6e6; width:10%;"></td>
+                                <td style="background-color:#ffcccc;width:10%;"></td>
+                                <td style="background-color:#ffb3b3;width:10%;"></td>
+                                <td style="background-color:#ff9999;width:10%;"></td>
+                                <td style="background-color:#ff8080;width:10%;"></td>
+                                <td style="background-color:#ff6666;width:10%;"></td>
+                                <td style="background-color:#ff4d4d;width:10%;"></td>
+                                <td style="background-color:#ff3333;width:10%;"></td>
+                                <td style="background-color:#ff1a1a;width:10%;"></td>
+                            </tr>
+                        </table>
+                        <table style="width:calc(100% - 400px); height:20px;border-style:solid; margin-left:200px;">
+                            <tr>
+                                <td style="width:50%; text-align:left;">0.0 (least check-worthy)</td>
+                                <td style="width:50%; text-align:right;">(most check worthy) 1.0 </td>
+                            </tr>
+                        </table>
+                        <br>
                 <table id="inputBox" style=" font-size: small; border-style:inset; border-width:1px; overflow:scroll; text-align:left;">
                     {% for sentence in transSentenceList %}
                             <tr>
@@ -32,11 +65,10 @@
                 <form action="http://localhost:5000/" method="get">
                     <input type="submit" value="enter another transcript"/>
                 </form>
+                   </div>
+                </div>
             </div>
-        </div>
 
-
-    </div>
 
     <script>
 
