@@ -57,35 +57,37 @@
                             </tr>
                         </table>
                         <br>
-                <table id="inputBox" style=" font-size: small; border-style:inset; border-width:1px; overflow:scroll; text-align:left;">
-                    {% for sentence in transSentenceList %}
-                        {% if sentence.pred >= 0.0 and sentence.pred < 0.1 %}
-                            <tr><td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px; background-color:#ffffff">: {{ sentence.text }}</td></tr>
-                        {% elif sentence.pred >=0.1 and sentence.pred <0.2 %}
-                            <tr><td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px; background-color:#ffe6e6">: {{ sentence.text }}</td></tr>
-                        {% elif sentence.pred >=0.2 and sentence.pred <0.3 %}
-                            <tr><td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px; background-color:#ffcccc">: {{ sentence.text }}</td></tr>
-                        {% elif sentence.pred >=0.3 and sentence.pred <0.4 %}
-                            <tr><td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px; background-color:#ffb3b3">: {{ sentence.text }}</td></tr>
-                        {% elif sentence.pred >=0.4 and sentence.pred <0.5 %}
-                            <tr><td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px; background-color:#ff9999">: {{ sentence.text }}</td></tr>
-                        {% elif sentence.pred >=0.5 and sentence.pred <0.6 %}
-                            <tr><td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px; background-color:#ff8080">: {{ sentence.text }}</td></tr>
-                        {% elif sentence.pred >=0.6 and sentence.pred <0.7 %}
-                            <tr><td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px; background-color:#ff6666">: {{ sentence.text }}</td></tr>
-                        {% elif sentence.pred >=0.7 and sentence.pred <0.8 %}
-                            <tr><td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px; background-color:#ff4d4d">: {{ sentence.text }}</td></tr>
-                        {% elif sentence.pred >=0.8 and sentence.pred <0.9 %}
-                            <tr><td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px; background-color:#ff3333">: {{ sentence.text }}</td></tr>
-                        {% elif sentence.pred >=0.9 and sentence.pred <=1.0 %}
-                            <tr><td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px; background-color:#ff1a1a">: {{ sentence.text }}</td></tr>
-                        {% endif %}
-                    {% endfor %}
+                        <div style="width:100%; text-align:center;">
+                        <table id="inputBox" style="font-size: small; border-style:inset; text-align:left; width:100%;">
+                            {% for sentence in transSentenceList %}
+                                {% if sentence.pred >= 0.0 and sentence.pred < 0.1 %}
+                                    <tr><td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px; background-color:#ffffff">: {{ sentence.text }}</td></tr>
+                                {% elif sentence.pred >=0.1 and sentence.pred <0.2 %}
+                                    <tr><td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px; background-color:#ffe6e6">: {{ sentence.text }}</td></tr>
+                                {% elif sentence.pred >=0.2 and sentence.pred <0.3 %}
+                                    <tr><td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px; background-color:#ffcccc">: {{ sentence.text }}</td></tr>
+                                {% elif sentence.pred >=0.3 and sentence.pred <0.4 %}
+                                    <tr><td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px; background-color:#ffb3b3">: {{ sentence.text }}</td></tr>
+                                {% elif sentence.pred >=0.4 and sentence.pred <0.5 %}
+                                    <tr><td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px; background-color:#ff9999">: {{ sentence.text }}</td></tr>
+                                {% elif sentence.pred >=0.5 and sentence.pred <0.6 %}
+                                    <tr><td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px; background-color:#ff8080">: {{ sentence.text }}</td></tr>
+                                {% elif sentence.pred >=0.6 and sentence.pred <0.7 %}
+                                    <tr><td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px; background-color:#ff6666">: {{ sentence.text }}</td></tr>
+                                {% elif sentence.pred >=0.7 and sentence.pred <0.8 %}
+                                    <tr><td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px; background-color:#ff4d4d">: {{ sentence.text }}</td></tr>
+                                {% elif sentence.pred >=0.8 and sentence.pred <0.9 %}
+                                    <tr><td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px; background-color:#ff3333">: {{ sentence.text }}</td></tr>
+                                {% elif sentence.pred >=0.9 and sentence.pred <=1.0 %}
+                                    <tr><td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px; background-color:#ff1a1a">: {{ sentence.text }}</td></tr>
+                                {% endif %}
+                            {% endfor %}
 
-                </table>
-                <form action="http://localhost:5000/" method="get">
-                    <input type="submit" value="Enter new text"/>
-                </form>
+                        </table>
+                        <form action="http://localhost:5000/" method="get">
+                            <input type="submit" value="Enter new text"/>
+                        </form>
+                        </div>
                    </div>
                 </div>
             </div>
