@@ -6,50 +6,60 @@
         <link rel="stylesheet" href="../static/js/css/bootstrap.css">
         <link rel="stylesheet" href="../static/js/css/bootstrap-theme.css">
         <title> Claim Rank Demo </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
         <!-- to include static files (i.e. js and css files in an html page in a Flask environment:
         1. set src="/static/js/xxx.js"; 2. static folder is in the same directly with yourapp.py -->
     </head>
-    <body>
+    <body style="height:100vh;  background: #fff url('/static/images/bodyBG.jpg')">
 
-        <div class="container-fluid" style="height: 100vh; width: 100vw;">
+        <!--<div class="container-fluid" style="border-style:solid; border-color:blue; height:auto !important;"> -->
 
-            <div class="row">
-                <div class="col-md-12">
 
-                    <div style="text-align:center;">
-                        <div style="margin-top: 50px;">
-                            <p style="font-size:large;">Claim Rank</p>
-                        </div>
-                        <br>
-                        <p>Enter text below:</p>
-                    </div>
+            <div class="row" style="border-style: solid; border-color:red; background-color:#333333">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-3" style="border-style:solid;border-color:green; font-size:small; line-height:25px;padding-top:15px; padding-left:50px;">
+                    <p>Qatar Computing Research Institute</p>
+                    <p>Arabic Language Technologies</p>
                 </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-12" style="text-align:center;">
-                    <form action="showResults" method="POST">
-                        <textarea id="inputBox" type="text" name="transcript" cols="120" rows="100" style="overflow:scroll; height:0px; "></textarea>
-                        <br>
-                        <input id="testbtn" type="submit" name="showResults" value="Submit">
-                    </form>
+                <div class="col-lg-2" style="border-style:solid;border-color:green; text-align:center; padding-top:30px;">
+                    <p style="font-size:large;">Claim Rank</p>
                 </div>
+                <div class="col-lg-3" style="border-style:solid;border-color:green; text-align:right; padding-right:40px;">
+                    <img src="../static/images/logo.png" alt="HBKU logo" height="90" width="150">
+                </div>
+                <div class="col-lg-2"></div>
             </div>
 
 
 
+            <div class="row" style="border-style: solid; border-color:red; ">
+                <div class="col-lg-12" style="text-align:center;border-style:solid;border-color:green;">
+                    <div class="container" style="background-color:white; width:calc(100% - 400px) ; margin-top:20px; padding:15px;
+                    -moz-box-shadow:    0px 0px 10px 0px #333333;
+                    -webkit-box-shadow: 0px 0px 10px 0px #333333;
+                    box-shadow:         0px 0px 10px 0px #333333;">
+                        <form action="showResults" method="POST" style="width:100%;">
+                            <textarea id="inputBox" type="text" name="transcript" placeholder="Enter text here" style="overflow:scroll; height:0px; width:calc(100% - 200px);"></textarea>
+                            <br>
+                            <input id="testbtn" type="submit" name="showResults" value="Submit">
+                        </form>
+                   </div>
+                </div>
+            </div>
 
 
 
-        </div>
+
+
+
+       <!-- </div> -->
 
 
         <script>
 
             $(document).ready(function()
             {
-                $("#inputBox").animate({height: "500px"},900);
+                $("#inputBox").animate({height: "400px"},900);
 
             });
 

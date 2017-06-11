@@ -21,8 +21,8 @@
         </div>
 
         <div class="row" style="text-align:center;">
-            <div class="col-md-12">
-                <table style=" font-size: small; border-style:inset; border-width:1px; overflow:scroll; text-align: left;">
+            <div class="col-md-12" style="text-align:center;">
+                <table id="inputBox" style=" font-size: small; border-style:inset; border-width:1px; overflow:scroll; text-align:left;">
                     {% for sentence in transSentenceList %}
                             <tr>
                                 <td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px;">: {{ sentence.text }}</td>
@@ -37,5 +37,15 @@
 
 
     </div>
+
+    <script>
+
+        $(document).ready(function()
+        {
+            //$("#inputBox").animate({height: "500px"},900);
+
+        });
+
+    </script>
 </body>
 </html>

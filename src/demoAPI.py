@@ -24,7 +24,8 @@ def showResults():
 
 
     sentenceCount = len(sentenceVec)
-    # extract two separate arrays from
+    for sent in sentenceVec:
+        sent.pred = round(sent.pred, 2)
     return render_template('results.html', transSentenceList = sentenceVec, sentenceCount= sentenceCount)
 
 
