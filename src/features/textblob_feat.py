@@ -4,6 +4,7 @@ from src.features.features import Feature
 
 
 class TextBlobSentiment(Feature):
+    print("Calculating ... TextBlobSentiment | features['polarity','subjectivity']")
     FEATS = ['polarity', 'subjectivity']
     def transform(self, X):
         for sent in X:

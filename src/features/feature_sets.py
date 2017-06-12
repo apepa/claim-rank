@@ -48,6 +48,7 @@ def get_demo_pipeline(dataset,case):
     import counting_feat
     import dict_feat
     import nltk_feat
+    import textblob_feat
     demo_features = [
         ("sent_length", counting_feat.SentenceLength()),
         ("tense", dict_feat.Tense()),
@@ -56,7 +57,8 @@ def get_demo_pipeline(dataset,case):
         ("TokenStat",counting_feat.TokenStat()),
         ("Negatives",dict_feat.Negatives()),
         ("POS-nltk", nltk_feat.POS()),
-        ("NER-nltk", nltk_feat.NER())
+        ("NER-nltk", nltk_feat.NER()),
+        ("TextBlobSentiment", textblob_feat.TextBlobSentiment())
         #("W2Vec_embeddings", embeddings_feat.W2VVectors())
         #("bag_of_TFIDF", counting_feat.BagOfTfIDF(dataset))
 
