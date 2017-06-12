@@ -29,6 +29,7 @@ class POS(Feature):
 # extracts contextual features / Named Entities (using different tool called NLTK) , unlike named entities in the claimBuster based (used Alchemy)
 class NER(Feature):
     """Adds NEs count"""
+    print("Calculating ... NER-NLTK | features['ner_count_nltk']")
     FEATS = ['ner_count_nltk']
 
     def transform(self, X):

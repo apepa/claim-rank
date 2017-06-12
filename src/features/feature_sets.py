@@ -55,7 +55,8 @@ def get_demo_pipeline(dataset,case):
         ("qatar_lex",dict_feat.SentimentLexicons()),
         ("TokenStat",counting_feat.TokenStat()),
         ("Negatives",dict_feat.Negatives()),
-        ("POS", nltk_feat.POS())
+        ("POS-nltk", nltk_feat.POS()),
+        ("NER-nltk", nltk_feat.NER())
         #("W2Vec_embeddings", embeddings_feat.W2VVectors())
         #("bag_of_TFIDF", counting_feat.BagOfTfIDF(dataset))
 
