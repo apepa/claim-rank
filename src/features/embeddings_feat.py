@@ -17,6 +17,7 @@ def get_sent_vetor(text):
     Get text's word2vec embedding vector, which is the mean of the w2v vector of the words in it.
     :return: 300-dim array, representing the document in the w2v cector space.
     """
+
     tokenized = text if text == "" else word_tokenize(text)
     result = np.mean([np.array(w2v[w]) for w in tokenized if w in w2v], axis=0)
     if type(result) is np.float64 and np.isnan(result):
@@ -41,6 +42,7 @@ class W2VVectors(Feature):
     """
     Adds as a feature the w2v sentence vector.
     """
+    print("Calculating ... word2vec embeddings | features['w2v_vector']")
     FEATS = ['w2v_vector']
 
     def transform(self, X):

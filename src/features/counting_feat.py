@@ -6,7 +6,7 @@ from nltk.tokenize import word_tokenize
 class BagOfTfIDF(Feature):
     """Adds Bag of TF-IDF scores of words.
     This is used in ClaimBuster approach."""
-    print("Calculating ... Bag of TF-IDF | features['bag_tfidf']")
+    #print("Calculating ... Bag of TF-IDF | features['bag_tfidf']")
     FEATS = ['bag_tfidf']
 
     def __init__(self, training):
