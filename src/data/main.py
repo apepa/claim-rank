@@ -45,7 +45,7 @@ class mainclass:
         # load the trained model saved as a python "pickle" file
         svc = joblib.load('trainedModel.pkl')
         # calculate features
-        features = get_demo_pipeline(test)
+        features = get_demo_pipeline(test,"testing")
         X = features.fit_transform(test)
         y_pred_proba = svc.predict_proba(X)
         y_pred_proba = MinMaxScaler().fit_transform([pred[1] for pred in y_pred_proba]).tolist()
@@ -80,7 +80,7 @@ class mainclass:
         # Assumed you have, X (predictor) and Y (target) for training data set and x_test(predictor) of test_dataset
         # Create SVM classification object
         svc = SVC(class_weight='balanced', kernel='rbf', C=C, gamma=gamma, probability=True, random_state=0)
-        features = get_demo_pipeline(train)
+        features = get_demo_pipeline(train,"training")
         # X_train is the list of training examples (features values / assembled vectors of features values)
         # X_train is an array of vectors (each vector represents an example from the training set )
         X_train = features.fit_transform(train)

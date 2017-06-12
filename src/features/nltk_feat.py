@@ -6,6 +6,7 @@ from nltk import pos_tag, ne_chunk, tag
 # extracts POS used to define the Tense features in contextual features /Tense
 class POS(Feature):
     """Adds a vector of POS tag counts."""
+    print("Calculating ... POS-NLTK | features['pos']")
     FEATS = ['pos']
 
     def __init__(self):

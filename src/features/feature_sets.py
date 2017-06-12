@@ -44,10 +44,10 @@ def get_experimential_pipeline(train):
 
 # this function constructs a pipeline from the features that can be put into a fast demo (IQJ)
 
-def get_demo_pipeline(dataset):
+def get_demo_pipeline(dataset,case):
     import counting_feat
     import dict_feat
-    import embeddings_feat
+    import nltk_feat
     demo_features = [
         ("sent_length", counting_feat.SentenceLength()),
         ("tense", dict_feat.Tense()),
@@ -55,8 +55,9 @@ def get_demo_pipeline(dataset):
         ("qatar_lex",dict_feat.SentimentLexicons()),
         ("TokenStat",counting_feat.TokenStat()),
         ("Negatives",dict_feat.Negatives()),
-        ("W2Vec_embeddings", embeddings_feat.W2VVectors())
-        #("bag_of_TFIDF", counting_feat.BagOfTfIDF(dataset)) #got error :ValueError: X.shape[1] = 42 should be equal to 1977, the number of features at training time
+        ("POS", nltk_feat.POS())
+        #("W2Vec_embeddings", embeddings_feat.W2VVectors())
+        #("bag_of_TFIDF", counting_feat.BagOfTfIDF(dataset))
 
     ]
     return get_pipeline(demo_features)

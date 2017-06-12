@@ -1,4 +1,4 @@
-#from gensim.models import *
+
 from gensim.models.keyedvectors import KeyedVectors
 from src.features.features import Feature
 from nltk.tokenize import word_tokenize
@@ -6,11 +6,13 @@ from scipy.spatial.distance import cosine
 from utils.config import get_config
 import numpy as np
 
+print("LOADING W2V ...")
 CONFIG = get_config()
 # got the warning :  Deprecated. Use gensim.models.KeyedVectors.load_word2vec_format instead
 # so decided to use the class KeyedVectors instead of class Word2Vec
-# w2v = Word2Vec.load_word2vec_format(CONFIG['w2v'], binary=True)
 w2v = KeyedVectors.load_word2vec_format(CONFIG['w2v'], binary=True)  #(IQJ)
+print("FINSHED LOADING W2V !")
+
 
 def get_sent_vetor(text):
     """
