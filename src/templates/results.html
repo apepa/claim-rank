@@ -31,7 +31,7 @@
 
             <div class="row" style="">
                 <div class="col-lg-12" style="text-align:center;">
-                    <div class="container" style="background-color:white; width:calc(100% - 400px) ; margin-top:20px; padding:15px;
+                    <div class="container" style="background-color:white; width:calc(100% - 400px) ; margin-top:60px; padding:15px;
                     -moz-box-shadow:    0px 0px 10px 0px #333333;
                     -webkit-box-shadow: 0px 0px 10px 0px #333333;
                     box-shadow:         0px 0px 10px 0px #333333;">
@@ -61,25 +61,25 @@
                         <table id="inputBox" style="font-size: small; border-style:inset; text-align:left; width:100%;">
                             {% for sentence in transSentenceList %}
                                 {% if sentence.pred >= 0.0 and sentence.pred < 0.1 %}
-                                    <tr><td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px; background-color:#ffffff">: {{ sentence.text }}</td></tr>
+                                    <tr class="animated"><td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px; background-color:#ffffff">: {{ sentence.text }}</td></tr>
                                 {% elif sentence.pred >=0.1 and sentence.pred <0.2 %}
-                                    <tr><td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px; background-color:#ffe6e6">: {{ sentence.text }}</td></tr>
+                                    <tr class="animated"><td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px; background-color:#ffe6e6">: {{ sentence.text }}</td></tr>
                                 {% elif sentence.pred >=0.2 and sentence.pred <0.3 %}
-                                    <tr><td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px; background-color:#ffcccc">: {{ sentence.text }}</td></tr>
+                                    <tr class="animated"><td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px; background-color:#ffcccc">: {{ sentence.text }}</td></tr>
                                 {% elif sentence.pred >=0.3 and sentence.pred <0.4 %}
-                                    <tr><td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px; background-color:#ffb3b3">: {{ sentence.text }}</td></tr>
+                                    <tr class="animated"><td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px; background-color:#ffb3b3">: {{ sentence.text }}</td></tr>
                                 {% elif sentence.pred >=0.4 and sentence.pred <0.5 %}
-                                    <tr><td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px; background-color:#ff9999">: {{ sentence.text }}</td></tr>
+                                    <tr class="animated"><td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px; background-color:#ff9999">: {{ sentence.text }}</td></tr>
                                 {% elif sentence.pred >=0.5 and sentence.pred <0.6 %}
-                                    <tr><td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px; background-color:#ff8080">: {{ sentence.text }}</td></tr>
+                                    <tr class="animated"><td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px; background-color:#ff8080">: {{ sentence.text }}</td></tr>
                                 {% elif sentence.pred >=0.6 and sentence.pred <0.7 %}
-                                    <tr><td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px; background-color:#ff6666">: {{ sentence.text }}</td></tr>
+                                    <tr class="animated"><td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px; background-color:#ff6666">: {{ sentence.text }}</td></tr>
                                 {% elif sentence.pred >=0.7 and sentence.pred <0.8 %}
-                                    <tr><td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px; background-color:#ff4d4d">: {{ sentence.text }}</td></tr>
+                                    <tr class="animated"><td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px; background-color:#ff4d4d">: {{ sentence.text }}</td></tr>
                                 {% elif sentence.pred >=0.8 and sentence.pred <0.9 %}
-                                    <tr><td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px; background-color:#ff3333">: {{ sentence.text }}</td></tr>
+                                    <tr class="animated"><td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px; background-color:#ff3333">: {{ sentence.text }}</td></tr>
                                 {% elif sentence.pred >=0.9 and sentence.pred <=1.0 %}
-                                    <tr><td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px; background-color:#ff1a1a">: {{ sentence.text }}</td></tr>
+                                    <tr class="animated"><td style="line-height:0px;">{{ sentence.pred }}</td> <td style="margin-left: 10px; background-color:#ff1a1a">: {{ sentence.text }}</td></tr>
                                 {% endif %}
                             {% endfor %}
 
@@ -97,8 +97,10 @@
 
         $(document).ready(function()
         {
-            //$("#inputBox").animate({height: "500px"},900);
+                $('#inputBox').on('load', '.animated', function() {
 
+                    $(this).fadeIn(10000 * i);
+                });
         });
 
     </script>
