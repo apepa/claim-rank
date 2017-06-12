@@ -92,7 +92,7 @@ def read_debates(debate, use_label='sum_all'):
             label = use_label(columns)
 
         #s = Sentence(columns[0], columns[-1], label, columns[1], debate, dabates_dates[debate.value])
-        s = demoSentence(columns[0],label) #(IQJ):creating a new instance from the class demoSentence, because old class "Sentence" has extra members like "Speaker", that we don't use in the demo
+        s = demoSentence(columns[0]+debate.name,columns[-1],label) #(IQJ):creating a new instance from the class demoSentence, because old class "Sentence" has extra members like "Speaker", that we don't use in the demo
         sentences.append(s)
 
     return sentences

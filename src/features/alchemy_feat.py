@@ -6,22 +6,24 @@ CONFIG = get_config()
 # alchemy API is used o extract sentence level features / ClaimBuster based features : named entities (NER = Named Entities Recognition)
 class NER(Feature):
     """Adds Named Entities from Alchemy API - [ 20 f ]  """
+    print("Calculating ... Alchemy features | features['ner']")
     FEATS = ['ner']
 
     def __init__(self):
-        types_file = open(CONFIG['alchemy_ner'])
+        types_file = open(CONFIG['alchemy_ner']) # the four debates are already annotated with NER from alchemy , here we are just reading the file and annotations
         self.ner = {}
         columns = []
         types_file.readline()
         for line in types_file:
             line = line.strip()
             columns = line.split("\t")
-            self.ner[columns[0] + " " + columns[1]] = [int(v) for v in columns[2:]]
+            self.ner[columns[0]+" "+columns[1]] = [int(v) for v in columns[2:]]
         self.len = len(columns) - 2
 
     def transform(self, X):
         for sent in X:
-            sent.features['ner'] = self.ner[str(sent.id) + " " + sent.debate.name]
+            #sent.features['ner'] = self.ner[str(sent.id)]  # (IQJ)
+            sent.features['ner'] = self.ner[str(sent.id) + " " + sent.debate.name] #sent.id and sent.debate name are used just to get a unique index for the ner[] entry
         return X
 
 #extracts Sentence-level features/claimBuster based : sentiment
@@ -36,7 +38,7 @@ class Sentiment(Feature):
         self.sentiment = {}
 
         # read serialized sentiment scores
-        serialized_sentiment = open(CONFIG['sentiment_file'])
+        serialized_sentiment = open(CONFIG['sentiment_file']) # the four debates are already annotated with sentem. from alchemy , here we are just reading the file and annotations
         serialized_sentiment.readline()
         for line in serialized_sentiment:
             line = line.strip()

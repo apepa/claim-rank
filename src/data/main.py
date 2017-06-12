@@ -26,9 +26,11 @@ class mainclass:
 
     def transTosentVec(self, sentenceList):
         sentenceVec = []
+        i=0
         for sentence in sentenceList:
-            sent = demoSentence(sentence) #creating a new instance from the class demoSentence and passing the constructor of the class the sentence text
+            sent = demoSentence(str(i),sentence) #creating a new instance from the class demoSentence and passing the constructor of the class the sentence text
             sentenceVec.append(sent)
+            i+=1
         return sentenceVec
 
     def generateScores(self, sentenceVec):

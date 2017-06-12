@@ -3,10 +3,11 @@ from os.path import join
 from src.utils.dicts import *
 from src.features.features import Feature
 from nltk import pos_tag
-
+import codecs
 # extracts sentence-level features / Sentiment
 class Sentiment_NRC(Feature):
     """Adds sentiment of the text with NRC emotion lexicon"""
+    print("Calculating ... Sentiment_NRC | features['sent_nrc']")
     FEATS = ['sent_nrc']
 
     def __init__(self):
@@ -27,6 +28,7 @@ class Tense(Feature):
     """
     Adds the tense of the sentence as a feature.
     """
+    print("Calculating ... Tense | features['tense']")
     FEATS = ['tense']
     TENSES = {'present': 0, "future": 1, "past": 2, 'pp': 3}
 
@@ -49,13 +51,14 @@ class SentimentLexicons(Feature):
     """
     Adds as feature the number of words in each sentence that appear in each of the sentiment lexicons.
     """
+    print("Calculating ... SentimentLexicons (qatar lex) | features['lexicons']")
     FEATS = ['lexicons']
 
     def __init__(self):
         qatar_lexicon_files = ["negative-words-Liu05.txt", "negations.txt", "bias-lexicon-RecasensACL13.txt"]
         self.lexicons = []
         for lexicon in qatar_lexicon_files:
-            self.lexicons.append(set(open(join(CONFIG['sentiment_lexicons'], lexicon), encoding='iso-8859-1').
+            self.lexicons.append(set(codecs.open(join(CONFIG['sentiment_lexicons'], lexicon), encoding='iso-8859-1').
                                      read().split("\n")))
 
     def transform(self, X):

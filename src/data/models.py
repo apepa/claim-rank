@@ -12,7 +12,8 @@ class Sentence(object):
         self.tokens = word_tokenize(text)
 
 class demoSentence():
-    def __init__(self, text, label=9):
+    def __init__(self, id,text, label=9):
+        self.id = id
         self.text = text
         #self.prediction = label
         self.label = label

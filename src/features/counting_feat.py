@@ -6,6 +6,7 @@ from nltk.tokenize import word_tokenize
 class BagOfTfIDF(Feature):
     """Adds Bag of TF-IDF scores of words.
     This is used in ClaimBuster approach."""
+    print("Calculating ... Bag of TF-IDF | features['bag_tfidf']")
     FEATS = ['bag_tfidf']
 
     def __init__(self, training):
@@ -77,7 +78,7 @@ class TokenStat(Feature):
 # extracts the length of the sentence feature measured in words, characters
 class SentenceLength(Feature):
     FEATS = ['tokens_num', 'text_len']
-
+    print("Calculating ... SentenceLength | features['tokens_num', 'text_len']")
     def transform(self, X):
         for sent in X:
             # this counts the punctuation, too
