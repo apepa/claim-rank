@@ -71,6 +71,7 @@ class SentimentLexicons(Feature):
 # extracts mixed features / contradictions
 class Negatives(Feature):
     """Adds negative words and contradictions counts in current and next sentence."""
+    print("Calculating ... Negatives | features['negs','contras', 'negs_next','contras_next']")
     FEATS = ['negs', 'contras', 'negs_next', 'contras_next']
 
     def __init__(self):
@@ -83,7 +84,8 @@ class Negatives(Feature):
             sent.features['contras'] = self.count_contras(sent.text)
             sent.features['negs_next'] = 0
             sent.features['contras_next'] = 0
-            if i < len(X) - 1 and sent.debate == X[i + 1].debate:
+            #if i < len(X) - 1 and sent.debate == X[i + 1].debate: (IQJ) (checking if there is a next sentence, and if it belongs to the same debate) X[i+1] means next sent.
+            if i < len(X) - 1:
                 sent.features['negs_next'] = self.count_neg(X[i + 1].text)
                 sent.features['contras_next'] = self.count_contras(X[i + 1].text)
         return X

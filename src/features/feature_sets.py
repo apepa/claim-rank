@@ -53,7 +53,8 @@ def get_demo_pipeline(dataset):
         ("tense", dict_feat.Tense()),
         ("sentiment_NRC", dict_feat.Sentiment_NRC()),
         ("qatar_lex",dict_feat.SentimentLexicons()),
-        ("TokenStat",counting_feat.TokenStat())
+        ("TokenStat",counting_feat.TokenStat()),
+        ("Negatives",dict_feat.Negatives())
         #("bag_of_TFIDF", counting_feat.BagOfTfIDF(dataset)) #got error :ValueError: X.shape[1] = 42 should be equal to 1977, the number of features at training time
 
     ]
