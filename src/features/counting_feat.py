@@ -67,8 +67,9 @@ class BagOfCounts(Feature):
 
 class TokenStat(Feature):
     """Adds specific token counts."""
-    FEATS = ['America', 'Reagan', 'Mexico', 'tax', 'i ', 'said', 'have to', 'you ']
-
+    print("Calculating ... TokenStat | features['i','said', 'have to', 'you']")
+    #FEATS = ['America', 'Reagan', 'Mexico', 'tax', 'i ', 'said', 'have to', 'you '] (IQJ) some of these terms removed because they are specific to the context of american debates only
+    FEATS = ['i ', 'said', 'have to', 'you']
     def transform(self, X):
         for sent in X:
             for word in self.FEATS:
