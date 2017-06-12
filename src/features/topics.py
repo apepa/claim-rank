@@ -19,6 +19,7 @@ def topic_to_array(topics):
 
 class LDATopics(Feature):
     """Adds a vector of POS tag counts."""
+    print("Calculating ... Topics (POS) | features['lda']")
     FEATS = ['lda']
 
     def __init__(self):
