@@ -35,8 +35,8 @@ def showResults():
         i+=1
 
     session['sentenceList'] = sentencelist
-    session['scoreList'] =scoreList
-    return render_template('results.html', transSentenceList = sentenceVec, sentenceCount= sentenceCount)
+    session['scoreList'] = scoreList
+    return render_template('results.html', transSentenceList=sentenceVec, sentenceCount=sentenceCount)
 
 
 @app.route("/sortResults", methods=['POST'])
@@ -46,7 +46,7 @@ def sortResults():
     sentenceVec = []
     i = 0
     for sent in sentenceList:
-        sentence = demoSentence(str(i),sent)
+        sentence = demoSentence(str(i), sent)
         sentence.pred = scoreList[i]
         sentenceVec.append(sentence)
         i += 1
@@ -63,8 +63,8 @@ def main():
 
 
 
-if __name__ == "__main__":
-	app.run()
+if __name__=="__main__" :
+    app.run()
 
 
 

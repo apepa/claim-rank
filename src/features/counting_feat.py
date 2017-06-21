@@ -1,21 +1,42 @@
 from src.features.features import Feature
 from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 from nltk.tokenize import word_tokenize
-
+from data.debates import prepare_train_data_for_demo #(IQJ)
 #extracts sentence level features / ClaimBuster-based features TF-IDF, weighed bag of words
+# BOW explained:
+# using BOW as a feature :
+# 1. first thing build the vocabulary list from the training set
+# a vocabulary is the list of all words that exist in all of the training set without repetition
+# now for each sentence initiate an empty array , the length of the array equals the length of the
+# list in the vocabulary , so each index in the array corresponds to one word from the vocab list
+# 2. fill this array with 0 or 1 based on whether this word form the vocab exists in this sentence.
+# this BOW is called " binary " there is another variation of this thing which is counting the number
+# of occurences of each word in the document .
+# at the end you will get an array for each sentence in the training set that represent the existence /count of
+# words in that sentence.
+# 3. now for the testing , you should use the same vocab generated from the training set and fill an array for each
+# sentence from the testing list representing whether a word in the vocab exists in the document .
+# exactly the same way with the training set but without generating a new vocab list (instead use the training set vocab )
+# that's it ! :)
+
+print ('preparing the training data for the bag of words and building vocab ...')
+train = prepare_train_data_for_demo()  #(IQJ)
+vocab = [s.text for s in train] #(IQJ: these two variables where in the function level) (keep the vocab list loaded in memory so it can be used at the testing stage)
+print ('finished data preparation !')
+
 class BagOfTfIDF(Feature):
     """Adds Bag of TF-IDF scores of words.
     This is used in ClaimBuster approach."""
-    #print("Calculating ... Bag of TF-IDF | features['bag_tfidf']")
+    print("Calculating ... Bag of TF-IDF | features['bag_tfidf']")
     FEATS = ['bag_tfidf']
 
-    def __init__(self, training):
+    def __init__(self):
         self.vectorizer = TfidfVectorizer(analyzer="word",
                                           tokenizer=None,
                                           preprocessor=None,
                                           ngram_range=(1, 1),
                                           min_df=3)
-        vocab = [s.text for s in training]
+        #vocab = [s.text for s in train]
         self.vectorizer.fit_transform(vocab)
 
     def transform(self, X):
@@ -26,9 +47,11 @@ class BagOfTfIDF(Feature):
 
 class BagOfTfIDFN(Feature):
     """Adds Bag of TF-IDF scores of 1/2/3-grams."""
+    print("Calculating ... Bag Of TF-IDF N-grams | features['bag_tfidf_n']")
+
     FEATS = ['bag_tfidf_n']
 
-    def __init__(self, training):
+    def __init__(self):
         self.vectorizer = TfidfVectorizer(analyzer="word",
                                           tokenizer=None,
                                           preprocessor=None,
@@ -37,7 +60,7 @@ class BagOfTfIDFN(Feature):
                                           max_df=0.4,
                                           stop_words="english",
                                           max_features=2000)
-        vocab = [s.text for s in training]
+        #vocab = [s.text for s in train]
         self.vectorizer.fit_transform(vocab)
 
     def transform(self, X):
@@ -48,15 +71,16 @@ class BagOfTfIDFN(Feature):
 
 class BagOfCounts(Feature):
     """Adds Bag of Counts of words."""
+    print("Calculating ... Bag Of Counts | features['bag']")
     FEATS = ['bag']
 
-    def __init__(self, training):
+    def __init__(self):
         self.vectorizer = CountVectorizer(analyzer="word",
                                           tokenizer=None,
                                           preprocessor=None,
                                           stop_words="english",
                                           max_features=5000)
-        vocab = [s.text for s in training]
+        #vocab = [s.text for s in train]
         self.vectorizer.fit_transform(vocab)
 
     def transform(self, X):

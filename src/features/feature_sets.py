@@ -5,14 +5,19 @@
 
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing.data import MinMaxScaler
-
+import counting_feat
+import dict_feat
+import nltk_feat
+import textblob_feat
+import topics
+import embeddings_feat
 
 from features import *
 
 
 def get_cb_pipeline(train):
-    import alchemy_feat, counting_feat, dict_feat, metadata_feat, nltk_feat, topics, knn_similarity, embeddings_feat, \
-        textblob_feat
+    import alchemy_feat
+
     """
     Set of features used by Claim Buster.
     """
@@ -27,8 +32,8 @@ def get_cb_pipeline(train):
 
 
 def get_experimential_pipeline(train):
-    import alchemy_feat, counting_feat, dict_feat, metadata_feat, nltk_feat, topics, knn_similarity, embeddings_feat, \
-        textblob_feat
+    import metadata_feat, knn_similarity
+
     experimential_features = [
         ("pf_search", knn_similarity.PolitiFactSearch()),
         ("train_search", knn_similarity.TrainSearch(train=train)),
@@ -44,12 +49,8 @@ def get_experimential_pipeline(train):
 
 # this function constructs a pipeline from the features that can be put into a fast demo (IQJ)
 
-def get_demo_pipeline(dataset,case):
-    import counting_feat
-    import dict_feat
-    import nltk_feat
-    import textblob_feat
-    import topics
+def get_demo_pipeline():
+
     demo_features = [
         ("sent_length", counting_feat.SentenceLength()),
         ("tense", dict_feat.Tense()),
@@ -60,9 +61,11 @@ def get_demo_pipeline(dataset,case):
         ("POS-nltk", nltk_feat.POS()),
         ("NER-nltk", nltk_feat.NER()),
         ("TextBlobSentiment", textblob_feat.TextBlobSentiment()),
-        ("Topics POS", topics.LDATopics())
-        #("W2Vec_embeddings", embeddings_feat.W2VVectors())
-        #("bag_of_TFIDF", counting_feat.BagOfTfIDF(dataset))
+        ("Topics POS", topics.LDATopics()),
+        ("W2Vec_embeddings", embeddings_feat.W2VVectors()),
+        ("bag_of_TFIDF", counting_feat.BagOfTfIDF()),
+        ("bag_of_TFIDF_N", counting_feat.BagOfTfIDFN()),
+        ("bag_of_Counts", counting_feat.BagOfCounts())
 
     ]
     return get_pipeline(demo_features)
