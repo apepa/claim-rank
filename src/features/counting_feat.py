@@ -15,7 +15,7 @@ from data.debates import prepare_train_data_for_demo #(IQJ)
 # at the end you will get an array for each sentence in the training set that represent the existence /count of
 # words in that sentence.
 # 3. now for the testing , you should use the same vocab generated from the training set and fill an array for each
-# sentence from the testing list representing whether a word in the vocab exists in the document .
+# sentence from the testing set representing whether a word in the vocab exists in the document .
 # exactly the same way with the training set but without generating a new vocab list (instead use the training set vocab )
 # that's it ! :)
 
