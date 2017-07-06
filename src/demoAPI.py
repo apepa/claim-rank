@@ -21,7 +21,7 @@ def showResults():
 # send the text, if you want to train the model set second param to True, if you want to predict scores for the entered text set thirs param to True
 # method = 'svm' or 'nn' based on the method you want to use for learning  (Support Vector Machines , Neural Netwok)
 
-    sentenceVec = obj.mainproc(text, True, True, 'svm' )
+    sentenceVec = obj.mainproc(text, True, True, 'nn' )
 
 #######################################################################################################################################################################################
 #######################################################################################################################################################################################

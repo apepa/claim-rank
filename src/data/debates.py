@@ -125,8 +125,10 @@ def get_for_crossvalidation():
         test = read_debates(debate)
         for train_debate in train_debates:
             train += read_debates(train_debate)
-        data_sets.append((debate, test, train))
-    return data_sets
+        #data_sets.append((debate, test, train)) (IQJ)
+        data_sets.append ((test, train))
+    return data_sets  # data_sets[0,1,2,3] each index stands for the kth fold of the cross validation ,
+                      # in each index you will find two arrays  data_sets[0] = [0,1] in index 0 is always the testing ds and in index 1 is always the training ds
 
 
 
