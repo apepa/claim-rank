@@ -1,7 +1,7 @@
 from src.features.features import Feature
 from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 from nltk.tokenize import word_tokenize
-from data.debates import prepare_train_data_for_demo #(IQJ)
+from data.main import * #(IQJ)
 #extracts sentence level features / ClaimBuster-based features TF-IDF, weighed bag of words
 # BOW explained:
 # using BOW as a feature :
@@ -19,27 +19,34 @@ from data.debates import prepare_train_data_for_demo #(IQJ)
 # exactly the same way with the training set but without generating a new vocab list (instead use the training set vocab )
 # that's it ! :)
 
-print ('preparing the training data for the bag of words and building vocab ...')
-train = prepare_train_data_for_demo()  #(IQJ)
-vocab = [s.text for s in train] #(IQJ: these two variables where in the function level) (keep the vocab list loaded in memory so it can be used at the testing stage)
-print ('finished data preparation !')
+
+    #print ('preparing the training data for the bag of words and building vocab ...')
+# def get_vocab():
+#
+#     train = mainclass.train #prepare_train_data_for_demo()  #(IQJ)
+#     vocab = [s.text for s in train]  # (IQJ: these two variables where in the function level) (keep the vocab list loaded in memory so it can be used at the testing stage)
+#     return vocab
+
 
 class BagOfTfIDF(Feature):
     """Adds Bag of TF-IDF scores of words.
     This is used in ClaimBuster approach."""
-    print("Calculating ... Bag of TF-IDF | features['bag_tfidf']")
+
     FEATS = ['bag_tfidf']
 
-    def __init__(self):
+    def __init__(self,train):
+        print ("Initializing ... Bag of TF-IDF ")
         self.vectorizer = TfidfVectorizer(analyzer="word",
                                           tokenizer=None,
                                           preprocessor=None,
                                           ngram_range=(1, 1),
                                           min_df=3)
-        #vocab = [s.text for s in train]
+        vocab = [s.text for s in train]
         self.vectorizer.fit_transform(vocab)
 
+
     def transform(self, X):
+        print("Calculating ... Bag of TF-IDF | features['bag_tfidf']")
         for sent in X:
             sent.features['bag_tfidf'] = self.vectorizer.transform([sent.text]).toarray().tolist()[0]
         return X
@@ -47,11 +54,12 @@ class BagOfTfIDF(Feature):
 
 class BagOfTfIDFN(Feature):
     """Adds Bag of TF-IDF scores of 1/2/3-grams."""
-    print("Calculating ... Bag Of TF-IDF N-grams | features['bag_tfidf_n']")
+
 
     FEATS = ['bag_tfidf_n']
 
-    def __init__(self):
+    def __init__(self,train):
+        print ("Initializing ... Bag Of TF-IDF N-grams ")
         self.vectorizer = TfidfVectorizer(analyzer="word",
                                           tokenizer=None,
                                           preprocessor=None,
@@ -60,10 +68,11 @@ class BagOfTfIDFN(Feature):
                                           max_df=0.4,
                                           stop_words="english",
                                           max_features=2000)
-        #vocab = [s.text for s in train]
+        vocab = [s.text for s in train]
         self.vectorizer.fit_transform(vocab)
 
     def transform(self, X):
+        print("Calculating ... Bag Of TF-IDF N-grams | features['bag_tfidf_n']")
         for sent in X:
             sent.features['bag_tfidf_n'] = self.vectorizer.transform([sent.text]).toarray().tolist()[0]
         return X
@@ -71,19 +80,21 @@ class BagOfTfIDFN(Feature):
 
 class BagOfCounts(Feature):
     """Adds Bag of Counts of words."""
-    print("Calculating ... Bag Of Counts | features['bag']")
+
     FEATS = ['bag']
 
-    def __init__(self):
+    def __init__(self,train):
+        print("Initializing ... Bag Of Counts")
         self.vectorizer = CountVectorizer(analyzer="word",
                                           tokenizer=None,
                                           preprocessor=None,
                                           stop_words="english",
                                           max_features=5000)
-        #vocab = [s.text for s in train]
+        vocab = [s.text for s in train]
         self.vectorizer.fit_transform(vocab)
 
     def transform(self, X):
+        print("Calculating ... Bag Of Counts | features['bag']")
         for sent in X:
             sent.features['bag'] = self.vectorizer.transform([sent.text]).toarray().tolist()[0]
         return X
@@ -91,10 +102,11 @@ class BagOfCounts(Feature):
 
 class TokenStat(Feature):
     """Adds specific token counts."""
-    print("Calculating ... TokenStat | features['i','said', 'have to', 'you']")
+
     #FEATS = ['America', 'Reagan', 'Mexico', 'tax', 'i ', 'said', 'have to', 'you '] (IQJ) some of these terms removed because they are specific to the context of american debates only
     FEATS = ['i ', 'said', 'have to', 'you']
     def transform(self, X):
+        print("Calculating ... TokenStat | features['i','said', 'have to', 'you']")
         for sent in X:
             for word in self.FEATS:
                 sent.features[word] = sent.text.count(word)
@@ -103,8 +115,9 @@ class TokenStat(Feature):
 # extracts the length of the sentence feature measured in words, characters
 class SentenceLength(Feature):
     FEATS = ['tokens_num', 'text_len']
-    print("Calculating ... SentenceLength | features['tokens_num', 'text_len']")
+
     def transform(self, X):
+        print("Calculating ... SentenceLength | features['tokens_num', 'text_len']")
         for sent in X:
             # this counts the punctuation, too
             # TODO add separate count for puntuation

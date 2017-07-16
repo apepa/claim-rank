@@ -1,3 +1,4 @@
+from __future__ import division
 from operator import attrgetter
 from sklearn.metrics import precision_score, recall_score, average_precision_score, roc_auc_score
 from src.utils.config import get_config
@@ -5,8 +6,9 @@ from operator import itemgetter
 import numpy as np
 from math import *
 from copy import deepcopy
-from data.debates import get_for_crossvalidation
-from src.models.sklearn_nn import run
+
+#from data.debates import get_for_crossvalidation
+#from src.models.sklearn_nn import run
 
 CONFIG = get_config()
 
@@ -54,7 +56,8 @@ def precision_at_n(dataset, n=10, agreement=1):
     """
     dataset = sorted(dataset, key=attrgetter('pred'), reverse=True)
     relevant = sum([1 if instance.label >= agreement else 0 for instance in dataset[:n]])
-    return relevant/n
+    p=relevant/n
+    return p
 
 
 def recall_at_n(dataset, n=10, agreement=1):
@@ -73,9 +76,9 @@ def dcg(dataset, agreement=True, agreement_num=1):
         else:
             reli = 2**(1 if instance.label >= agreement_num else 0) - 1
 
-            denom = log(i + 2,2) #denom = log2(i+2)
-
+        denom = log(i + 2,2) #denom = log2(i+2)
         result += reli / denom
+
     return result
 
 
@@ -113,7 +116,7 @@ def get_all_metrics(sentences, agreement=1):
                'PR@1': [], 'PR@3': [], 'PR@5': [],'PR@20': [], 'PR@10': [], 'PR@50': [], 'PR@100': [], 'PR@200': []}
 
     for sentence_set in sentences:
-        sentence_set = (sorted(sentence_set, key=attrgetter("pred"), reverse=True))
+        sentence_set = (sorted(sentence_set, key=attrgetter("pred"), reverse=True)) # sort the sentence based on predictions in reverse order
         y_true = [1 if t.label >= agreement else 0 for t in sentence_set]
         y_pred = [s.pred for s in sentence_set]
         y_pred_label = [s.pred_label for s in sentence_set]
@@ -188,9 +191,9 @@ def get_metrics_for_plot(agreement, ranks):
     return av_p, precision, recall, thresholds
 
 # main function to construct the pipeline of features and run a classifier
-if __name__ == '__main__':
-        results = []
-        for test_deb, test, train in get_for_crossvalidation():
-            results.append(run(train=train, test=test)) # running the neural network main function to train and predict
-            get_all_metrics(results, agreement=1)
-        get_all_metrics(results, agreement=1)
+# if __name__ == '__main__':
+#         results = []
+#         for test_deb, test, train in get_for_crossvalidation():
+#             results.append(run(train=train, test=test)) # running the neural network main function to train and predict
+#             get_all_metrics(results, agreement=1)
+#         get_all_metrics(results, agreement=1)

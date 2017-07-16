@@ -6,10 +6,11 @@ from nltk import pos_tag, ne_chunk, tag
 # extracts POS used to define the Tense features in contextual features /Tense
 class POS(Feature):
     """Adds a vector of POS tag counts."""
-    print("Calculating ... POS-NLTK | features['pos']")
+
     FEATS = ['pos']
 
     def __init__(self):
+        print("Initializing ... POS-NLTK")
         tagdict = load('help/tagsets/upenn_tagset.pickle')
         tags_keys = tagdict.keys()
         self.tags = {}
@@ -17,6 +18,7 @@ class POS(Feature):
             self.tags[tag] = i
 
     def transform(self, X):
+        print("Calculating ... POS-NLTK | features['pos']")
         for sent in X:
             tokenized = word_tokenize(sent.text)
             tag_vector = [0 for _ in range(len(self.tags))]
@@ -29,10 +31,11 @@ class POS(Feature):
 # extracts contextual features / Named Entities (using different tool called NLTK) , unlike named entities in the claimBuster based (used Alchemy)
 class NER(Feature):
     """Adds NEs count"""
-    print("Calculating ... NER-NLTK | features['ner_count_nltk']")
+
     FEATS = ['ner_count_nltk']
 
     def transform(self, X):
+        print("Calculating ... NER-NLTK | features['ner_count_nltk']")
         for sent in X:
             tokens = word_tokenize(sent.text)
             parse_tree = ne_chunk(tag.pos_tag(tokens), binary=True)  # POS tagging before chunking!

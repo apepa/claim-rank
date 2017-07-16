@@ -44,10 +44,11 @@ class W2VVectors(Feature):
     """
     Adds as a feature the w2v sentence vector.
     """
-    print("Calculating ... word2vec embeddings | features['w2v_vector']")
+
     FEATS = ['w2v_vector']
 
     def transform(self, X):
+        print("Calculating ... word2vec embeddings | features['w2v_vector']")
         for sent in X:
             sent.features['w2v_vector'] = get_sent_vetor(sent.text)
         return X

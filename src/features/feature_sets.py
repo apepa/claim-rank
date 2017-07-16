@@ -49,7 +49,7 @@ def get_experimential_pipeline(train):
 
 # this function constructs a pipeline from the features that can be put into a fast demo (IQJ)
 
-def get_demo_pipeline():
+def get_demo_pipeline(train):
 
     demo_features = [
         ("sent_length", counting_feat.SentenceLength()),
@@ -63,9 +63,9 @@ def get_demo_pipeline():
         ("TextBlobSentiment", textblob_feat.TextBlobSentiment()),
         ("Topics POS", topics.LDATopics()),
         ("W2Vec_embeddings", embeddings_feat.W2VVectors()),
-        ("bag_of_TFIDF", counting_feat.BagOfTfIDF()),
-        ("bag_of_TFIDF_N", counting_feat.BagOfTfIDFN()),
-        ("bag_of_Counts", counting_feat.BagOfCounts())
+        ("bag_of_TFIDF", counting_feat.BagOfTfIDF(train)),
+        ("bag_of_TFIDF_N", counting_feat.BagOfTfIDFN(train)),
+        ("bag_of_Counts", counting_feat.BagOfCounts(train))
 
     ]
     return get_pipeline(demo_features)

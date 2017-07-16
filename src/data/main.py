@@ -1,29 +1,35 @@
 from nltk.tokenize import sent_tokenize
 #import random
 from sklearn.svm import SVC
-from features.feature_sets import get_demo_pipeline
+from features.feature_sets import *
 #import pickle
 from sklearn.externals import joblib
 from sklearn.neural_network import MLPClassifier
 from sklearn.preprocessing.data import MinMaxScaler
 from data.debates import *
+from stats.rank_metrics import *
 
 
-class mainclass:
+class mainclass ():
+    #train = [] #global static class variable shared by all instances
     def __init__(self):
+
         return None
     # prepares user input to match the testing data format in the pipeline
     def mainproc(self,text,activateTraining,predictScores,method):
         sentenceList = self.tokenizeTranscript(text)
         self.sentenceVec = self.transTosentVec(sentenceList) # sentenceVec will be the vector (array) of sentence objects
+        train = prepare_train_data_for_demo()
         if (activateTraining == True and method == 'svm' ):
-            self.trainModel_SVM() # train the model with SVM (run only once)
+            print ('TRAINING  SVM ============')
+            results = self.prepare_data_getMetrics('svm')
         if (predictScores == True and method == 'svm'):
-            self.sentenceVec = self.predict_scores_SVM(self.sentenceVec) # predict scores for the entered text (SVM)
+            self.sentenceVec = self.predict_scores_SVM(self.sentenceVec,train) # predict scores for the entered text (SVM)
         if (activateTraining == True and method == 'nn'):
-            self.trainModel_NN() # train the model with NN (run only once)
+            print ('TRAINING  NN  ============')
+            results = self.prepare_data_getMetrics('nn')
         if (predictScores == True and method == 'nn'):
-            self.sentenceVec = self.predict_scores_NN(self.sentenceVec)  # predict scores for the entered text (NN)
+            self.sentenceVec = self.predict_scores_NN(self.sentenceVec,train)  # predict scores for the entered text (NN)
 
         return self.sentenceVec
 
@@ -46,6 +52,26 @@ class mainclass:
     #     predictions = self.predict_scores_SVM(sentenceVec)
     #     return sentenceVec
 
+    def prepare_data_getMetrics(self,method):
+        results = []
+        fold =0
+        for test, train in get_for_crossvalidation():
+            fold += 1
+            print "F O L D   "+ str(fold) + " ##################################################################################"
+            if method =='svm':
+                self.trainModel_SVM(train)  # train the model with SVM (run only once)
+                print ('TESTING  SVM ============')
+                result = self.predict_scores_SVM(test,train) #test the model
+            elif method =='nn':
+                self.trainModel_NN(train)  # train the model with SVM (run only once)
+                print ('TESTING  NN  ============')
+                result = self.predict_scores_NN(test,train) #test the model
+            results.append(result)
+            print "FOLD "+str(fold)+" RESULTS : _________________________________________________________"
+            get_all_metrics(results, agreement=1)
+        print "FINAL RESULTS : __________________________________________________________"
+        get_all_metrics(results, agreement=1)
+        return results
 
 
 
@@ -53,13 +79,15 @@ class mainclass:
 ###############################################################  S U P P O R T   V E C T O R   M A C H I N E  ###########################################################################
 ####################################################################################################################################################################################
 
-    def predict_scores_SVM(self,test):
+
+
+    def predict_scores_SVM(self,test,train):
         # PREDICTING RESULTS fOR DATA ENTERED BY THE USER
         agreement = 1
         # load the trained model saved as a python "pickle" file
         svc = joblib.load('trainedModelSVM.pkl')
         # calculate features
-        features = get_demo_pipeline()
+        features = get_demo_pipeline(train)
         X = features.fit_transform(test)
         y_pred_proba = svc.predict_proba(X)
         y_pred_proba = MinMaxScaler().fit_transform([pred[1] for pred in y_pred_proba]).tolist()
@@ -77,7 +105,7 @@ class mainclass:
         #print(average_precision_score(y_true, y_pred_proba))
         return test  # return annotated data set ( array of sentence objects but with sentence.label values filled)
 
-    def trainModel_SVM (self):
+    def trainModel_SVM (self,train):
 
         """
         :param test:
@@ -87,14 +115,15 @@ class mainclass:
         """
 
         # this is the main gate (call) to the svm ranker (training, testing)
-        train = prepare_train_data_for_demo()
+        #train = get_for_crossvalidation()
         agreement = 1
         C = 1
         gamma = 0.0001
         # Assumed you have, X (predictor) and Y (target) for training data set and x_test(predictor) of test_dataset
         # Create SVM classification object
         svc = SVC(class_weight='balanced', kernel='rbf', C=C, gamma=gamma, probability=True, random_state=0)
-        features = get_demo_pipeline()
+        print ("Building features pipeline ...")
+        features = get_demo_pipeline(train)
         # X_train is the list of training examples (features values / assembled vectors of features values)
         # X_train is an array of vectors (each vector represents an example from the training set )
         X_train = features.fit_transform(train)
@@ -119,11 +148,12 @@ class mainclass:
 #####################################################################################################################################################################################
 
     # train the features with a Neural Net
-    def trainModel_NN(self):
+    def trainModel_NN(self,train):
 
         #train = prepare_train_data_for_demo()
-        train = get_for_crossvalidation()
-        features = get_demo_pipeline()
+
+        print ("Building features pipeline ...")
+        features = get_demo_pipeline(train)
         X_train = features.fit_transform(train)
 
 
@@ -141,13 +171,13 @@ class mainclass:
 
 
     # test with Neural Nets model
-    def predict_scores_NN(self, test):
+    def predict_scores_NN(self, test,train):
 
         # PREDICTING RESULTS fOR DATA ENTERED BY THE USER
         # load the trained model saved as a python "pickle" file
         clf = joblib.load('trainedModelNN.pkl')
         # calculate features
-        features = get_demo_pipeline()
+        features = get_demo_pipeline(train)
         X_test = features.fit_transform(test)
 
         predictions = clf.predict(X_test)

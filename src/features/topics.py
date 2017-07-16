@@ -19,14 +19,16 @@ def topic_to_array(topics):
 
 class LDATopics(Feature):
     """Adds a vector of POS tag counts."""
-    print("Calculating ... Topics (POS) | features['lda']")
+
     FEATS = ['lda']
 
     def __init__(self):
+        print("Initializing ... Topics (POS)")
         self.lda = LdaModel.load(CONFIG['lda_model'])
         self.dict = Dictionary.load(CONFIG['lda_dict'])
 
     def transform(self, X):
+        print("Calculating ... Topics (POS) | features['lda']")
         for sent in X:
             sent.features['lda'] = topic_to_array(self.lda[get_bow(sent.text, self.dict)])
         return X
@@ -42,6 +44,7 @@ class LDAVectorSim(Feature):
     FEATS = ['lda_dist_prev', 'lda_dist_next', 'lda_dist']
 
     def __init__(self):
+
         self.lda = LdaModel.load(CONFIG['lda_model'])
         self.dict = Dictionary.load(CONFIG['lda_dict'])
 

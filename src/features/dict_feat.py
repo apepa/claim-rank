@@ -7,13 +7,15 @@ import codecs
 # extracts sentence-level features / Sentiment
 class Sentiment_NRC(Feature):
     """Adds sentiment of the text with NRC emotion lexicon"""
-    print("Calculating ... Sentiment_NRC | features['sent_nrc']")
+
     FEATS = ['sent_nrc']
 
     def __init__(self):
+        print("Initializing ... Sentiment_NRC")
         self.sent_lext = get_sentiment_lexicon()
 
     def transform(self, X):
+        print("Calculating ... Sentiment_NRC | features['sent_nrc']")
         for sent in X:
             emotions_vector = [0 for _ in range(len(emotions))]
             for token in sent.tokens:
@@ -28,11 +30,12 @@ class Tense(Feature):
     """
     Adds the tense of the sentence as a feature.
     """
-    print("Calculating ... Tense | features['tense']")
+
     FEATS = ['tense']
     TENSES = {'present': 0, "future": 1, "past": 2, 'pp': 3}
 
     def transform(self, X):
+        print("Calculating ... Tense | features['tense']")
         for sent in X:
             tags = pos_tag(sent.tokens)
             sent.features['tense'] = self.TENSES['present']
@@ -51,10 +54,11 @@ class SentimentLexicons(Feature):
     """
     Adds as feature the number of words in each sentence that appear in each of the sentiment lexicons.
     """
-    print("Calculating ... SentimentLexicons (qatar lex) | features['lexicons']")
+
     FEATS = ['lexicons']
 
     def __init__(self):
+        print("Initializing ... SentimentLexicons")
         qatar_lexicon_files = ["negative-words-Liu05.txt", "negations.txt", "bias-lexicon-RecasensACL13.txt"]
         self.lexicons = []
         for lexicon in qatar_lexicon_files:
@@ -62,6 +66,7 @@ class SentimentLexicons(Feature):
                                      read().split("\n")))
 
     def transform(self, X):
+        print("Calculating ... SentimentLexicons (qatar lex) | features['lexicons']")
         for sent in X:
             sent.features['lexicons'] = []
             for lexicon in self.lexicons:
@@ -71,14 +76,16 @@ class SentimentLexicons(Feature):
 # extracts mixed features / contradictions
 class Negatives(Feature):
     """Adds negative words and contradictions counts in current and next sentence."""
-    print("Calculating ... Negatives | features['negs','contras', 'negs_next','contras_next']")
+
     FEATS = ['negs', 'contras', 'negs_next', 'contras_next']
 
     def __init__(self):
+        print("Initializing ... Negatives")
         self.contras = get_contra_vocab()
         self.negatives = get_negative_vocab()
 
     def transform(self, X):
+        print("Calculating ... Negatives | features['negs','contras', 'negs_next','contras_next']")
         for i, sent in enumerate(X):
             sent.features['negs'] = self.count_neg(sent.text)
             sent.features['contras'] = self.count_contras(sent.text)
