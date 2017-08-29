@@ -9,6 +9,6 @@ Please, cite the following paper if you use the dataset or the models in this re
   month     = {September},
   year      = {2017},
   address   = {Varna, Bulgaria},
-  series 	= {RANLP~'17}
+  series    = {RANLP~'17}
 }
 ```
