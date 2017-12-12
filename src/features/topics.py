@@ -4,7 +4,7 @@ from gensim.corpora import Dictionary
 import numpy as np
 from scipy.spatial.distance import cosine
 from nltk.tokenize import word_tokenize
-from utils.config import get_config
+from src.utils.config import get_config
 
 CONFIG = get_config()
 
