@@ -1,6 +1,6 @@
 from sklearn.svm import SVC
 from sklearn.metrics.ranking import average_precision_score
-from features.feature_sets import *
+from src.features.feature_sets import *
 from random import shuffle, randint
 
 
