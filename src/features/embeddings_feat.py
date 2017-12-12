@@ -1,12 +1,12 @@
-from gensim.models import Word2Vec
+import gensim
 from src.features.features import Feature
 from nltk.tokenize import word_tokenize
 from scipy.spatial.distance import cosine
-from utils.config import get_config
+from src.utils.config import get_config
 import numpy as np
 
 CONFIG = get_config()
-w2v = Word2Vec.load_word2vec_format(CONFIG['w2v'], binary=True)
+w2v = gensim.models.KeyedVectors.load_word2vec_format(CONFIG['w2v'], binary=True)
 
 
 def get_sent_vetor(text):
