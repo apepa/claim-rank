@@ -81,8 +81,9 @@ def read_debates(debate, use_label='sum_all'):
             label = int(columns[2].strip())
         else:
             label = use_label(columns)
-
-        s = Sentence(columns[0], columns[-1], label, columns[1], debate, dabates_dates[debate.value])
+        labels = columns[3:-1]
+        s = Sentence(columns[0], columns[-1], label, columns[1], debate, dabates_dates[debate.value], labels)
+        s.label_test = label
         sentences.append(s)
 
     return sentences
