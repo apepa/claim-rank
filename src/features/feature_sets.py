@@ -4,7 +4,7 @@ from sklearn.preprocessing.data import MinMaxScaler
 from src.features import alchemy_feat, counting_feat, \
     dict_feat, metadata_feat, nltk_feat, topics, knn_similarity, embeddings_feat
 
-from features.features import ToMatrix
+from src.features.features import ToMatrix
 
 
 def get_cb_pipeline(train):
