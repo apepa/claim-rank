@@ -143,3 +143,22 @@ class SyntacticParse(Feature):
         for sent in X:
             sent.features['syntactic_parse'] = self.syntactic_parses[sent.debate.name + sent.id]
         return X
+
+
+class QatarLexicons(Feature):
+    FEATS = ['lexicons']
+
+    def __init__(self):
+        lexicons_l = ["negative-words-Liu05.txt", "negations.txt", "bias-lexicon-RecasensACL13.txt"]
+        self.lexicons = []
+        for lexicon in lexicons_l:
+            self.lexicons.append(set(open(join(CONFIG['qatar_lexicons'], lexicon), encoding='iso-8859-1').
+                                     read().split("\n")))
+
+    def transform(self, X):
+        for x in X:
+            x.features['lexicons'] = []
+            tokens = x.tokens
+            for lexicon in self.lexicons:
+                x.features['lexicons'].append(sum([tokens.count(lex_word) for lex_word in lexicon]))
+        return X
