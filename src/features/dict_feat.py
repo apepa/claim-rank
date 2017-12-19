@@ -3,7 +3,7 @@ from os.path import join
 from src.utils.dicts import *
 from src.features.features import Feature
 from nltk import pos_tag
-
+from src.data.debates import DEBATES, read_debates
 
 class Sentiment_NRC(Feature):
     """Adds sentiment of the text with NRC emotion lexicon"""
@@ -121,4 +121,25 @@ class NegationNextChunk(Negatives):
                     next_chunk_i += 1
             sent.features['negs_next_chunk'] = count_next_neg
             sent.features['contras_next_chunk'] = count_next_contra
+        return X
+
+
+class SyntacticParse(Feature):
+    """Adds the syntactic parse embedding of the sentence."""
+    FEATS = ['syntactic_parse']
+
+    def __init__(self):
+        self.syntactic_parses = {}
+
+        for debate in DEBATES:
+            parsed = open("../../data/parses/" + CONFIG[debate.name] + "_parsed.txt")
+            sentences = read_debates(debate)
+            for sentence in sentences:
+                parse = [float(x) for x in parsed.readline().strip().split()[1:]]
+
+                self.syntactic_parses[sentence.debate.name + sentence.id] = parse
+
+    def transform(self, X):
+        for sent in X:
+            sent.features['syntactic_parse'] = self.syntactic_parses[sent.debate.name + sent.id]
         return X
