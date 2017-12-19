@@ -11,13 +11,11 @@ class NER(Feature):
     def __init__(self):
         types_file = open(CONFIG['alchemy_ner'])
         self.ner = {}
-        columns = []
         types_file.readline()
         for line in types_file:
             line = line.strip()
             columns = line.split("\t")
             self.ner[columns[0] + " " + columns[1]] = [int(v) for v in columns[2:]]
-        self.len = len(columns) - 2
 
     def transform(self, X):
         for sent in X:
