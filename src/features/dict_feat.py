@@ -1,5 +1,8 @@
 from nltk.tokenize import word_tokenize
 from os.path import join
+
+from os import listdir
+
 from src.utils.dicts import *
 from src.features.features import Feature
 from nltk import pos_tag
@@ -149,7 +152,8 @@ class QatarLexicons(Feature):
     FEATS = ['lexicons']
 
     def __init__(self):
-        lexicons_l = ["negative-words-Liu05.txt", "negations.txt", "bias-lexicon-RecasensACL13.txt"]
+        lexicons_l = sorted(listdir(CONFIG['qatar_lexicons']))
+        lexicons_l.remove("readme.txt")
         self.lexicons = []
         for lexicon in lexicons_l:
             self.lexicons.append(set(open(join(CONFIG['qatar_lexicons'], lexicon), encoding='iso-8859-1').
