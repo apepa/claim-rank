@@ -14,7 +14,7 @@ def get_bow(text, dict):
 
 
 def topic_to_array(topics):
-    return [t for t, _ in topics]
+    return [t for _, t in topics]
 
 
 class LDATopics(Feature):
