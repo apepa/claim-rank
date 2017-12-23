@@ -1,11 +1,16 @@
-from operator import attrgetter
+import copy
+import json
+import os
+
 from sklearn.metrics import precision_score, recall_score, average_precision_score, roc_auc_score
+from src.features import counting_feat, knn_similarity
+from src.features.feature_sets import get_experimential_pipeline
+from src.data.debates import get_for_crossvalidation, DEBATES, read_debates
 from src.utils.config import get_config
-from operator import itemgetter
+from operator import itemgetter, attrgetter
 import numpy as np
 from math import log2
 from copy import deepcopy
-from data.debates import get_for_crossvalidation
 from src.models.sklearn_nn import run
 
 CONFIG = get_config()
@@ -187,8 +192,31 @@ def get_metrics_for_plot(agreement, ranks):
 
 
 if __name__ == '__main__':
-        results = []
-        for test_deb, test, train in get_for_crossvalidation():
-            results.append(run(train=train, test=test))
+        serialize = False
+        if serialize:
+            all_debates = []
+            trainable_feats = counting_feat.BagOfTfIDF.FEATS + knn_similarity.TrainSearch.FEATS
+
+            for debate in DEBATES:
+                all_debates += read_debates(debate)
+            all_feats = get_experimential_pipeline(all_debates, to_matrix=False).fit_transform(all_debates)
+            for feat_name in all_feats[0].features.keys():
+                if feat_name in trainable_feats:
+                    continue
+                feat_dict = {}
+                for _x in all_feats:
+                    feat_dict[str(_x.id) + _x.debate.name] = _x.features[feat_name]
+                if os.path.isfile(CONFIG['features_dump_dir'] + feat_name):
+                    old_dict = json.loads(open(CONFIG['features_dump_dir'] + feat_name).read())
+                else:
+                    old_dict = {}
+                old_dict.update(feat_dict)
+                with open(CONFIG['features_dump_dir'] + feat_name, "w") as out:
+                    out.write(json.dumps(old_dict))
+        else:
+            results = []
+            for test_deb, test, train in get_for_crossvalidation():
+                split_results = run(test, train)
+                results.append(split_results)
+                get_all_metrics(copy.deepcopy([split_results]), agreement=1)
             get_all_metrics(results, agreement=1)
-        get_all_metrics(results, agreement=1)
