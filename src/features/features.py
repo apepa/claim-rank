@@ -25,7 +25,7 @@ class ReadFeatures(Feature):
 
 class ToMatrix(Feature):
     """Transforms the features dict to a matrix"""
-    def __init__(self, features=[]):
+    def __init__(self, features):
         self.features = features
 
     def transform(self, X):
