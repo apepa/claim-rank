@@ -20,7 +20,7 @@ def precision(y_true, y_pred):
 
 
 def r_precision(dataset, agreement=1):
-    R = sum([1 if sent.label >= agreement else 0 for sent in dataset])
+    R = sum([1 if sent.label_test >= agreement else 0 for sent in dataset])
     return precision_at_n(dataset, n=R, agreement=agreement)
 
 
@@ -37,10 +37,10 @@ def accuracy(y_true, y_pred):
 
 def average_precision(dataset, agreement):
     sorted_dataset = sorted(dataset, key=attrgetter("pred"), reverse=True)
-    relevant = sum([1 if i.label >= agreement else 0 for i in dataset])
+    relevant = sum([1 if i.label_test >= agreement else 0 for i in dataset])
     avg_p = 0
     for i, inst in enumerate(sorted_dataset):
-        if inst.label >= agreement:
+        if inst.label_test >= agreement:
             avg_p += precision_at_n(dataset, n=i+1, agreement=agreement)
     return avg_p/relevant
 
@@ -53,14 +53,14 @@ def precision_at_n(dataset, n=10, agreement=1):
     :return: PR@N
     """
     dataset = sorted(dataset, key=attrgetter('pred'), reverse=True)
-    relevant = sum([1 if instance.label >= agreement else 0 for instance in dataset[:n]])
+    relevant = sum([1 if instance.label_test >= agreement else 0 for instance in dataset[:n]])
     return relevant/n
 
 
 def recall_at_n(dataset, n=10, agreement=1):
     dataset = sorted(dataset, key=attrgetter('pred'), reverse=True)
-    relevant = sum([1 if instance.label >= agreement else 0 for instance in dataset[:n]])
-    all_relevant = sum([1 if instance.label >= agreement else 0 for instance in dataset])
+    relevant = sum([1 if instance.label_test >= agreement else 0 for instance in dataset[:n]])
+    all_relevant = sum([1 if instance.label_test >= agreement else 0 for instance in dataset])
     return relevant / all_relevant
 
 
@@ -69,31 +69,29 @@ def dcg(dataset, agreement=True, agreement_num=1):
     result = 0
     for i, instance in enumerate(dataset):
         if agreement:
-            reli = 2**instance.label - 1
+            reli = 2**instance.label_test- 1
         else:
-            reli = 2**(1 if instance.label >= agreement_num else 0) - 1
+            reli = 2**(1 if instance.label_test>= agreement_num else 0) - 1
 
         denom = log2(i+2)
 
         result += reli / denom
     return result
 
-
 def ndcg(dataset, agreement=True, agreement_num=1):
     result = dcg(dataset, agreement)
 
     idataset = deepcopy(dataset)
     for data in idataset:
-        data.pred = data.label
+        data.pred = data.label_test
     idcg = dcg(idataset, agreement, agreement_num=agreement_num)
     return result/idcg
-
 
 def get_mrr(sentences, agreement=1):
     mrr = 0
     sorted_res = sorted(sentences, key=attrgetter("pred"), reverse=True)
     for i, res in enumerate(sorted_res):
-        if res.label >= agreement:
+        if res.label_test>= agreement:
             mrr += 1/(i+1)
     return mrr
 
@@ -113,10 +111,10 @@ def get_all_metrics(sentences, agreement=1):
                'PR@1': [], 'PR@3': [], 'PR@5': [],'PR@20': [], 'PR@10': [], 'PR@50': [], 'PR@100': [], 'PR@200': []}
 
     for sentence_set in sentences:
-        sentence_set = (sorted(sentence_set, key=attrgetter("pred"), reverse=True))
-        y_true = [1 if t.label >= agreement else 0 for t in sentence_set]
-        y_pred = [s.pred for s in sentence_set]
-        y_pred_label = [s.pred_label for s in sentence_set]
+        sentence_set = sorted(sentence_set, key=attrgetter("pred"), reverse=True)
+        y_true = copy.deepcopy([1 if t.label_test >= agreement else 0 for t in sentence_set])
+        y_pred = copy.deepcopy([s.pred for s in sentence_set])
+        y_pred_label = copy.deepcopy([s.pred_label for s in sentence_set])
 
         metrics['AvgP'].append(average_precision(sentence_set, agreement=agreement))
         metrics['ROC'].append(roc_auc_score(y_true, y_pred))
