@@ -1,6 +1,6 @@
 from sklearn.neural_network import MLPClassifier
 from sklearn.preprocessing.data import MinMaxScaler
-
+import numpy as np
 from features.feature_sets import get_cb_pipeline, get_serialized_pipeline, get_experimential_pipeline
 
 
@@ -22,7 +22,7 @@ def run(test, train):
     # predict
     predictions = clf.predict(test_x)
     pred_probs = clf.predict_proba(test_x)
-    pred_probs = MinMaxScaler().fit_transform([pred[1] for pred in pred_probs]).tolist()
+    pred_probs = MinMaxScaler().fit_transform(np.reshape([pred[1] for pred in pred_probs], (-1, 1))).tolist()
     for i, sent in enumerate(test):
         sent.pred_label = predictions[i]
         sent.pred = pred_probs[i]
