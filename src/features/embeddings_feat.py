@@ -15,9 +15,11 @@ def get_sent_vetor(text):
     :return: 300-dim array, representing the document in the w2v cector space.
     """
     tokenized = text if text == "" else word_tokenize(text)
-    result = np.mean([np.array(w2v[w]) for w in tokenized if w in w2v], axis=0)
-    if type(result) is np.float64 and np.isnan(result):
+    all_word_vectors = [np.array(w2v[w]) for w in tokenized if w in w2v]
+    if len(all_word_vectors) == 0:
         result = np.zeros(300)
+    else:
+        result = np.mean(all_word_vectors, axis=0)
     return [float(i) for i in result]
 
 
