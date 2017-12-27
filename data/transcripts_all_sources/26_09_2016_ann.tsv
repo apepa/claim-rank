@@ -78,7 +78,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 76	TRUMP	0	0	0	0	0	0	0	0	0	0	We have to stop our companies from leaving the United States and, with it, firing all of their people.
 77	TRUMP	0	0	0	0	0	0	0	0	0	0	All you have to do is take a look at Carrier air conditioning in Indianapolis.
 78	TRUMP	0	0	0	0	0	0	0	0	0	0	They left -- fired 1,400 people.
-79	TRUMP	0	0	0	0	0	0	0	0	0	0	They're going to Mexico.
+79	TRUMP	3	1	0	1	0	0	0	1	0	0	They're going to Mexico.
 80	TRUMP	1	0	0	0	0	0	0	1	0	0	So many hundreds and hundreds of companies are doing this.
 81	TRUMP	0	0	0	0	0	0	0	0	0	0	We cannot let it happen.
 82	TRUMP	1	0	0	0	0	0	1	0	0	0	Under my plan, I'll be reducing taxes tremendously, from 35 percent to 15 percent for companies, small and big businesses.
@@ -183,7 +183,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 181	TRUMP	5	1	1	0	1	1	1	0	0	0	I did not.
 182	TRUMP	6	1	1	0	1	1	1	0	1	0	I do not say that.
 183	CLINTON	0	0	0	0	0	0	0	0	0	0	I think science is real.
-184	TRUMP	0	0	0	0	0	0	0	0	0	0	I do not say that.
+184	TRUMP	6	1	1	0	1	1	1	0	1	0	I do not say that.
 185	CLINTON	0	0	0	0	0	0	0	0	0	0	And I think it's important that we grip this and deal with it, both at home and abroad.
 186	CLINTON	0	0	0	0	0	0	0	0	0	0	And here's what we can do.
 187	CLINTON	0	0	0	0	0	0	0	0	0	0	We can deploy a half a billion more solar panels.
@@ -221,7 +221,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 219	CLINTON	0	0	0	0	0	0	0	0	0	0	I think a lot about what worked and how we can make it work again...
 220	TRUMP	0	0	0	0	0	0	0	0	0	0	Well, he approved NAFTA...
 221	SYSTEM	0	0	0	0	0	0	0	0	0	0	(CROSSTALK)
-222	CLINTON	0	0	0	0	0	0	0	0	0	0	... million new jobs, a balanced budget...
+222	CLINTON	0	0	0	0	0	0	0	0	0	0	million new jobs, a balanced budget...
 223	TRUMP	0	0	0	0	0	0	0	0	0	0	He approved NAFTA, which is the single worst trade deal ever approved in this country.
 224	CLINTON	1	0	0	1	0	0	0	0	0	0	Incomes went up for everybody.
 225	CLINTON	1	0	0	1	0	0	0	0	0	0	Manufacturing jobs went up also in the 1990s, if we're actually going to look at the facts.
@@ -269,10 +269,10 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 267	CLINTON	0	0	0	0	0	0	0	0	0	0	Well, Donald, I know you live in your own reality, but that is not the facts.
 268	CLINTON	4	1	0	0	1	0	0	0	1	1	The facts are -- I did say I hoped it would be a good deal, but when it was negotiated...
 269	TRUMP	0	0	0	0	0	0	0	0	0	0	Not.
-270	CLINTON	1	0	0	0	0	0	1	0	0	0	... which I was not responsible for, I concluded it wasn't.
+270	CLINTON	1	0	0	0	0	0	1	0	0	0	which I was not responsible for, I concluded it wasn't.
 271	CLINTON	0	0	0	0	0	0	0	0	0	0	I wrote about that in my book...
 272	TRUMP	0	0	0	0	0	0	0	0	0	0	So is it President Obama's fault?
-273	CLINTON	0	0	0	0	0	0	0	0	0	0	... before you even announced.
+273	CLINTON	0	0	0	0	0	0	0	0	0	0	before you even announced.
 274	TRUMP	0	0	0	0	0	0	0	0	0	0	Is it President Obama's fault?
 275	CLINTON	0	0	0	0	0	0	0	0	0	0	Look, there are differences...
 276	TRUMP	0	0	0	0	0	0	0	0	0	0	Secretary, is it President Obama's fault?
@@ -290,7 +290,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 288	TRUMP	0	0	0	0	0	0	0	0	0	0	That's about all you've...
 289	SYSTEM	0	0	0	0	0	0	0	0	0	0	(CROSSTALK)
 290	HOLT	0	0	0	0	0	0	0	0	0	0	Folks, we're going to...
-291	CLINTON	0	0	0	0	0	0	0	0	0	0	... or at an airport near you.
+291	CLINTON	0	0	0	0	0	0	0	0	0	0	or at an airport near you.
 292	HOLT	0	0	0	0	0	0	0	0	0	0	We're going to move to...
 293	CLINTON	0	0	0	0	0	0	0	0	0	0	But it's because I see this -- we need to have strong growth, fair growth, sustained growth.
 294	CLINTON	0	0	0	0	0	0	0	0	0	0	We also have to look at how we help families balance the responsibilities at home and the responsibilities at business.
@@ -320,7 +320,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 318	CLINTON	1	0	0	0	0	1	0	0	0	0	So if you want to see in real-time what the facts are, please go and take a look.
 319	CLINTON	0	0	0	0	0	0	0	0	0	0	Because what I have proposed...
 320	TRUMP	0	0	0	0	0	0	0	0	0	0	And take a look at mine, also, and you'll see.
-321	CLINTON	1	0	0	1	0	0	0	0	0	0	... would not add a penny to the debt, and your plans would add $5 trillion to the debt.
+321	CLINTON	1	0	0	1	0	0	0	0	0	0	would not add a penny to the debt, and your plans would add $5 trillion to the debt.
 322	CLINTON	0	0	0	0	0	0	0	0	0	0	What I have proposed would cut regulations and streamline them for small businesses.
 323	CLINTON	0	0	0	0	0	0	0	0	0	0	What I have proposed would be paid for by raising taxes on the wealthy, because they have made all the gains in the economy.
 324	CLINTON	0	0	0	0	0	0	0	0	0	0	And I think it's time that the wealthy and corporations paid their fair share to support this country.
@@ -329,7 +329,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 327	SYSTEM	0	0	0	0	0	0	0	0	0	0	(CROSSTALK)
 328	HOLT	0	0	0	0	0	0	0	0	0	0	I'm going to give you a chance right here...
 329	TRUMP	0	0	0	0	0	0	0	0	0	0	I think I should -- you go to her website, and you take a look at her website.
-330	HOLT	0	0	0	0	0	0	0	0	0	0	... with a new 15-minute segment...
+330	HOLT	0	0	0	0	0	0	0	0	0	0	with a new 15-minute segment...
 331	TRUMP	0	0	0	0	0	0	0	0	0	0	She's going to raise taxes $1.3 trillion.
 332	HOLT	0	0	0	0	0	0	0	0	0	0	Mr. Trump, I'm going to...
 333	TRUMP	0	0	0	0	0	0	0	0	0	0	And look at her website.
@@ -341,7 +341,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 339	TRUMP	0	0	0	0	0	0	0	0	0	0	I don't think General Douglas MacArthur would like that too much.
 340	HOLT	0	0	0	0	0	0	0	0	0	0	The next segment, we're continuing...
 341	CLINTON	0	0	0	0	0	0	0	0	0	0	Well, at least I have a plan to fight ISIS.
-342	HOLT	0	0	0	0	0	0	0	0	0	0	... achieving prosperity...
+342	HOLT	0	0	0	0	0	0	0	0	0	0	achieving prosperity...
 343	TRUMP	0	0	0	0	0	0	0	0	0	0	No, no, you're telling the enemy everything you want to do.
 344	CLINTON	0	0	0	0	0	0	0	0	0	0	No, we're not.
 345	CLINTON	0	0	0	0	0	0	0	0	0	0	No, we're not.
@@ -400,13 +400,13 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 398	TRUMP	0	0	0	0	0	0	0	0	0	0	The first I've -- who gave it that name?
 399	SYSTEM	0	0	0	0	0	0	0	0	0	0	(CROSSTALK)
 400	HOLT	0	0	0	0	0	0	0	0	0	0	Mr. Trump, this is Secretary Clinton's two minutes.
-401	CLINTON	0	0	0	0	0	0	0	0	0	0	... $4 billion tax benefit for your family.
+401	CLINTON	0	0	0	0	0	0	0	0	0	0	$4 billion tax benefit for your family.
 402	CLINTON	0	0	0	0	0	0	0	0	0	0	And when you look at what you are proposing...
 403	TRUMP	0	0	0	0	0	0	0	0	0	0	How much?
 404	TRUMP	0	0	0	0	0	0	0	0	0	0	How much for my family?
-405	CLINTON	0	0	0	0	0	0	0	0	0	0	... it is...
+405	CLINTON	0	0	0	0	0	0	0	0	0	0	it is...
 406	TRUMP	0	0	0	0	0	0	0	0	0	0	Lester, how much?
-407	CLINTON	0	0	0	0	0	0	0	0	0	0	... as I said, trumped-up trickle-down.
+407	CLINTON	0	0	0	0	0	0	0	0	0	0	as I said, trumped-up trickle-down.
 408	CLINTON	0	0	0	0	0	0	0	0	0	0	Trickle-down did not work.
 409	CLINTON	0	0	0	0	0	0	0	0	0	0	It got us into the mess we were in, in 2008 and 2009.
 410	CLINTON	0	0	0	0	0	0	0	0	0	0	Slashing taxes on the wealthy hasn't worked.
@@ -448,7 +448,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 446	TRUMP	0	0	0	0	0	0	0	0	0	0	We have people that are political hacks negotiating our trade deals.
 447	HOLT	0	0	0	0	0	0	0	0	0	0	The IRS says an audit...
 448	TRUMP	0	0	0	0	0	0	0	0	0	0	Excuse me.
-449	HOLT	0	0	0	0	0	0	0	0	0	0	... of your taxes -- you're perfectly free to release your taxes during an audit.
+449	HOLT	0	0	0	0	0	0	0	0	0	0	of your taxes -- you're perfectly free to release your taxes during an audit.
 450	HOLT	0	0	0	0	0	0	0	0	0	0	And so the question, does the public's right to know outweigh your personal...
 451	TRUMP	0	0	0	0	0	0	0	0	0	0	Well, I told you, I will release them as soon as the audit.
 452	TRUMP	1	1	0	0	0	0	0	0	0	0	Look, I've been under audit almost for 15 years.
@@ -559,7 +559,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 557	SYSTEM	0	0	0	0	0	0	0	0	0	0	(APPLAUSE)
 558	CLINTON	0	0	0	0	0	0	0	0	0	0	And the other thing I think is important...
 559	TRUMP	0	0	0	0	0	0	0	0	0	0	It would be squandered, too, believe me.
-560	CLINTON	0	0	0	0	0	0	0	0	0	0	... is if your -- if your main claim to be president of the United States is your business, then I think we should talk about that.
+560	CLINTON	0	0	0	0	0	0	0	0	0	0	is if your -- if your main claim to be president of the United States is your business, then I think we should talk about that.
 561	CLINTON	0	0	0	0	0	0	0	0	0	0	You know, your campaign manager said that you built a lot of businesses on the backs of little guys.
 562	CLINTON	0	0	0	0	0	0	0	0	0	0	And, indeed, I have met a lot of the people who were stiffed by you and your businesses, Donald.
 563	CLINTON	0	0	0	0	0	0	0	0	0	0	I've met dishwashers, painters, architects, glass installers, marble installers, drapery installers, like my dad was, who you refused to pay when they finished the work that you asked them to do.
@@ -579,7 +579,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 577	CLINTON	0	0	0	0	0	0	0	0	0	0	You talk about leverage.
 578	CLINTON	5	0	1	1	1	1	1	0	0	0	You even at one time suggested that you would try to negotiate down the national debt of the United States.
 579	TRUMP	4	0	1	1	1	1	0	0	0	0	Wrong.
-580	TRUMP	0	0	0	0	0	0	0	0	0	0	Wrong.
+580	TRUMP	4	0	1	1	1	1	0	0	0	0	Wrong.
 581	CLINTON	0	0	0	0	0	0	0	0	0	0	Well, sometimes there's not a direct transfer of skills from business to government, but sometimes what happened in business would be really bad for government.
 582	HOLT	0	0	0	0	0	0	0	0	0	0	Let's let Mr. Trump...
 583	CLINTON	0	0	0	0	0	0	0	0	0	0	And we need to be very clear about that.
@@ -651,7 +651,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 649	TRUMP	1	0	0	0	0	1	0	0	0	0	And we have to stop the violence.
 650	TRUMP	1	0	0	0	0	1	0	0	0	0	We have to bring back law and order.
 651	TRUMP	1	0	0	0	0	0	0	1	0	0	In a place like Chicago, where thousands of people have been killed, thousands over the last number of years, in fact, almost 4,000 have been killed since Barack Obama became president, over -- almost 4,000 people in Chicago have been killed.
-652	TRUMP	0	0	0	0	0	0	0	0	0	0	We have to bring back law and order.
+652	TRUMP	1	0	0	0	0	1	0	0	0	0	We have to bring back law and order.
 653	TRUMP	2	0	1	0	0	0	0	1	0	0	Now, whether or not in a place like Chicago you do stop and frisk, which worked very well, Mayor Giuliani is here, worked very well in New York.
 654	TRUMP	2	0	1	0	0	0	1	0	0	0	It brought the crime rate way down.
 655	TRUMP	0	0	0	0	0	0	0	0	0	0	But you take the gun away from criminals that shouldn't be having it.
@@ -832,7 +832,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 830	HOLT	0	0	0	0	0	0	0	0	0	0	The birth certificate was produced in 2011.
 831	HOLT	0	0	0	0	0	0	0	0	0	0	You've continued to tell the story and question the president's legitimacy in 2012, '13, '14, '15...
 832	TRUMP	0	0	0	0	0	0	0	0	0	0	Yeah.
-833	HOLT	0	0	0	0	0	0	0	0	0	0	.... as recently as January.
+833	HOLT	0	0	0	0	0	0	0	0	0	0	as recently as January.
 834	HOLT	0	0	0	0	0	0	0	0	0	0	So the question is, what changed your mind?
 835	TRUMP	3	1	1	0	1	0	0	0	0	0	Well, nobody was pressing it, nobody was caring much about it.
 836	TRUMP	0	0	0	0	0	0	0	0	0	0	I figured you'd ask the question tonight, of course.
@@ -915,7 +915,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 913	CLINTON	0	0	0	0	0	0	0	0	0	0	There's no doubt now that Russia has used cyber attacks against all kinds of organizations in our country, and I am deeply concerned about this.
 914	CLINTON	4	0	1	0	0	0	1	1	0	1	I know Donald's very praiseworthy of Vladimir Putin, but Putin is playing a really...
 915	SYSTEM	0	0	0	0	0	0	0	0	0	0	(CROSSTALK)
-916	CLINTON	1	0	0	0	0	0	0	0	0	1	... tough, long game here.
+916	CLINTON	1	0	0	0	0	0	0	0	0	1	tough, long game here.
 917	CLINTON	1	0	0	1	0	0	0	0	0	0	And one of the things he's done is to let loose cyber attackers to hack into government files, to hack into personal files, hack into the Democratic National Committee.
 918	CLINTON	0	0	0	0	0	0	0	0	0	0	And we recently have learned that, you know, that this is one of their preferred methods of trying to wreak havoc and collect information.
 919	CLINTON	0	0	0	0	0	0	0	0	0	0	We need to make it very clear -- whether it's Russia, China, Iran or anybody else -- the United States has much greater capacity.
@@ -929,7 +929,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 927	CLINTON	0	0	0	0	0	0	0	0	0	0	That is just unacceptable.
 928	CLINTON	0	0	0	0	0	0	0	0	0	0	It's one of the reasons why 50 national security officials who served in Republican information -- in administrations...
 929	HOLT	0	0	0	0	0	0	0	0	0	0	Your two minutes have expired.
-930	CLINTON	0	0	0	0	0	0	0	0	0	0	... have said that Donald is unfit to be the commander- in-chief.
+930	CLINTON	0	0	0	0	0	0	0	0	0	0	have said that Donald is unfit to be the commander- in-chief.
 931	CLINTON	0	0	0	0	0	0	0	0	0	0	It's comments like that that really worry people who understand the threats that we face.
 932	HOLT	0	0	0	0	0	0	0	0	0	0	Mr. Trump, you have two minutes and the same question.
 933	HOLT	0	0	0	0	0	0	0	0	0	0	Who's behind it?
@@ -1006,8 +1006,8 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 1004	CLINTON	2	0	0	1	0	0	1	0	0	0	Donald supported the invasion of Iraq.
 1005	TRUMP	4	0	0	1	0	0	1	1	1	0	Wrong.
 1006	CLINTON	0	0	0	0	0	0	0	0	0	0	That is absolutely proved over and over again.
-1007	TRUMP	0	0	0	0	0	0	0	0	0	0	Wrong.
-1008	TRUMP	0	0	0	0	0	0	0	0	0	0	Wrong.
+1007	TRUMP	4	0	1	1	1	1	0	0	0	0	Wrong.
+1008	TRUMP	4	0	1	1	1	1	0	0	0	0	Wrong.
 1009	CLINTON	3	0	1	1	0	0	1	0	0	0	He actually advocated for the actions we took in Libya and urged that Gadhafi be taken out, after actually doing some business with him one time.
 1010	CLINTON	1	0	0	0	0	1	0	0	0	0	But the larger point -- and he says this constantly -- is George W. Bush made the agreement about when American troops would leave Iraq, not Barack Obama.
 1011	CLINTON	1	0	0	0	0	1	0	0	0	0	And the only way that American troops could have stayed in Iraq is to get an agreement from the then-Iraqi government that would have protected our troops, and the Iraqi government would not give that.
@@ -1082,7 +1082,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 1080	TRUMP	0	0	0	0	0	0	0	0	0	0	That is a mainstream media nonsense put out by her, because she -- frankly, I think the best person in her campaign is mainstream media.
 1081	HOLT	0	0	0	0	0	0	0	0	0	0	My question is, since you supported it...
 1082	TRUMP	0	0	0	0	0	0	0	0	0	0	Just -- would you like to hear...
-1083	HOLT	0	0	0	0	0	0	0	0	0	0	... why is your -- why is your judgment...
+1083	HOLT	0	0	0	0	0	0	0	0	0	0	why is your -- why is your judgment...
 1084	TRUMP	0	0	0	0	0	0	0	0	0	0	Wait a minute.
 1085	TRUMP	2	0	1	0	1	0	0	0	0	0	I was against the war in Iraq.
 1086	TRUMP	0	0	0	0	0	0	0	0	0	0	Just so you put it out.
@@ -1157,12 +1157,12 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 1155	CLINTON	0	0	0	0	0	0	0	0	0	0	That is not the right temperament to be commander-in- chief, to be taunted.
 1156	CLINTON	0	0	0	0	0	0	0	0	0	0	And the worst part...
 1157	TRUMP	0	0	0	0	0	0	0	0	0	0	No, they were taunting us.
-1158	CLINTON	0	0	0	0	0	0	0	0	0	0	... of what we heard Donald say has been about nuclear weapons.
+1158	CLINTON	0	0	0	0	0	0	0	0	0	0	of what we heard Donald say has been about nuclear weapons.
 1159	CLINTON	1	0	1	0	0	0	0	0	0	0	He has said repeatedly that he didn't care if other nations got nuclear weapons, Japan, South Korea, even Saudi Arabia.
 1160	CLINTON	0	0	0	0	0	0	0	0	0	0	It has been the policy of the United States, Democrats and Republicans, to do everything we could to reduce the proliferation of nuclear weapons.
 1161	CLINTON	1	0	1	0	0	0	0	0	0	0	He even said, well, you know, if there were nuclear war in East Asia, well, you know, that's fine...
 1162	TRUMP	1	0	1	0	0	0	0	0	0	0	Wrong.
-1163	CLINTON	0	0	0	0	0	0	0	0	0	0	... have a good time, folks.
+1163	CLINTON	0	0	0	0	0	0	0	0	0	0	have a good time, folks.
 1164	TRUMP	0	0	0	0	0	0	0	0	0	0	It's lies.
 1165	CLINTON	0	0	0	0	0	0	0	0	0	0	And, in fact, his cavalier attitude about nuclear weapons is so deeply troubling.
 1166	CLINTON	0	0	0	0	0	0	0	0	0	0	That is the number-one threat we face in the world.
@@ -1260,8 +1260,8 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 1258	CLINTON	0	0	0	0	0	0	0	0	0	0	I intend to be a leader of our country that people can count on, both here at home and around the world, to make decisions that will further peace and prosperity, but also stand up to bullies, whether they're abroad or at home.
 1259	CLINTON	0	0	0	0	0	0	0	0	0	0	We cannot let those who would try to destabilize the world to interfere with American interests and security...
 1260	HOLT	0	0	0	0	0	0	0	0	0	0	Your two minutes is...
-1261	CLINTON	0	0	0	0	0	0	0	0	0	0	... to be given any opportunities at all.
-1262	HOLT	0	0	0	0	0	0	0	0	0	0	... is expired.
+1261	CLINTON	0	0	0	0	0	0	0	0	0	0	to be given any opportunities at all.
+1262	HOLT	0	0	0	0	0	0	0	0	0	0	is expired.
 1263	TRUMP	0	0	0	0	0	0	0	0	0	0	Lester, one thing I'd like to say.
 1264	HOLT	0	0	0	0	0	0	0	0	0	0	Very quickly.
 1265	HOLT	0	0	0	0	0	0	0	0	0	0	Twenty seconds.
@@ -1274,7 +1274,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 1272	TRUMP	0	0	0	0	0	0	0	0	0	0	We cannot be the policemen of the world.
 1273	TRUMP	0	0	0	0	0	0	0	0	0	0	We cannot protect countries all over the world...
 1274	HOLT	0	0	0	0	0	0	0	0	0	0	We have just...
-1275	TRUMP	0	0	0	0	0	0	0	0	0	0	... where they're not paying us what we need.
+1275	TRUMP	0	0	0	0	0	0	0	0	0	0	where they're not paying us what we need.
 1276	HOLT	0	0	0	0	0	0	0	0	0	0	We have just a few final questions...
 1277	TRUMP	0	0	0	0	0	0	0	0	0	0	And she doesn't say that, because she's got no business ability.
 1278	TRUMP	0	0	0	0	0	0	0	0	0	0	We need heart.
@@ -1326,7 +1326,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 1324	CLINTON	0	0	0	0	0	0	0	0	0	0	You know, he tried to switch from looks to stamina.
 1325	CLINTON	3	0	1	0	0	1	1	0	0	0	But this is a man who has called women pigs, slobs and dogs, and someone who has said pregnancy is an inconvenience to employers, who has said...
 1326	TRUMP	1	0	1	0	0	0	0	0	0	0	I never said that.
-1327	CLINTON	0	0	0	0	0	0	0	0	0	0	.... women don't deserve equal pay unless they do as good a job as men.
+1327	CLINTON	0	0	0	0	0	0	0	0	0	0	women don't deserve equal pay unless they do as good a job as men.
 1328	TRUMP	0	0	0	0	0	0	0	0	0	0	I didn't say that.
 1329	CLINTON	0	0	0	0	0	0	0	0	0	0	And one of the worst things he said was about a woman in a beauty contest.
 1330	CLINTON	0	0	0	0	0	0	0	0	0	0	He loves beauty contests, supporting them and hanging around them.
@@ -1339,7 +1339,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 1337	TRUMP	0	0	0	0	0	0	0	0	0	0	Where did you find this?
 1338	CLINTON	0	0	0	0	0	0	0	0	0	0	And she has become a U.S. citizen, and you can bet...
 1339	TRUMP	0	0	0	0	0	0	0	0	0	0	Oh, really?
-1340	CLINTON	0	0	0	0	0	0	0	0	0	0	... she's going to vote this November.
+1340	CLINTON	0	0	0	0	0	0	0	0	0	0	she's going to vote this November.
 1341	TRUMP	0	0	0	0	0	0	0	0	0	0	OK, good.
 1342	TRUMP	0	0	0	0	0	0	0	0	0	0	Let me just tell you...
 1343	SYSTEM	0	0	0	0	0	0	0	0	0	0	(APPLAUSE)
@@ -1363,7 +1363,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 1361	TRUMP	0	0	0	0	0	0	0	0	0	0	It's hundreds of millions of ads.
 1362	TRUMP	0	0	0	0	0	0	0	0	0	0	And the only gratifying thing is, I saw the polls come in today, and with all of that money...
 1363	HOLT	0	0	0	0	0	0	0	0	0	0	We have to move on to the final question.
-1364	TRUMP	0	0	0	0	0	0	0	0	0	0	... $200 million is spent, and I'm either winning or tied, and I've spent practically nothing.
+1364	TRUMP	0	0	0	0	0	0	0	0	0	0	$200 million is spent, and I'm either winning or tied, and I've spent practically nothing.
 1365	SYSTEM	0	0	0	0	0	0	0	0	0	0	(APPLAUSE)
 1366	HOLT	0	0	0	0	0	0	0	0	0	0	One of you will not win this election.
 1367	HOLT	0	0	0	0	0	0	0	0	0	0	So my final question to you tonight, are you willing to accept the outcome as the will of the voters?

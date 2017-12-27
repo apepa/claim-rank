@@ -72,11 +72,11 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 70	KAINE	0	0	0	0	0	0	0	0	0	0	As a civil rights lawyer in the South, with the Children's Defense Fund, first lady of Arkansas and this country, senator, secretary of state, it's always been about putting others first.
 71	KAINE	0	0	0	0	0	0	0	0	0	0	And that's a sharp contrast with Donald Trump.
 72	KAINE	0	0	0	0	0	0	0	0	0	0	Donald Trump always puts himself first.
-73	KAINE	0	0	0	0	0	0	0	0	0	0	He built a business career, in the words of one of his own campaign staffers, "off the backs of the little guy."
+73	KAINE	0	0	0	0	0	0	0	0	0	0	"He built a business career, in the words of one of his own campaign staffers, ""off the backs of the little guy."""
 74	KAINE	3	0	0	0	1	0	1	1	0	0	And as a candidate, he started his campaign with a speech where he called Mexicans rapists and criminals, and he has pursued the discredited and really outrageous lie that President Obama wasn't born in the United States.
 75	KAINE	0	0	0	0	0	0	0	0	0	0	It is so painful to suggest that we go back to think about these days where an African-American could not be a citizen of the United States.
-76	KAINE	0	0	0	0	0	0	0	0	0	0	And I can't imagine how Governor Pence can defend the insult- driven selfish "me first" style of Donald Trump.
-77	QUIJANO	0	0	0	0	0	0	0	0	0	0	Governor Pence, let me ask you, you have said Donald Trump is, quote, "thoughtful, compassionate, and steady."
+76	KAINE	0	0	0	0	0	0	0	0	0	0	"And I can't imagine how Governor Pence can defend the insult- driven selfish ""me first"" style of Donald Trump."
+77	QUIJANO	0	0	0	0	0	0	0	0	0	0	"Governor Pence, let me ask you, you have said Donald Trump is, quote, ""thoughtful, compassionate, and steady."""
 78	QUIJANO	0	0	0	0	0	0	0	0	0	0	Yet 67 percent of voters feel he is a risky choice, and 65 percent feel he does not have the right kind of temperament to be president.
 79	QUIJANO	0	0	0	0	0	0	0	0	0	0	Why do so many Americans think Mr. Trump is simply too erratic?
 80	PENCE	0	0	0	0	0	0	0	0	0	0	Well, let me -- let me say first and foremost that, Senator, you and Hillary Clinton would know a lot about an insult- driven campaign.
@@ -86,7 +86,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 84	PENCE	1	1	0	0	0	0	0	0	0	0	The newly emboldened -- the aggression of Russia, whether it was in Ukraine or now they're heavy-handed approach...
 85	KAINE	1	0	0	1	0	0	0	0	0	0	You guys love Russia.
 86	KAINE	0	0	0	0	0	0	0	0	0	0	You both have said...
-87	PENCE	0	0	0	0	0	0	0	0	0	0	... their heavy-handed approach.
+87	PENCE	0	0	0	0	0	0	0	0	0	0	their heavy-handed approach.
 88	KAINE	1	0	0	1	0	0	0	0	0	0	You both have said -- you both have said Vladimir Putin is a better leader than the president.
 89	PENCE	0	0	0	0	0	0	0	0	0	0	Well...
 90	SYSTEM	0	0	0	0	0	0	0	0	0	0	(CROSSTALK)
@@ -132,10 +132,10 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 130	PENCE	0	0	0	0	0	0	0	0	0	0	She had a private server...
 131	KAINE	0	0	0	0	0	0	0	0	0	0	Now, I get to weigh in.
 132	KAINE	0	0	0	0	0	0	0	0	0	0	Now, let me just say this...
-133	PENCE	0	0	0	0	0	0	0	0	0	0	... that was discovered...
+133	PENCE	0	0	0	0	0	0	0	0	0	0	that was discovered...
 134	SYSTEM	0	0	0	0	0	0	0	0	0	0	(CROSSTALK)
-135	QUIJANO	0	0	0	0	0	0	0	0	0	0	... Senator, you have an opportunity to respond.
-136	PENCE	1	0	0	0	0	0	0	1	0	0	... keep that pay to play process out of the reach of the public.
+135	QUIJANO	0	0	0	0	0	0	0	0	0	0	Senator, you have an opportunity to respond.
+136	PENCE	1	0	0	0	0	0	0	1	0	0	keep that pay to play process out of the reach of the public.
 137	KAINE	0	0	0	0	0	0	0	0	0	0	Governor Pence -- Governor Pence doesn't think the world's going so well and he, you know, is going to say it's everybody's fault.
 138	PENCE	0	0	0	0	0	0	0	0	0	0	Do you?
 139	KAINE	0	0	0	0	0	0	0	0	0	0	Let me tell you this.
@@ -159,9 +159,9 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 157	PENCE	2	0	1	1	0	0	0	0	0	0	And so we removed -- we removed all of our...
 158	QUIJANO	0	0	0	0	0	0	0	0	0	0	Gentlemen, we'll get to...
 159	SYSTEM	0	0	0	0	0	0	0	0	0	0	(CROSSTALK)
-160	PENCE	2	0	1	1	0	0	0	0	0	0	... troops from Iraq, and ISIS was able to be conjured up in that vacuum.
+160	PENCE	2	0	1	1	0	0	0	0	0	0	troops from Iraq, and ISIS was able to be conjured up in that vacuum.
 161	KAINE	0	0	0	0	0	0	0	0	0	0	But I'd like to correct...
-162	PENCE	2	0	1	1	0	0	0	0	0	0	... and overrun vast areas of Iraq.
+162	PENCE	2	0	1	1	0	0	0	0	0	0	and overrun vast areas of Iraq.
 163	KAINE	2	0	0	0	0	1	0	0	0	1	Governor, President Bush said we would leave Iraq at the end of 2011.
 164	KAINE	2	0	0	0	0	1	0	0	0	1	And, Elaine, Iraq didn't want our troops to stay, and they wouldn't give us the protection for our troops.
 165	KAINE	2	0	0	0	0	1	0	0	0	1	And guess what?
@@ -199,9 +199,9 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 197	PENCE	0	0	0	0	0	0	0	0	0	0	When we get back to 3.5 percent to 4 percent growth with Donald Trump's plan will do, then we're going to have the resources to meet our nation's needs at home and abroad, and we're going to have the ability to bring down the national debt.
 198	QUIJANO	0	0	0	0	0	0	0	0	0	0	Senator Kaine?
 199	KAINE	0	0	0	0	0	0	0	0	0	0	Elaine, on the economy, there's a fundamental choice for the American electorate.
-200	KAINE	0	0	0	0	0	0	0	0	0	0	Do you want a "you're hired" president in Hillary Clinton or do you want a "you're fired" president in Donald Trump?
+200	KAINE	0	0	0	0	0	0	0	0	0	0	"Do you want a ""you're hired"" president in Hillary Clinton or do you want a ""you're fired"" president in Donald Trump?"
 201	KAINE	0	0	0	0	0	0	0	0	0	0	I think that's not such a hard choice.
-202	KAINE	0	0	0	0	0	0	0	0	0	0	Hillary and I have a plan that's on the table that's a "you're hired" plan.
+202	KAINE	0	0	0	0	0	0	0	0	0	0	"Hillary and I have a plan that's on the table that's a ""you're hired"" plan."
 203	KAINE	0	0	0	0	0	0	0	0	0	0	Five components.
 204	KAINE	0	0	0	0	0	0	0	0	0	0	First thing we do is we invest in manufacturing, infrastructure, and research in the clean energy jobs of tomorrow.
 205	KAINE	0	0	0	0	0	0	0	0	0	0	Second thing is we invest in our workforce, from pre-K education to great teachers to debt-free college and tuition-free college for families that make less than $125,000 a year.
@@ -211,7 +211,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 209	KAINE	0	0	0	0	0	0	0	0	0	0	My dad, who ran an iron working and welding shop, is here tonight.
 210	KAINE	0	0	0	0	0	0	0	0	0	0	And, fifth, we have a tax plan that targets tax relief to middle- class individuals and small businesses and asks those at the very top who've benefited as we've come out of recession to pay more.
 211	KAINE	1	0	1	0	0	0	0	0	0	0	The Trump plan is a different plan.
-212	KAINE	1	0	1	0	0	0	0	0	0	0	It's a "you're fired" plan.
+212	KAINE	1	0	1	0	0	0	0	0	0	0	"It's a ""you're fired"" plan."
 213	KAINE	1	0	1	0	0	0	0	0	0	0	And there's two key elements to it.
 214	KAINE	4	0	1	0	0	1	1	0	0	1	First, Donald Trump said wages are too high.
 215	KAINE	3	0	1	1	0	0	1	0	0	0	And both Donald Trump and Mike Pence think we ought to eliminate the federal minimum wage.
@@ -227,7 +227,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 225	QUIJANO	1	0	0	0	0	0	1	0	0	0	On that point, Governor Pence, recently the New York Times released part of Mr. Trump's 1995 tax return and reported that he could have avoided paying federal income taxes for years.
 226	QUIJANO	0	0	0	0	0	0	0	0	0	0	Yesterday, Mr. Trump said he brilliantly used the laws to pay as little tax as legally possible.
 227	QUIJANO	0	0	0	0	0	0	0	0	0	0	Does that seem fair to you?
-228	PENCE	0	0	0	0	0	0	0	0	0	0	Well, first, let me say, I appreciated the "you're hired," "you're fired" thing, Senator.
+228	PENCE	0	0	0	0	0	0	0	0	0	0	"Well, first, let me say, I appreciated the ""you're hired,"" ""you're fired"" thing, Senator."
 229	PENCE	0	0	0	0	0	0	0	0	0	0	You use that a whole lot.
 230	PENCE	0	0	0	0	0	0	0	0	0	0	And I think your running mate used a lot of pre-done lines.
 231	PENCE	0	0	0	0	0	0	0	0	0	0	Look, what -- what you all just heard out there is more taxes, $2 trillion in more spending, more deficits, more debt, more government.
@@ -235,14 +235,14 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 233	PENCE	1	0	0	0	0	0	0	0	0	1	I mean, the truth of the matter is, the policies of this administration, which Hillary Clinton and Senator Kaine want to continue, have run this economy into a ditch.
 234	PENCE	1	0	0	1	0	0	0	0	0	0	We're in the...
 235	KAINE	3	0	0	0	0	0	1	1	0	1	Fifteen million new jobs?
-236	PENCE	1	0	0	1	0	0	0	0	0	0	... slowest economic recovery since the Great Depression.
-237	KAINE	0	0	0	0	0	0	0	0	0	0	Fifteen million new jobs?
+236	PENCE	1	0	0	1	0	0	0	0	0	0	slowest economic recovery since the Great Depression.
+237	KAINE	3	0	0	0	0	0	1	1	0	1	Fifteen million new jobs?
 238	QUIJANO	0	0	0	0	0	0	0	0	0	0	Governor...
 239	SYSTEM	0	0	0	0	0	0	0	0	0	0	(CROSSTALK)
 240	PENCE	2	0	0	1	0	0	0	0	1	0	There are millions more people living in poverty today than the day that Barack Obama with Hillary Clinton at his side...
 241	KAINE	1	0	0	0	0	1	0	0	0	0	And the poverty level and the median income...
-242	PENCE	1	0	0	0	0	1	0	0	0	0	... stepped into the Oval Office.
-243	KAINE	1	0	0	0	0	1	0	0	0	0	... improved dramatically between 2014 and 2015.
+242	PENCE	1	0	0	0	0	1	0	0	0	0	stepped into the Oval Office.
+243	KAINE	1	0	0	0	0	1	0	0	0	0	improved dramatically between 2014 and 2015.
 244	PENCE	0	0	0	0	0	0	0	0	0	0	You -- honestly, Senator, you can roll out the numbers and the sunny side, but I got to tell you, people in Scranton know different.
 245	PENCE	0	0	0	0	0	0	0	0	0	0	People in Fort Wayne, Indiana, know different.
 246	PENCE	0	0	0	0	0	0	0	0	0	0	I mean, this economy is struggling.
@@ -274,14 +274,14 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 272	QUIJANO	0	0	0	0	0	0	0	0	0	0	Senator, I'm going to give you about 30 seconds to respond, and I have question on Social Security for you.
 273	KAINE	0	0	0	0	0	0	0	0	0	0	OK.
 274	PENCE	0	0	0	0	0	0	0	0	0	0	The only issue on taxes -- Hillary Clinton is going to raise taxes, and Donald Trump and I are going to cut them.
-275	KAINE	2	0	1	1	0	0	0	0	0	0	Donald Trump started this campaign in 2014 and he said, "If I run for president, I will absolutely release my taxes."
+275	KAINE	2	0	1	1	0	0	0	0	0	0	"Donald Trump started this campaign in 2014 and he said, ""If I run for president, I will absolutely release my taxes."""
 276	KAINE	0	0	0	0	0	0	0	0	0	0	He's broken his first...
 277	PENCE	2	0	1	1	0	0	0	0	0	0	And he will.
 278	KAINE	1	0	1	0	0	0	0	0	0	0	He's broken his first promise.
 279	KAINE	0	0	0	0	0	0	0	0	0	0	Second, he stood on the stage...
 280	PENCE	1	0	0	0	0	0	1	0	0	0	He hasn't broken his promise.
 281	PENCE	0	0	0	0	0	0	0	0	0	0	He said he's...
-282	KAINE	1	0	1	0	0	0	0	0	0	0	He stood on the stage last week and when Hillary said, you haven't been paying taxes, he said, "That makes me smart."
+282	KAINE	1	0	1	0	0	0	0	0	0	0	"He stood on the stage last week and when Hillary said, you haven't been paying taxes, he said, ""That makes me smart."""
 283	KAINE	0	0	0	0	0	0	0	0	0	0	So it's smart not to pay for our military?
 284	KAINE	0	0	0	0	0	0	0	0	0	0	It's smart not to pay for veterans?
 285	KAINE	0	0	0	0	0	0	0	0	0	0	It's smart not to pay for teachers?
@@ -302,7 +302,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 300	QUIJANO	0	0	0	0	0	0	0	0	0	0	All right, Gentlemen...
 301	PENCE	0	0	0	0	0	0	0	0	0	0	The American people can review that.
 302	PENCE	0	0	0	0	0	0	0	0	0	0	And he's going -- Senator, he's going to release his tax returns when the audit is over...
-303	QUIJANO	0	0	0	0	0	0	0	0	0	0	... I need to ask you about Social Security...
+303	QUIJANO	0	0	0	0	0	0	0	0	0	0	I need to ask you about Social Security...
 304	KAINE	6	0	1	0	0	1	1	1	1	1	Richard Nixon released tax returns when he was under audit.
 305	PENCE	1	0	0	0	0	0	0	0	0	1	They're going to raise your taxes.
 306	PENCE	1	0	0	0	0	0	0	0	0	1	We're going to cut your taxes.
@@ -353,7 +353,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 351	PENCE	0	0	0	0	0	0	0	0	0	0	We're going to -- we're going to -- we're going to...
 352	KAINE	2	0	1	0	0	0	0	0	0	1	You're not going to cut taxes.
 353	KAINE	2	0	1	0	0	0	0	0	0	1	You're going to raise taxes on the middle class.
-354	PENCE	1	0	1	0	0	0	0	0	0	0	... reform government programs so we can meet the obligations of Social Security and Medicare.
+354	PENCE	1	0	1	0	0	0	0	0	0	0	reform government programs so we can meet the obligations of Social Security and Medicare.
 355	QUIJANO	0	0	0	0	0	0	0	0	0	0	All right.
 356	PENCE	1	0	1	0	0	0	0	0	0	0	Stay on the path that your party has us on, we're going to be in a -- in a mountain range of debt.
 357	PENCE	0	0	0	0	0	0	0	0	0	0	And we're going to face hard choices and...
@@ -363,11 +363,11 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 361	QUIJANO	0	0	0	0	0	0	0	0	0	0	All right.
 362	QUIJANO	0	0	0	0	0	0	0	0	0	0	Let me move on now...
 363	PENCE	0	0	0	0	0	0	0	0	0	0	Three hundred and five (ph) economists said your plan is bad for the economy.
-364	QUIJANO	0	0	0	0	0	0	0	0	0	0	... to the issue of law enforcement and race relations.
+364	QUIJANO	0	0	0	0	0	0	0	0	0	0	to the issue of law enforcement and race relations.
 365	QUIJANO	0	0	0	0	0	0	0	0	0	0	Law enforcement and race relations.
-366	QUIJANO	0	0	0	0	0	0	0	0	0	0	After the Dallas police shooting, Police Chief David Brown said, quote, "We're asking cops to do too much in this country.
+366	QUIJANO	0	0	0	0	0	0	0	0	0	0	"After the Dallas police shooting, Police Chief David Brown said, quote, ""We're asking cops to do too much in this country."
 367	QUIJANO	0	0	0	0	0	0	0	0	0	0	Every societal failure we put it off on the cops to solve.
-368	QUIJANO	0	0	0	0	0	0	0	0	0	0	Not enough mental health funding, not enough drug addiction funding, schools fail, let's give it to the cops."
+368	QUIJANO	0	0	0	0	0	0	0	0	0	0	"Not enough mental health funding, not enough drug addiction funding, schools fail, let's give it to the cops."""
 369	QUIJANO	0	0	0	0	0	0	0	0	0	0	Do we ask too much of police officers in this country?
 370	QUIJANO	0	0	0	0	0	0	0	0	0	0	And how would you specifically address the chief's concerns?
 371	QUIJANO	0	0	0	0	0	0	0	0	0	0	Senator Kaine?
@@ -422,7 +422,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 420	PENCE	2	0	0	0	0	0	0	1	0	1	But Hillary Clinton actually referred to that moment as an example of implicit bias in the police force, where -- where she used -- when she was asked in the debate a week ago whether there was implicit bias in law enforcement, her only answer was that there's implicit bias in everyone in the United States.
 421	PENCE	0	0	0	0	0	0	0	0	0	0	I just think...
 422	KAINE	0	0	0	0	0	0	0	0	0	0	Can I -- can I explain...
-423	PENCE	0	0	0	0	0	0	0	0	0	0	... I just think what we ought to do is we ought to stop seizing on these moments of tragedy.
+423	PENCE	0	0	0	0	0	0	0	0	0	0	I just think what we ought to do is we ought to stop seizing on these moments of tragedy.
 424	PENCE	0	0	0	0	0	0	0	0	0	0	We ought to assure the public that we'll have a full and complete and transparent investigation whenever there's a loss of life because of police action.
 425	PENCE	0	0	0	0	0	0	0	0	0	0	But, Senator, please, you know, enough of this seeking every opportunity to demean law enforcement broadly by making the accusation of implicit bias every time tragedy occurs.
 426	KAINE	0	0	0	0	0	0	0	0	0	0	Elaine -- Elaine, people shouldn't be afraid to bring up issues of bias in law enforcement.
@@ -442,7 +442,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 440	PENCE	0	0	0	0	0	0	0	0	0	0	Indiana has passed criminal justice reform.
 441	KAINE	0	0	0	0	0	0	0	0	0	0	But I just want to say, those who say that we should not...
 442	PENCE	0	0	0	0	0	0	0	0	0	0	But that's not what you're talking about.
-443	KAINE	0	0	0	0	0	0	0	0	0	0	... we should not be able to bring up and talk about bias in the system, we'll never solve the problem...
+443	KAINE	0	0	0	0	0	0	0	0	0	0	we should not be able to bring up and talk about bias in the system, we'll never solve the problem...
 444	QUIJANO	0	0	0	0	0	0	0	0	0	0	Governor Pence...
 445	SYSTEM	0	0	0	0	0	0	0	0	0	0	(CROSSTALK)
 446	QUIJANO	0	0	0	0	0	0	0	0	0	0	Governor Pence...
@@ -455,7 +455,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 453	QUIJANO	1	0	0	0	0	1	0	0	0	0	Your fellow Republican, Governor Pence, Senator Tim Scott, who is African-American, recently spoke on the Senate floor.
 454	QUIJANO	1	0	0	0	0	1	0	0	0	0	He said he was stopped seven times by law enforcement in one year.
 455	KAINE	0	0	0	0	0	0	0	0	0	0	A U.S. senator.
-456	QUIJANO	0	0	0	0	0	0	0	0	0	0	He said, "I have felt the anger, the frustration, the sadness, and the humiliation that comes with feeling like you're being targeted for nothing more than being just yourself."
+456	QUIJANO	0	0	0	0	0	0	0	0	0	0	"He said, ""I have felt the anger, the frustration, the sadness, and the humiliation that comes with feeling like you're being targeted for nothing more than being just yourself."""
 457	QUIJANO	0	0	0	0	0	0	0	0	0	0	What would you say to Senator Scott about his experiences?
 458	PENCE	0	0	0	0	0	0	0	0	0	0	Well, I have the deepest respect for Senator Scott, and he's a close friend.
 459	PENCE	0	0	0	0	0	0	0	0	0	0	And what I would say is that we -- we need to adopt criminal justice reform nationally.
@@ -516,12 +516,12 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 514	PENCE	5	0	0	1	1	1	1	1	0	0	I mean, to be honest with you, if Donald Trump had said all of the things that you've said he said in the way you said he said them, he still wouldn't have a fraction of the insults that Hillary Clinton leveled when she said that half of our supporters were a basket of deplorables.
 515	PENCE	1	0	0	1	0	0	0	0	0	0	It's -- she said they were irredeemable, they were not American.
 516	PENCE	0	0	0	0	0	0	0	0	0	0	I mean, it's extraordinary.
-517	PENCE	0	0	0	0	0	0	0	0	0	0	And then she labeled one after another "ism" on millions of Americans who believe that we can have a stronger America at home and abroad, who believe we can get this economy moving again, who believe that we can end illegal immigration once and for all.
+517	PENCE	0	0	0	0	0	0	0	0	0	0	"And then she labeled one after another ""ism"" on millions of Americans who believe that we can have a stronger America at home and abroad, who believe we can get this economy moving again, who believe that we can end illegal immigration once and for all."
 518	PENCE	0	0	0	0	0	0	0	0	0	0	So, Senator, this -- this insult-driven campaign, I mean...
 519	QUIJANO	0	0	0	0	0	0	0	0	0	0	Governor...
 520	PENCE	0	0	0	0	0	0	0	0	0	0	That's small potatoes compared to Hillary Clinton...
 521	QUIJANO	0	0	0	0	0	0	0	0	0	0	Senator Kaine?
-522	PENCE	0	0	0	0	0	0	0	0	0	0	.... calling half of Donald Trump's supporters a basket of deplorables.
+522	PENCE	0	0	0	0	0	0	0	0	0	0	calling half of Donald Trump's supporters a basket of deplorables.
 523	KAINE	0	0	0	0	0	0	0	0	0	0	Hillary Clinton said something on the campaign trail, and the very next day, she said, you know what, I shouldn't have said that.
 524	PENCE	0	0	0	0	0	0	0	0	0	0	She said she shouldn't have said half.
 525	QUIJANO	0	0	0	0	0	0	0	0	0	0	Governor, this is Senator Kaine's two minutes, please.
@@ -530,8 +530,8 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 528	SYSTEM	0	0	0	0	0	0	0	0	0	0	(LAUGHTER)
 529	KAINE	1	0	0	0	0	0	1	0	0	0	Look for Donald trump apologizing to John McCain for saying he wasn't a hero...
 530	PENCE	0	0	0	0	0	0	0	0	0	0	Oh...
-531	KAINE	0	0	0	0	0	0	0	0	0	0	... to Donald Trump apologizing for calling women slobs, pigs, dogs, disgusting.
-532	PENCE	0	0	0	0	0	0	0	0	0	0	She apologized for saying "half."
+531	KAINE	0	0	0	0	0	0	0	0	0	0	to Donald Trump apologizing for calling women slobs, pigs, dogs, disgusting.
+532	PENCE	0	0	0	0	0	0	0	0	0	0	"She apologized for saying ""half."""
 533	QUIJANO	0	0	0	0	0	0	0	0	0	0	Governor.
 534	QUIJANO	0	0	0	0	0	0	0	0	0	0	It is his two minutes, please.
 535	KAINE	0	0	0	0	0	0	0	0	0	0	Did Donald Trump apologize for taking after somebody in a Twitter war and making fun of her weight?
@@ -553,7 +553,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 551	KAINE	3	0	1	0	0	0	0	1	0	1	They want to go house to house, school to school, business to business, and kick out 16 million people.
 552	KAINE	0	0	0	0	0	0	0	0	0	0	And I cannot believe...
 553	PENCE	3	0	1	0	0	0	0	1	0	1	That's nonsense.
-554	PENCE	0	0	0	0	0	0	0	0	0	0	That's nonsense.
+554	PENCE	3	0	1	0	0	0	0	1	0	1	That's nonsense.
 555	KAINE	0	0	0	0	0	0	0	0	0	0	I cannot believe that Governor Pence would sit here and defend his running mate's claim that we should create a deportation force to -- so that they'll all be gone.
 556	PENCE	1	0	0	0	0	1	0	0	0	0	Senator, we have a deportation force.
 557	PENCE	0	0	0	0	0	0	0	0	0	0	It's called Immigrations and Customs Enforcement.
@@ -572,7 +572,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 570	KAINE	0	0	0	0	0	0	0	0	0	0	No, I...
 571	PENCE	0	0	0	0	0	0	0	0	0	0	They always say we're going to do this, we're going to do that, we'll eventually get the border...
 572	SYSTEM	0	0	0	0	0	0	0	0	0	0	(CROSSTALK)
-573	KAINE	0	0	0	0	0	0	0	0	0	0	... border security three years ago, and Governor Pence was against it.
+573	KAINE	0	0	0	0	0	0	0	0	0	0	border security three years ago, and Governor Pence was against it.
 574	QUIJANO	0	0	0	0	0	0	0	0	0	0	Governor, Mr. Trump has said...
 575	PENCE	0	0	0	0	0	0	0	0	0	0	Ronald Reagan said a nation without borders is not a nation.
 576	PENCE	0	0	0	0	0	0	0	0	0	0	Donald Trump is committed to restoring the borders of this nation and securing our nation, enforcing our laws.
@@ -591,14 +591,14 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 589	PENCE	0	0	0	0	0	0	0	0	0	0	We're going to strengthen Immigrations and Customs Enforcements with more resources and more personnel to be able to do that.
 590	PENCE	0	0	0	0	0	0	0	0	0	0	And then Donald Trump has made it clear, once we've done all of those things, that we're going to reform the immigration system that we have...
 591	KAINE	0	0	0	0	0	0	0	0	0	0	I just have to correct Governor Pence....
-592	PENCE	0	0	0	0	0	0	0	0	0	0	... where people can come into this country.
+592	PENCE	0	0	0	0	0	0	0	0	0	0	where people can come into this country.
 593	KAINE	0	0	0	0	0	0	0	0	0	0	I have to...
 594	PENCE	0	0	0	0	0	0	0	0	0	0	That's the order that you should do it.
 595	PENCE	0	0	0	0	0	0	0	0	0	0	Border security, removing criminal aliens, upholding with law, and then -- but then, Senator, I'll work you when you go back to the Senate, I promise you, we'll work you to reform the immigration system.
 596	KAINE	0	0	0	0	0	0	0	0	0	0	I look forward to working together in whatever capacities we serve in.
 597	KAINE	0	0	0	0	0	0	0	0	0	0	But I just want to make it very, very clear that he's trying to fuzz up what Donald Trump has said.
 598	KAINE	2	0	0	0	0	1	1	0	0	0	When Donald Trump spoke in Phoenix, he looked the audience in the eye and he said, no, we're building a wall, and we're deporting everybody.
-599	KAINE	2	0	0	0	0	1	1	0	0	0	He said, quote, "They will all be gone."
+599	KAINE	2	0	0	0	0	1	1	0	0	0	"He said, quote, ""They will all be gone."""
 600	KAINE	1	0	0	0	0	1	0	0	0	0	They will all be gone.
 601	KAINE	2	0	1	0	0	0	1	0	0	0	And this is one of these ones where you can just go to the tape on it and see what Donald Trump has said.
 602	KAINE	0	0	0	0	0	0	0	0	0	0	And to add...
@@ -631,24 +631,24 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 629	KAINE	0	0	0	0	0	0	0	0	0	0	Donald Trump.
 630	KAINE	0	0	0	0	0	0	0	0	0	0	Donald Trump can't start a Twitter war with Miss Universe without shooting himself in the foot.
 631	KAINE	1	1	0	0	0	0	0	0	0	0	Donald Trump doesn't have a plan.
-632	KAINE	1	0	0	0	1	0	0	0	0	0	He said, "I have a secret plan," and then he said, "Um, I know more than all the generals about ISIL."
-633	KAINE	1	0	0	0	1	0	0	0	0	0	And then he said, "I'm going to call the generals to help me figure out a plan."
-634	KAINE	1	0	0	0	1	0	0	0	0	0	And finally he said, "I'm going to fire all the generals."
+632	KAINE	1	0	0	0	1	0	0	0	0	0	"He said, I have a secret plan,"" and then he said, Um, I know more than all the generals about ISIL."
+633	KAINE	1	0	0	0	1	0	0	0	0	0	"And then he said, ""I'm going to call the generals to help me figure out a plan."""
+634	KAINE	1	0	0	0	1	0	0	0	0	0	"And finally he said, ""I'm going to fire all the generals."""
 635	KAINE	1	0	0	0	1	0	0	0	0	0	He doesn't have a plan.
 636	KAINE	0	0	0	0	0	0	0	0	0	0	But he does have dangerous ideas.
 637	KAINE	0	0	0	0	0	0	0	0	0	0	Here's four.
 638	KAINE	0	0	0	0	0	0	0	0	0	0	He trash talks the military.
 639	KAINE	1	0	0	0	0	0	1	0	0	0	The military is a disaster, John McCain's no hero, the generals need all to be fired, and I know more than them.
 640	KAINE	0	0	0	0	0	0	0	0	0	0	He wants to tear up alliances.
-641	KAINE	0	0	0	0	0	0	0	0	0	0	NATO is obsolete, and we'll only work together with Israel if they pay "big league."
+641	KAINE	0	0	0	0	0	0	0	0	0	0	"NATO is obsolete, and we'll only work together with Israel if they pay ""big league."""
 642	KAINE	0	0	0	0	0	0	0	0	0	0	Third, he loves dictators.
 643	KAINE	1	0	0	0	0	0	1	0	0	0	He's got kind of a personal Mount Rushmore, Vladimir Putin, Kim Jong-un, Moammar Gadhafi...
 644	PENCE	0	0	0	0	0	0	0	0	0	0	Oh, please.
 645	PENCE	0	0	0	0	0	0	0	0	0	0	Come on.
-646	KAINE	0	0	0	0	0	0	0	0	0	0	... and Saddam Hussein.
+646	KAINE	0	0	0	0	0	0	0	0	0	0	and Saddam Hussein.
 647	KAINE	2	0	0	1	0	0	0	0	0	1	And last and most dangerously, Donald Trump believes -- Donald Trump believes that the world will be safer if more nations have nuclear weapons.
 648	KAINE	3	0	0	1	0	0	1	0	0	1	He's said Saudi Arabia should get them, Japan should get them, Korea should get them.
-649	KAINE	2	0	0	1	0	0	0	0	0	1	And when he was confronted with this, and told, wait a minute, terrorists could get those, proliferation could lead to nuclear war, here's what Donald Trump said, and I quote: "Go ahead, folks, enjoy yourselves."
+649	KAINE	2	0	0	1	0	0	0	0	0	1	"And when he was confronted with this, and told, wait a minute, terrorists could get those, proliferation could lead to nuclear war, here's what Donald Trump said, and I quote: ""Go ahead, folks, enjoy yourselves."""
 650	KAINE	0	0	0	0	0	0	0	0	0	0	I'd love to hear Governor Pence tell me what's so enjoyable or comical about nuclear war.
 651	QUIJANO	0	0	0	0	0	0	0	0	0	0	Governor Pence?
 652	PENCE	0	0	0	0	0	0	0	0	0	0	Did you work on that one a long time?
@@ -684,7 +684,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 682	KAINE	0	0	0	0	0	0	0	0	0	0	Yes, we did.
 683	PENCE	0	0	0	0	0	0	0	0	0	0	You essentially...
 684	KAINE	0	0	0	0	0	0	0	0	0	0	Even the Israeli military says it stopped.
-685	PENCE	0	0	0	0	0	0	0	0	0	0	... guaranteed that Iran will someday become a nuclear power, because there's no limitations once the period of time of the treaty comes off.
+685	PENCE	0	0	0	0	0	0	0	0	0	0	guaranteed that Iran will someday become a nuclear power, because there's no limitations once the period of time of the treaty comes off.
 686	QUIJANO	1	0	0	0	0	0	1	0	0	0	Governor Pence, Mr. Trump has proposed extreme vetting of immigrants from parts of the world that export terrorism.
 687	QUIJANO	0	0	0	0	0	0	0	0	0	0	But that does not address many of the recent terrorist attacks in the United States, such as the Orlando nightclub massacre and the recent bombings in New York and New Jersey.
 688	QUIJANO	0	0	0	0	0	0	0	0	0	0	Those were homegrown, committed by U.S. citizens and legal residents.
@@ -710,11 +710,11 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 708	KAINE	0	0	0	0	0	0	0	0	0	0	Donald Trump said keep them out if they're Muslim.
 709	KAINE	1	0	0	0	0	1	0	0	0	0	Mike Pence...
 710	PENCE	0	0	0	0	0	0	0	0	0	0	Absolutely...
-711	KAINE	1	0	0	0	0	1	0	0	0	0	... put a program in place to keep them out if they're from Syria.
+711	KAINE	1	0	0	0	0	1	0	0	0	0	put a program in place to keep them out if they're from Syria.
 712	KAINE	2	0	0	0	0	1	0	0	1	0	And yesterday an appellate court with three Republican judges struck down the Pence plan...
 713	PENCE	0	0	0	0	0	0	0	0	0	0	Right.
 714	PENCE	0	0	0	0	0	0	0	0	0	0	Right.
-715	KAINE	0	0	0	0	0	0	0	0	0	0	... and said it was discriminatory...
+715	KAINE	0	0	0	0	0	0	0	0	0	0	and said it was discriminatory...
 716	PENCE	0	0	0	0	0	0	0	0	0	0	And those judges -- those judges said...
 717	KAINE	0	0	0	0	0	0	0	0	0	0	We should focus upon danger, not upon discrimination.
 718	QUIJANO	0	0	0	0	0	0	0	0	0	0	Governor?
@@ -743,11 +743,11 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 741	PENCE	0	0	0	0	0	0	0	0	0	0	You've got to err on the side of the safety and security of the American people, Senator.
 742	PENCE	0	0	0	0	0	0	0	0	0	0	I understand the...
 743	KAINE	0	0	0	0	0	0	0	0	0	0	By trashing all Syrians or trashing all Muslims?
-744	PENCE	0	0	0	0	0	0	0	0	0	0	... the U.N. wants us to expand the Syrian refugee program...
+744	PENCE	0	0	0	0	0	0	0	0	0	0	the U.N. wants us to expand the Syrian refugee program...
 745	QUIJANO	0	0	0	0	0	0	0	0	0	0	Senator Kaine, let me ask you this.
 746	QUIJANO	0	0	0	0	0	0	0	0	0	0	Secretary Clinton...
 747	PENCE	0	0	0	0	0	0	0	0	0	0	We're going to put the safety and security of the American people first.
-748	QUIJANO	0	0	0	0	0	0	0	0	0	0	... has talked about an intelligence surge.
+748	QUIJANO	0	0	0	0	0	0	0	0	0	0	has talked about an intelligence surge.
 749	KAINE	0	0	0	0	0	0	0	0	0	0	Yes.
 750	QUIJANO	0	0	0	0	0	0	0	0	0	0	What exactly would an intelligence surge look like?
 751	QUIJANO	0	0	0	0	0	0	0	0	0	0	And how would that help identify terrorists with no operational connection to a foreign terrorist organization?
@@ -779,7 +779,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 777	PENCE	0	0	0	0	0	0	0	0	0	0	We have an intelligence, sir (ph).
 778	PENCE	1	1	0	0	0	0	0	0	0	0	But I will also tell you that it's important in this moment to remember that Hillary Clinton had a private server in her home that had classified information on it...
 779	QUIJANO	0	0	0	0	0	0	0	0	0	0	And I don't -- 30 seconds is on up.
-780	PENCE	1	1	0	0	0	0	0	0	0	0	... about drone strikes, e-mails from the president of the United States of America were on there.
+780	PENCE	1	1	0	0	0	0	0	0	0	0	about drone strikes, e-mails from the president of the United States of America were on there.
 781	QUIJANO	0	0	0	0	0	0	0	0	0	0	Right.
 782	PENCE	2	1	0	0	0	1	0	0	0	0	Her private server was subject to being hacked by foreign...
 783	SYSTEM	0	0	0	0	0	0	0	0	0	0	(CROSSTALK)
@@ -793,8 +793,8 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 791	QUIJANO	0	0	0	0	0	0	0	0	0	0	All right, we are moving on now.
 792	QUIJANO	0	0	0	0	0	0	0	0	0	0	Two hundred fifty thousand people...
 793	PENCE	0	0	0	0	0	0	0	0	0	0	If your son or my son handled classified information the way Hillary Clinton did...
-794	QUIJANO	0	0	0	0	0	0	0	0	0	0	... one hundred thousand of them children -- Governor...
-795	PENCE	0	0	0	0	0	0	0	0	0	0	... they'd be court martialed.
+794	QUIJANO	0	0	0	0	0	0	0	0	0	0	one hundred thousand of them children -- Governor...
+795	PENCE	0	0	0	0	0	0	0	0	0	0	they'd be court martialed.
 796	KAINE	0	0	0	0	0	0	0	0	0	0	That is absolutely false and you know that.
 797	PENCE	0	0	0	0	0	0	0	0	0	0	Absolutely true.
 798	KAINE	0	0	0	0	0	0	0	0	0	0	And you know that, Governor.
@@ -894,16 +894,16 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 892	PENCE	0	0	0	0	0	0	0	0	0	0	I saw what the American soldier won in Operation Iraqi Freedom.
 893	PENCE	0	0	0	0	0	0	0	0	0	0	And to see the weak and feckless leadership that Hillary Clinton was the architect of and the foreign policy of the Obama administration...
 894	KAINE	0	0	0	0	0	0	0	0	0	0	Well, let me -- let me come back...
-895	PENCE	0	0	0	0	0	0	0	0	0	0	... is deeply troubling to me.
+895	PENCE	0	0	0	0	0	0	0	0	0	0	is deeply troubling to me.
 896	PENCE	0	0	0	0	0	0	0	0	0	0	That will all change the day Donald Trump becomes president of the United States.
-897	KAINE	0	0	0	0	0	0	0	0	0	0	... and talk about -- let me talk about the things that Governor Pence doesn't want to acknowledge, Elaine.
+897	KAINE	0	0	0	0	0	0	0	0	0	0	and talk about -- let me talk about the things that Governor Pence doesn't want to acknowledge, Elaine.
 898	KAINE	1	1	0	0	0	0	0	0	0	0	He doesn't want to acknowledge that we stopped the Iranian nuclear weapons program.
 899	KAINE	0	0	0	0	0	0	0	0	0	0	He doesn't want to acknowledge...
 900	PENCE	0	0	0	0	0	0	0	0	0	0	We didn't.
-901	KAINE	0	0	0	0	0	0	0	0	0	0	... that Hillary was part of a team that got bin Laden.
+901	KAINE	0	0	0	0	0	0	0	0	0	0	that Hillary was part of a team that got bin Laden.
 902	KAINE	0	0	0	0	0	0	0	0	0	0	He doesn't want to acknowledge...
 903	PENCE	0	0	0	0	0	0	0	0	0	0	I just did.
-904	KAINE	0	0	0	0	0	0	0	0	0	0	... that it's a good thing, not a bad thing, that it's a good thing -- not a bad thing -- that we're down from 175,000 troops deployed overseas to 15,000.
+904	KAINE	0	0	0	0	0	0	0	0	0	0	that it's a good thing, not a bad thing, that it's a good thing -- not a bad thing -- that we're down from 175,000 troops deployed overseas to 15,000.
 905	KAINE	0	0	0	0	0	0	0	0	0	0	But let me tell you what will really make the Middle East dangerous.
 906	KAINE	2	0	1	0	0	1	0	0	0	0	Donald Trump's idea that more nations should get nuclear weapons, Saudi Arabia, Japan, South Korea.
 907	KAINE	0	0	0	0	0	0	0	0	0	0	Ronald Reagan said something really interesting about nuclear proliferation back in the 1980s.
@@ -919,7 +919,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 917	PENCE	0	0	0	0	0	0	0	0	0	0	Ronald Reagan also said nuclear war should never be fought because it can never be won.
 918	PENCE	0	0	0	0	0	0	0	0	0	0	And the United States of America needs to make investments in modernizing our nuclear force for both deterrence...
 919	KAINE	0	0	0	0	0	0	0	0	0	0	But can you defend Donald Trump's claim that more nations should get nuclear weapons?
-920	PENCE	0	0	0	0	0	0	0	0	0	0	... and assurance to our allies.
+920	PENCE	0	0	0	0	0	0	0	0	0	0	and assurance to our allies.
 921	PENCE	0	0	0	0	0	0	0	0	0	0	But let me go back to this Iran thing.
 922	PENCE	0	0	0	0	0	0	0	0	0	0	I mean, he keeps saying that they prevented -- that Hillary Clinton started the deal with the Iranians prevented Iran from getting a nuclear weapon.
 923	SYSTEM	0	0	0	0	0	0	0	0	0	0	(CROSSTALK)
@@ -944,10 +944,10 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 942	SYSTEM	0	0	0	0	0	0	0	0	0	0	(CROSSTALK)
 943	QUIJANO	0	0	0	0	0	0	0	0	0	0	And very quickly, Senator.
 944	KAINE	0	0	0	0	0	0	0	0	0	0	Elaine...
-945	PENCE	2	0	0	0	1	0	1	0	0	0	... and the fact that they got $1.7 billion in a ransom payment...
+945	PENCE	2	0	0	0	1	0	1	0	0	0	and the fact that they got $1.7 billion in a ransom payment...
 946	QUIJANO	0	0	0	0	0	0	0	0	0	0	We need to talk about Russia.
 947	QUIJANO	0	0	0	0	0	0	0	0	0	0	Very quickly, though, Senator, please.
-948	PENCE	0	0	0	0	0	0	0	0	0	0	... is astonishing to the American people.
+948	PENCE	0	0	0	0	0	0	0	0	0	0	is astonishing to the American people.
 949	KAINE	0	0	0	0	0	0	0	0	0	0	Six times tonight, I have said to Governor Pence I can't imagine how you can defend your running mate's position on one issue after the next.
 950	KAINE	0	0	0	0	0	0	0	0	0	0	And in all six cases, he's refused to defend his running mate.
 951	PENCE	0	0	0	0	0	0	0	0	0	0	Well, let's -- no, no, don't put words in my mouth.
@@ -979,7 +979,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 977	KAINE	0	0	0	0	0	0	0	0	0	0	Donald Trump and Mike Pence have said he's a great leader.
 978	KAINE	0	0	0	0	0	0	0	0	0	0	And Donald Trump has business...
 979	PENCE	0	0	0	0	0	0	0	0	0	0	No, we haven't.
-980	KAINE	0	0	0	0	0	0	0	0	0	0	... has business dealings -- has business dealings with Russia that he refuses to disclose.
+980	KAINE	0	0	0	0	0	0	0	0	0	0	has business dealings -- has business dealings with Russia that he refuses to disclose.
 981	KAINE	0	0	0	0	0	0	0	0	0	0	Hillary Clinton has gone toe-to- toe with Russia.
 982	KAINE	0	0	0	0	0	0	0	0	0	0	She went toe-to-toe with Russia as secretary of state to do the New START Agreement to reduce Russia's nuclear stockpile.
 983	KAINE	0	0	0	0	0	0	0	0	0	0	She's had the experience doing it.
@@ -987,7 +987,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 985	KAINE	0	0	0	0	0	0	0	0	0	0	And we've done the same thing about Ukraine, but more than launching protests, we've put punishing economic sanctions on Russia that we need to continue.
 986	KAINE	1	0	0	0	0	0	0	1	0	0	Donald Trump, on the other hand, didn't know that Russia had invaded the Crimea.
 987	PENCE	0	0	0	0	0	0	0	0	0	0	Oh, that's nonsense.
-988	KAINE	0	0	0	0	0	0	0	0	0	0	He was on a TV show a couple months back, and he said, "I'll guarantee you this, Russia's not going into the Ukraine."
+988	KAINE	0	0	0	0	0	0	0	0	0	0	"He was on a TV show a couple months back, and he said, ""I'll guarantee you this, Russia's not going into the Ukraine."""
 989	KAINE	0	0	0	0	0	0	0	0	0	0	And he had to be reminded that they had gone into the Crimea two years before.
 990	PENCE	1	0	0	0	0	0	0	1	0	0	He knew that.
 991	KAINE	1	0	0	0	0	1	0	0	0	0	Hillary Clinton has gone toe-to-toe with Russia to work out a deal on New START.
@@ -1034,14 +1034,14 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 1032	PENCE	0	0	0	0	0	0	0	0	0	0	It is -- ISIS from Raqqa has overrun vast areas that at great sacrifice the American soldier won in Operation Iraqi Freedom, and yet Senator Kaine still sits here, loyal soldier -- I get all that -- in saying that the foreign policy of Hillary Clinton and Barack Obama somehow made the world more secure.
 1033	PENCE	0	0	0	0	0	0	0	0	0	0	I mean, it really is astonishing that on the day...
 1034	KAINE	0	0	0	0	0	0	0	0	0	0	We even wiped out the leader of Al Qaida.
-1035	PENCE	0	0	0	0	0	0	0	0	0	0	... on the day that Iran released four American hostages...
+1035	PENCE	0	0	0	0	0	0	0	0	0	0	on the day that Iran released four American hostages...
 1036	KAINE	0	0	0	0	0	0	0	0	0	0	We stopped Iran from getting nuclear weapons.
 1037	QUIJANO	0	0	0	0	0	0	0	0	0	0	Governor...
-1038	PENCE	2	0	0	0	1	0	1	0	0	0	... we delivered $400 million in cash as a ransom payment for Americans held by the radical mullahs in Tehran.
+1038	PENCE	2	0	0	0	1	0	1	0	0	0	we delivered $400 million in cash as a ransom payment for Americans held by the radical mullahs in Tehran.
 1039	SYSTEM	0	0	0	0	0	0	0	0	0	0	(CROSSTALK)
 1040	QUIJANO	0	0	0	0	0	0	0	0	0	0	Governor, yesterday, Mr. Trump said...
 1041	KAINE	0	0	0	0	0	0	0	0	0	0	And we stopped a nuclear weapons program without a shot.
-1042	QUIJANO	0	0	0	0	0	0	0	0	0	0	... quote, "Putin has no respect for Hillary Clinton and no respect for Obama."
+1042	QUIJANO	0	0	0	0	0	0	0	0	0	0	"quote, ""Putin has no respect for Hillary Clinton and no respect for Obama."""
 1043	QUIJANO	0	0	0	0	0	0	0	0	0	0	Why do you think he'll respect a Trump- Pence administration?
 1044	PENCE	0	0	0	0	0	0	0	0	0	0	Strength.
 1045	PENCE	0	0	0	0	0	0	0	0	0	0	Plain and simple.
@@ -1049,7 +1049,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 1047	PENCE	0	0	0	0	0	0	0	0	0	0	Donald Trump -- that's nonsense.
 1048	PENCE	0	0	0	0	0	0	0	0	0	0	Donald Trump is a strong leader...
 1049	KAINE	0	0	0	0	0	0	0	0	0	0	Donald Trump's son says that the Trump organization...
-1050	PENCE	0	0	0	0	0	0	0	0	0	0	... who is going to lead with American strength.
+1050	PENCE	0	0	0	0	0	0	0	0	0	0	who is going to lead with American strength.
 1051	QUIJANO	0	0	0	0	0	0	0	0	0	0	Please, Senator, I'll give you a chance to respond.
 1052	PENCE	0	0	0	0	0	0	0	0	0	0	We're going to rebuild our military.
 1053	PENCE	0	0	0	0	0	0	0	0	0	0	And let me -- let me -- this whole Putin thing.
@@ -1060,7 +1060,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 1058	PENCE	0	0	0	0	0	0	0	0	0	0	That's not an endorsement of Vladimir Putin.
 1059	PENCE	0	0	0	0	0	0	0	0	0	0	That's an indictment of the weak and feckless leadership...
 1060	QUIJANO	0	0	0	0	0	0	0	0	0	0	Senator Kaine?
-1061	PENCE	0	0	0	0	0	0	0	0	0	0	... of Hillary Clinton and Barack Obama.
+1061	PENCE	0	0	0	0	0	0	0	0	0	0	of Hillary Clinton and Barack Obama.
 1062	KAINE	1	0	0	0	0	1	0	0	0	0	Well, this is one where we can just kind of go to the tape on it.
 1063	KAINE	4	0	1	0	1	1	0	0	0	1	But Governor Pence said, inarguably, Vladimir Putin is a better leader than President Obama.
 1064	PENCE	3	0	1	0	1	0	0	0	0	1	That is absolutely inaccurate.
@@ -1072,9 +1072,9 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 1070	KAINE	0	0	0	0	0	0	0	0	0	0	If you mistake leadership for dictatorship, and you can't tell the difference, a country that's running its economy into the ground...
 1071	PENCE	0	0	0	0	0	0	0	0	0	0	Yeah, here we go.
 1072	PENCE	0	0	0	0	0	0	0	0	0	0	This is the grade school thing again?
-1073	KAINE	0	0	0	0	0	0	0	0	0	0	... persecuting journalists...
+1073	KAINE	0	0	0	0	0	0	0	0	0	0	persecuting journalists...
 1074	PENCE	0	0	0	0	0	0	0	0	0	0	Right, this is grade school.
-1075	KAINE	0	0	0	0	0	0	0	0	0	0	... if you can't tell the difference, you shouldn't be commander-in-chief.
+1075	KAINE	0	0	0	0	0	0	0	0	0	0	if you can't tell the difference, you shouldn't be commander-in-chief.
 1076	PENCE	0	0	0	0	0	0	0	0	0	0	Yeah.
 1077	KAINE	0	0	0	0	0	0	0	0	0	0	And with Donald Trump -- Donald Trump's sons say that they have all these business dealings with Russia.
 1078	KAINE	0	0	0	0	0	0	0	0	0	0	Those could be disclosed with tax returns, but they refuse to do them.
@@ -1112,7 +1112,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 1110	PENCE	0	0	0	0	0	0	0	0	0	0	It must have -- must have...
 1111	KAINE	0	0	0	0	0	0	0	0	0	0	Until he...
 1112	SYSTEM	0	0	0	0	0	0	0	0	0	0	(CROSSTALK)
-1113	PENCE	0	0	0	0	0	0	0	0	0	0	... done well in some focus group.
+1113	PENCE	0	0	0	0	0	0	0	0	0	0	done well in some focus group.
 1114	PENCE	0	0	0	0	0	0	0	0	0	0	But here -- Hillary Clinton and her husband set up a private foundation called the Clinton Foundation.
 1115	PENCE	1	0	0	0	0	0	0	0	1	0	While she was secretary of state, the Clinton Foundation accepted tens of millions of dollars from foreign governments and foreign donors.
 1116	PENCE	0	0	0	0	0	0	0	0	0	0	Now, you all need to know out there, this is basic stuff.
@@ -1122,9 +1122,9 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 1120	PENCE	3	0	0	0	1	1	0	1	0	0	And then we found, thanks to the good work of the Associated Press, that more than half her private meetings when she was secretary of state were given to major donors of the Clinton Foundation.
 1121	PENCE	0	0	0	0	0	0	0	0	0	0	When you talk about all these -- all these baseless rumors about Russia and the rest, Hillary Clinton -- you asked the trustworthy question at the very beginning -- the reason...
 1122	QUIJANO	0	0	0	0	0	0	0	0	0	0	Governor, your two minutes are up.
-1123	PENCE	0	0	0	0	0	0	0	0	0	0	... the reason the American people don't trust Hillary Clinton is because they are looking at the pay to play politics that she operated with the Clinton Foundation through a private server...
+1123	PENCE	0	0	0	0	0	0	0	0	0	0	the reason the American people don't trust Hillary Clinton is because they are looking at the pay to play politics that she operated with the Clinton Foundation through a private server...
 1124	QUIJANO	0	0	0	0	0	0	0	0	0	0	Governor, please.
-1125	PENCE	0	0	0	0	0	0	0	0	0	0	... while she's secretary of state.
+1125	PENCE	0	0	0	0	0	0	0	0	0	0	while she's secretary of state.
 1126	QUIJANO	0	0	0	0	0	0	0	0	0	0	Your two minutes are up, Governor.
 1127	PENCE	0	0	0	0	0	0	0	0	0	0	And they're saying enough is enough.
 1128	QUIJANO	0	0	0	0	0	0	0	0	0	0	Senator Kaine?
@@ -1166,9 +1166,9 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 1164	PENCE	0	0	0	0	0	0	0	0	0	0	It has been a platform for the Clintons to travel the world, to have staff.
 1165	PENCE	2	0	0	0	0	0	1	0	0	1	But honestly, Senator, we would know a lot more about it if Hillary Clinton would just turn over the 33,000 e-mails...
 1166	QUIJANO	0	0	0	0	0	0	0	0	0	0	All right, let's turn back to North Korea...
-1167	PENCE	0	0	0	0	0	0	0	0	0	0	... that she refused to turn over in her private server...
+1167	PENCE	0	0	0	0	0	0	0	0	0	0	that she refused to turn over in her private server...
 1168	QUIJANO	0	0	0	0	0	0	0	0	0	0	Senator Kaine...
-1169	PENCE	0	0	0	0	0	0	0	0	0	0	... and we'd have a much better picture of what the Clinton Foundation was about.
+1169	PENCE	0	0	0	0	0	0	0	0	0	0	and we'd have a much better picture of what the Clinton Foundation was about.
 1170	QUIJANO	1	0	0	0	0	1	0	0	0	0	Senator Kaine, if you had intelligence that North Korea was about to launch a missile, a nuclear-armed missile capable of reaching the United States, would you take preemptive action?
 1171	KAINE	0	0	0	0	0	0	0	0	0	0	If we -- look, a president should take action to defend the United States against imminent threat.
 1172	KAINE	0	0	0	0	0	0	0	0	0	0	You have to.
@@ -1184,7 +1184,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 1182	KAINE	0	0	0	0	0	0	0	0	0	0	So we're working together with China, and we need to.
 1183	KAINE	0	0	0	0	0	0	0	0	0	0	China's another one of those relationships where it's competitive, it's also challenging, and in times like North Korea, we have to be able to cooperate.
 1184	KAINE	0	0	0	0	0	0	0	0	0	0	Hillary understands that very well.
-1185	KAINE	1	0	0	0	0	1	0	0	0	0	She went once famously to China and stood up at a human rights meeting and looked them in the eye and said, "Women's rights are human rights."
+1185	KAINE	1	0	0	0	0	1	0	0	0	0	"She went once famously to China and stood up at a human rights meeting and looked them in the eye and said, ""Women's rights are human rights."""
 1186	KAINE	1	0	0	0	0	1	0	0	0	0	They didn't want her to say that, but she did.
 1187	KAINE	0	0	0	0	0	0	0	0	0	0	But she's also worked on a lot of diplomatic and important diplomatic deals with China.
 1188	KAINE	0	0	0	0	0	0	0	0	0	0	And that's what it's going to take.
@@ -1275,7 +1275,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 1273	PENCE	0	0	0	0	0	0	0	0	0	0	Yeah.
 1274	KAINE	0	0	0	0	0	0	0	0	0	0	When Donald Trump says women should be punished or Mexicans are rapists and criminals...
 1275	PENCE	0	0	0	0	0	0	0	0	0	0	I'm telling you...
-1276	KAINE	0	0	0	0	0	0	0	0	0	0	... or John McCain is not a hero, he is showing you who he is.
+1276	KAINE	0	0	0	0	0	0	0	0	0	0	or John McCain is not a hero, he is showing you who he is.
 1277	PENCE	0	0	0	0	0	0	0	0	0	0	Senator, you've whipped out that Mexican thing again.
 1278	PENCE	0	0	0	0	0	0	0	0	0	0	He -- look...
 1279	KAINE	0	0	0	0	0	0	0	0	0	0	Can you defend it?
@@ -1293,11 +1293,11 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 1291	PENCE	0	0	0	0	0	0	0	0	0	0	More and more young people today are embracing life because we know we are -- we're better for it.
 1292	PENCE	0	0	0	0	0	0	0	0	0	0	We can -- like Mother Teresa said at that famous national prayer breakfast...
 1293	KAINE	0	0	0	0	0	0	0	0	0	0	This is important --
-1294	PENCE	0	0	0	0	0	0	0	0	0	0	... bring the -- let's welcome the children into our world.
+1294	PENCE	0	0	0	0	0	0	0	0	0	0	bring the -- let's welcome the children into our world.
 1295	PENCE	0	0	0	0	0	0	0	0	0	0	There are so many families around the country who can't have children.
 1296	PENCE	0	0	0	0	0	0	0	0	0	0	We could improve adoption...
 1297	KAINE	0	0	0	0	0	0	0	0	0	0	But, Governor...
-1298	PENCE	0	0	0	0	0	0	0	0	0	0	... so that families that can't have children can adopt more readily those children from crisis pregnancies.
+1298	PENCE	0	0	0	0	0	0	0	0	0	0	so that families that can't have children can adopt more readily those children from crisis pregnancies.
 1299	KAINE	0	0	0	0	0	0	0	0	0	0	Governor, why don't you trust women to make this choice for themselves?
 1300	KAINE	0	0	0	0	0	0	0	0	0	0	We can encourage people to support life.
 1301	KAINE	0	0	0	0	0	0	0	0	0	0	Of course we can.
@@ -1306,7 +1306,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 1304	KAINE	0	0	0	0	0	0	0	0	0	0	That's what we ought to be doing in public life.
 1305	KAINE	0	0	0	0	0	0	0	0	0	0	Living our lives of faith or motivation with enthusiasm and excitement, convincing other, dialoguing with each other about important moral issues of the day...
 1306	PENCE	0	0	0	0	0	0	0	0	0	0	Because there are...
-1307	KAINE	0	0	0	0	0	0	0	0	0	0	... but on fundamental issues of morality, we should let women make their own decisions.
+1307	KAINE	0	0	0	0	0	0	0	0	0	0	but on fundamental issues of morality, we should let women make their own decisions.
 1308	PENCE	0	0	0	0	0	0	0	0	0	0	Because there is -- a society can be judged by how it deals with its most vulnerable, the aged, the infirm, the disabled, and the unborn.
 1309	PENCE	0	0	0	0	0	0	0	0	0	0	I believe it with all my heart.
 1310	PENCE	1	0	0	0	0	0	1	0	0	0	And I couldn't be more proud to be standing with a pro-life candidate in Donald Trump.
@@ -1335,7 +1335,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 1333	QUIJANO	0	0	0	0	0	0	0	0	0	0	Governor, how will you unify the country if you win?
 1334	PENCE	0	0	0	0	0	0	0	0	0	0	Well, thank you, Elaine, and thanks for a great discussion...
 1335	KAINE	0	0	0	0	0	0	0	0	0	0	Absolutely.
-1336	PENCE	0	0	0	0	0	0	0	0	0	0	... tonight.
+1336	PENCE	0	0	0	0	0	0	0	0	0	0	tonight.
 1337	PENCE	0	0	0	0	0	0	0	0	0	0	Thank you, Senator.
 1338	PENCE	0	0	0	0	0	0	0	0	0	0	This is a very challenging time in the life of our nation.
 1339	PENCE	2	1	0	0	0	0	0	1	0	0	Weakened America's place in the world after the leadership of Hillary Clinton and Barack Obama on the world stage has been followed by an economy that is truly struggling, stifled by an avalanche of more taxes, more regulation, Obamacare, the war on coal, and the kind of trade deals that have put American workers in the back seat.

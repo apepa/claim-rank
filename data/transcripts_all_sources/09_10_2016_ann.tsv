@@ -214,12 +214,12 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 212	RADDATZ	0	0	0	0	0	0	0	0	0	0	Secretary Clinton, I want to follow up on that.
 213	SYSTEM	0	0	0	0	0	0	0	0	0	0	(CROSSTALK)
 214	RADDATZ	0	0	0	0	0	0	0	0	0	0	I'm going to let you talk about e-mails.
-215	CLINTON	0	0	0	0	0	0	0	0	0	0	... because everything he just said is absolutely false, but I'm not surprised.
+215	CLINTON	0	0	0	0	0	0	0	0	0	0	because everything he just said is absolutely false, but I'm not surprised.
 216	TRUMP	0	0	0	0	0	0	0	0	0	0	Oh, really?
 217	CLINTON	0	0	0	0	0	0	0	0	0	0	In the first debate...
 218	SYSTEM	0	0	0	0	0	0	0	0	0	0	(LAUGHTER)
 219	RADDATZ	0	0	0	0	0	0	0	0	0	0	And really, the audience needs to calm down here.
-220	CLINTON	0	0	0	0	0	0	0	0	0	0	... I told people that it would be impossible to be fact-checking Donald all the time.
+220	CLINTON	0	0	0	0	0	0	0	0	0	0	I told people that it would be impossible to be fact-checking Donald all the time.
 221	CLINTON	0	0	0	0	0	0	0	0	0	0	I'd never get to talk about anything I want to do and how we're going to really make lives better for people.
 222	CLINTON	0	0	0	0	0	0	0	0	0	0	So, once again, go to HillaryClinton.com.
 223	CLINTON	0	0	0	0	0	0	0	0	0	0	We have literally Trump -- you can fact check him in real time.
@@ -298,7 +298,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 296	TRUMP	0	0	0	0	0	0	0	0	0	0	Let's see what happens...
 297	SYSTEM	0	0	0	0	0	0	0	0	0	0	(CROSSTALK)
 298	COOPER	0	0	0	0	0	0	0	0	0	0	Allow her to respond.
-299	CLINTON	0	0	0	0	0	0	0	0	0	0	... on some of the issues that people care about tonight.
+299	CLINTON	0	0	0	0	0	0	0	0	0	0	on some of the issues that people care about tonight.
 300	CLINTON	0	0	0	0	0	0	0	0	0	0	Let's get to their questions.
 301	COOPER	0	0	0	0	0	0	0	0	0	0	We have a question here from Ken Karpowicz.
 302	COOPER	0	0	0	0	0	0	0	0	0	0	He has a question about health care.
@@ -392,9 +392,9 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 390	CLINTON	1	0	0	0	0	1	0	0	0	0	And like I say, 20 million people now have health insurance.
 391	CLINTON	0	0	0	0	0	0	0	0	0	0	So if we just rip it up and throw it away, what Donald's not telling you is we just turn it back to the insurance companies the way it used to be, and that means the insurance companies...
 392	COOPER	0	0	0	0	0	0	0	0	0	0	Secretary Clinton...
-393	CLINTON	0	0	0	0	0	0	0	0	0	0	... get to do pretty much whatever they want, including saying, look, I'm sorry, you've got diabetes, you had cancer, your child has asthma...
+393	CLINTON	0	0	0	0	0	0	0	0	0	0	get to do pretty much whatever they want, including saying, look, I'm sorry, you've got diabetes, you had cancer, your child has asthma...
 394	COOPER	0	0	0	0	0	0	0	0	0	0	Your time is up.
-395	CLINTON	0	0	0	0	0	0	0	0	0	0	... you may not be able to have insurance because you can't afford it.
+395	CLINTON	0	0	0	0	0	0	0	0	0	0	you may not be able to have insurance because you can't afford it.
 396	CLINTON	0	0	0	0	0	0	0	0	0	0	So let's fix what's broken about it, but let's not throw it away and give it all back to the insurance companies and the drug companies.
 397	CLINTON	0	0	0	0	0	0	0	0	0	0	That's not going to work.
 398	COOPER	0	0	0	0	0	0	0	0	0	0	Mr. Trump, let me follow up on this.
@@ -425,7 +425,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 423	TRUMP	0	0	0	0	0	0	0	0	0	0	We're going to block grant into the states.
 424	TRUMP	0	0	0	0	0	0	0	0	0	0	We're going to block grant into Medicaid into the states...
 425	COOPER	0	0	0	0	0	0	0	0	0	0	Thank you, Mr. Trump.
-426	TRUMP	0	0	0	0	0	0	0	0	0	0	... so that we will be able to take care of people without the necessary funds to take care of themselves.
+426	TRUMP	0	0	0	0	0	0	0	0	0	0	so that we will be able to take care of people without the necessary funds to take care of themselves.
 427	COOPER	0	0	0	0	0	0	0	0	0	0	Thank you, Mr. Trump.
 428	RADDATZ	0	0	0	0	0	0	0	0	0	0	We now go to Gorbah Hamed with a question for both candidates.
 429	QUESTION	0	0	0	0	0	0	0	0	0	0	Hi.
@@ -531,7 +531,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 529	TRUMP	3	0	1	0	1	0	0	0	0	1	That's not been debunked.
 530	CLINTON	0	0	0	0	0	0	0	0	0	0	So, please...
 531	TRUMP	2	0	0	0	1	0	0	0	0	1	That has not been debunked.
-532	CLINTON	0	0	0	0	0	0	0	0	0	0	... go to HillaryClinton.com and you can see it.
+532	CLINTON	0	0	0	0	0	0	0	0	0	0	go to HillaryClinton.com and you can see it.
 533	TRUMP	8	0	1	1	1	1	1	1	1	1	I was against -- I was against the war in Iraq.
 534	TRUMP	3	0	1	0	1	0	0	0	0	1	Has not been debunked.
 535	TRUMP	0	0	0	0	0	0	0	0	0	0	And you voted for it.
@@ -589,7 +589,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 587	CLINTON	0	0	0	0	0	0	0	0	0	0	And we should demand that Donald release all of his tax returns so that people can see what are the entanglements and the financial relationships that he has...
 588	RADDATZ	0	0	0	0	0	0	0	0	0	0	We're going to get to that later.
 589	RADDATZ	0	0	0	0	0	0	0	0	0	0	Secretary Clinton, you're out of time.
-590	CLINTON	0	0	0	0	0	0	0	0	0	0	... with the Russians and other foreign powers.
+590	CLINTON	0	0	0	0	0	0	0	0	0	0	with the Russians and other foreign powers.
 591	RADDATZ	0	0	0	0	0	0	0	0	0	0	Mr. Trump?
 592	TRUMP	0	0	0	0	0	0	0	0	0	0	Well, I think I should respond, because -- so ridiculous.
 593	TRUMP	0	0	0	0	0	0	0	0	0	0	Look, now she's blaming -- she got caught in a total lie.
@@ -874,7 +874,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 872	RADDATZ	0	0	0	0	0	0	0	0	0	0	Mr. Trump, let me repeat the question.
 873	RADDATZ	0	0	0	0	0	0	0	0	0	0	If you were president...
 874	SYSTEM	0	0	0	0	0	0	0	0	0	0	(LAUGHTER)
-875	RADDATZ	0	0	0	0	0	0	0	0	0	0	... what would you do about Syria and the humanitarian crisis in Aleppo?
+875	RADDATZ	0	0	0	0	0	0	0	0	0	0	what would you do about Syria and the humanitarian crisis in Aleppo?
 876	RADDATZ	0	0	0	0	0	0	0	0	0	0	And I want to remind you what your running mate said.
 877	RADDATZ	0	0	0	0	0	0	0	0	0	0	He said provocations by Russia need to be met with American strength and that if Russia continues to be involved in air strikes along with the Syrian government forces of Assad, the United States of America should be prepared to use military force to strike the military targets of the Assad regime.
 878	TRUMP	0	0	0	0	0	0	0	0	0	0	OK.
@@ -923,7 +923,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 921	TRUMP	0	0	0	0	0	0	0	0	0	0	How -- why would these people stay there?
 922	TRUMP	0	0	0	0	0	0	0	0	0	0	I've been reading now...
 923	RADDATZ	0	0	0	0	0	0	0	0	0	0	Tell me what your strategy is.
-924	TRUMP	1	0	0	0	0	1	0	0	0	0	... for weeks -- I've been reading now for weeks about Mosul, that it's the harbor of where -- you know, between Raqqa and Mosul, this is where they think the ISIS leaders are.
+924	TRUMP	1	0	0	0	0	1	0	0	0	0	for weeks -- I've been reading now for weeks about Mosul, that it's the harbor of where -- you know, between Raqqa and Mosul, this is where they think the ISIS leaders are.
 925	TRUMP	0	0	0	0	0	0	0	0	0	0	Why would they be saying -- they're not staying there anymore.
 926	TRUMP	0	0	0	0	0	0	0	0	0	0	They're gone.
 927	TRUMP	0	0	0	0	0	0	0	0	0	0	Because everybody's talking about how Iraq, which is us with our leadership, goes in to fight Mosul.
@@ -984,7 +984,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 982	TRUMP	1	0	0	0	0	0	0	1	0	0	And by the way, at the last debate, she lied, because it turned out that she did say the gold standard and she said she didn't say it.
 983	TRUMP	0	0	0	0	0	0	0	0	0	0	They actually said that she lied.
 984	TRUMP	0	0	0	0	0	0	0	0	0	0	OK?
-985	TRUMP	0	0	0	0	0	0	0	0	0	0	And she lied.
+985	TRUMP	1	0	0	0	0	0	0	1	0	0	And she lied.
 986	TRUMP	0	0	0	0	0	0	0	0	0	0	But she's lied about a lot of things.
 987	TRUMP	0	0	0	0	0	0	0	0	0	0	I would be a president for all of the people, African- Americans, the inner cities.
 988	TRUMP	0	0	0	0	0	0	0	0	0	0	Devastating what's happening to our inner cities.
@@ -1059,7 +1059,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 1057	CLINTON	0	0	0	0	0	0	0	0	0	0	Because we talked about what we wanted to do.
 1058	CLINTON	0	0	0	0	0	0	0	0	0	0	We might have had some differences, and we had a lot of debates...
 1059	COOPER	0	0	0	0	0	0	0	0	0	0	Thank you, Secretary.
-1060	TRUMP	0	0	0	0	0	0	0	0	0	0	... but we believed that we could make the country better.
+1060	TRUMP	0	0	0	0	0	0	0	0	0	0	but we believed that we could make the country better.
 1061	TRUMP	0	0	0	0	0	0	0	0	0	0	And I was proud of that.
 1062	COOPER	0	0	0	0	0	0	0	0	0	0	I want to give you a minute to respond.
 1063	TRUMP	0	0	0	0	0	0	0	0	0	0	We have a divided nation.
@@ -1087,7 +1087,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 1085	TRUMP	2	0	0	0	0	1	1	0	0	0	Guess what?
 1086	TRUMP	2	0	0	0	0	1	1	0	0	0	She didn't answer it, because when Ambassador Stevens...
 1087	COOPER	0	0	0	0	0	0	0	0	0	0	The question is, is that the discipline of a good leader?
-1088	TRUMP	0	0	0	0	0	0	0	0	0	0	... 600 -- wait a minute, Anderson, 600 times.
+1088	TRUMP	0	0	0	0	0	0	0	0	0	0	600 -- wait a minute, Anderson, 600 times.
 1089	TRUMP	0	0	0	0	0	0	0	0	0	0	Well, she said she was awake at 3 o'clock in the morning, and she also sent a tweet out at 3 o'clock in the morning, but I won't even mention that.
 1090	TRUMP	0	0	0	0	0	0	0	0	0	0	But she said she'll be awake.
 1091	TRUMP	0	0	0	0	0	0	0	0	0	0	Who's going -- the famous thing, we're going to answer our call at 3 o'clock in the morning.

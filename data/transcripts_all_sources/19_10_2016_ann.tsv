@@ -61,7 +61,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 59	WALLACE	0	0	0	0	0	0	0	0	0	0	We now have about 10 minutes for an open discussion.
 60	WALLACE	0	0	0	0	0	0	0	0	0	0	I want to focus on two issues that, in fact, by the justices that you name could end up changing the existing law of the land.
 61	WALLACE	0	0	0	0	0	0	0	0	0	0	First is one that you mentioned, Mr. Trump, and that is guns.
-62	WALLACE	0	0	0	0	0	0	0	0	0	0	Secretary Clinton, you said last year, let me quote, "The Supreme Court is wrong on the Second Amendment."
+62	WALLACE	0	0	0	0	0	0	0	0	0	0	"Secretary Clinton, you said last year, let me quote, ""The Supreme Court is wrong on the Second Amendment."""
 63	WALLACE	0	0	0	0	0	0	0	0	0	0	And now, in fact, in the 2008 Heller case, the court ruled that there is a constitutional right to bear arms, but a right that is reasonably limited.
 64	WALLACE	0	0	0	0	0	0	0	0	0	0	Those were the words of the Judge Antonin Scalia who wrote the decision.
 65	WALLACE	0	0	0	0	0	0	0	0	0	0	What's wrong with that?
@@ -272,7 +272,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 270	CLINTON	1	0	0	0	0	0	0	0	0	1	Now, what I am also arguing is that bringing undocumented immigrants out from the shadows, putting them into the formal economy will be good, because then employers can't exploit them and undercut Americans' wages.
 271	CLINTON	1	0	0	0	0	0	0	0	0	1	And Donald knows a lot about this.
 272	CLINTON	5	0	0	0	0	1	1	1	1	1	He used undocumented labor to build the Trump Tower.
-273	CLINTON	4	0	0	0	0	1	0	1	1	1	He underpaid undocumented workers, and when they complained, he basically said what a lot of employers do: "You complain, I'll get you deported."
+273	CLINTON	4	0	0	0	0	1	0	1	1	1	"He underpaid undocumented workers, and when they complained, he basically said what a lot of employers do: ""You complain, I'll get you deported."""
 274	CLINTON	2	0	0	0	0	0	0	1	1	0	I want to get everybody out of the shadows, get the economy working, and not let employers like Donald exploit undocumented workers, which hurts them, but also hurts American workers.
 275	WALLACE	0	0	0	0	0	0	0	0	0	0	Mr. Trump?
 276	TRUMP	3	1	0	0	0	1	0	1	0	0	President Obama has moved millions of people out.
@@ -305,7 +305,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 303	CLINTON	0	0	0	0	0	0	0	0	0	0	Ronald Reagan was the last president...
 304	WALLACE	0	0	0	0	0	0	0	0	0	0	Secretary Clinton, excuse me.
 305	WALLACE	0	0	0	0	0	0	0	0	0	0	Secretary Clinton.
-306	CLINTON	0	0	0	0	0	0	0	0	0	0	... to sign immigration reform, and George W. Bush supported it, as well.
+306	CLINTON	0	0	0	0	0	0	0	0	0	0	to sign immigration reform, and George W. Bush supported it, as well.
 307	WALLACE	0	0	0	0	0	0	0	0	0	0	Secretary Clinton, I want to clear up your position on this issue, because in a speech you gave to a Brazilian bank, for which you were paid $225,000, we've learned from the WikiLeaks, that you said this, and I want to quote.
 308	WALLACE	0	0	0	0	0	0	0	0	0	0	My dream is a hemispheric common market with open trade and open borders.
 309	WALLACE	0	0	0	0	0	0	0	0	0	0	So that's the question...
@@ -353,7 +353,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 351	TRUMP	0	0	0	0	0	0	0	0	0	0	And she's playing chicken.
 352	TRUMP	0	0	0	0	0	0	0	0	0	0	Look, Putin...
 353	WALLACE	0	0	0	0	0	0	0	0	0	0	Wait, but...
-354	TRUMP	0	0	0	0	0	0	0	0	0	0	... from everything I see, has no respect for this person.
+354	TRUMP	0	0	0	0	0	0	0	0	0	0	from everything I see, has no respect for this person.
 355	CLINTON	0	0	0	0	0	0	0	0	0	0	Well, that's because he'd rather have a puppet as president of the United States.
 356	TRUMP	0	0	0	0	0	0	0	0	0	0	No puppet.
 357	TRUMP	0	0	0	0	0	0	0	0	0	0	No puppet.
@@ -361,7 +361,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 359	TRUMP	0	0	0	0	0	0	0	0	0	0	You're the puppet!
 360	CLINTON	0	0	0	0	0	0	0	0	0	0	It's pretty clear you won't admit...
 361	TRUMP	0	0	0	0	0	0	0	0	0	0	No, you're the puppet.
-362	CLINTON	4	0	1	1	0	0	0	0	1	1	... that the Russians have engaged in cyberattacks against the United States of America, that you encouraged espionage against our people, that you are willing to spout the Putin line, sign up for his wish list, break up NATO, do whatever he wants to do, and that you continue to get help from him, because he has a very clear favorite in this race.
+362	CLINTON	4	0	1	1	0	0	0	0	1	1	that the Russians have engaged in cyberattacks against the United States of America, that you encouraged espionage against our people, that you are willing to spout the Putin line, sign up for his wish list, break up NATO, do whatever he wants to do, and that you continue to get help from him, because he has a very clear favorite in this race.
 363	CLINTON	0	0	0	0	0	0	0	0	0	0	So I think that this is such an unprecedented situation.
 364	CLINTON	0	0	0	0	0	0	0	0	0	0	We've never had a foreign government trying to interfere in our election.
 365	CLINTON	2	0	0	0	0	0	1	0	0	1	We have 17 -- 17 intelligence agencies, civilian and military, who have all concluded that these espionage attacks, these cyberattacks, come from the highest levels of the Kremlin and they are designed to influence our election.
@@ -373,9 +373,9 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 371	TRUMP	2	0	0	0	0	1	0	1	0	0	She has no idea.
 372	CLINTON	0	0	0	0	0	0	0	0	0	0	I am quoting 17...
 373	TRUMP	0	0	0	0	0	0	0	0	0	0	Hillary, you have no idea.
-374	CLINTON	0	0	0	0	0	0	0	0	0	0	... 17 intelligence -- do you doubt 17 military and civilian...
+374	CLINTON	0	0	0	0	0	0	0	0	0	0	17 intelligence -- do you doubt 17 military and civilian...
 375	TRUMP	3	1	0	0	0	0	0	1	1	0	And our country has no idea.
-376	CLINTON	0	0	0	0	0	0	0	0	0	0	... agencies.
+376	CLINTON	0	0	0	0	0	0	0	0	0	0	agencies.
 377	TRUMP	0	0	0	0	0	0	0	0	0	0	Yeah, I doubt it.
 378	TRUMP	0	0	0	0	0	0	0	0	0	0	I doubt it.
 379	CLINTON	0	0	0	0	0	0	0	0	0	0	Well, he'd rather believe Vladimir Putin than the military and civilian intelligence professionals who are sworn to protect us.
@@ -405,7 +405,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 403	TRUMP	0	0	0	0	0	0	0	0	0	0	Let me tell you, Putin has outsmarted her and Obama at every single step of the way.
 404	TRUMP	0	0	0	0	0	0	0	0	0	0	Whether it's Syria, you name it.
 405	TRUMP	0	0	0	0	0	0	0	0	0	0	Missiles.
-406	TRUMP	0	0	0	0	0	0	0	0	0	0	Take a look at the "start up" that they signed.
+406	TRUMP	0	0	0	0	0	0	0	0	0	0	"Take a look at the ""start up"" that they signed."
 407	TRUMP	1	0	1	0	0	0	0	0	0	0	The Russians have said, according to many, many reports, I can't believe they allowed us to do this.
 408	TRUMP	2	1	1	0	0	0	0	0	0	0	They create warheads, and we can't.
 409	TRUMP	0	0	0	0	0	0	0	0	0	0	The Russians can't believe it.
@@ -422,7 +422,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 420	CLINTON	2	0	0	1	0	0	0	0	0	1	This is a person who has been very cavalier, even casual about the use of nuclear weapons.
 421	CLINTON	1	0	0	1	0	0	0	0	0	0	He's...
 422	TRUMP	2	0	0	1	0	0	0	0	0	1	Wrong.
-423	CLINTON	3	0	1	1	0	0	0	0	0	1	... advocated more countries getting them, Japan, Korea, even Saudi Arabia.
+423	CLINTON	3	0	1	1	0	0	0	0	0	1	advocated more countries getting them, Japan, Korea, even Saudi Arabia.
 424	CLINTON	1	0	0	0	0	0	0	0	0	1	He said, well, if we have them, why don't we use them, which I think is terrifying.
 425	CLINTON	0	0	0	0	0	0	0	0	0	0	But here's the deal.
 426	CLINTON	0	0	0	0	0	0	0	0	0	0	The bottom line on nuclear weapons is that when the president gives the order, it must be followed.
@@ -430,7 +430,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 428	CLINTON	0	0	0	0	0	0	0	0	0	0	And that's why 10 people who have had that awesome responsibility have come out and, in an unprecedented way, said they would not trust Donald Trump with the nuclear codes or to have his finger on the nuclear button.
 429	TRUMP	0	0	0	0	0	0	0	0	0	0	I have 200 generals...
 430	WALLACE	0	0	0	0	0	0	0	0	0	0	Very quickly.
-431	TRUMP	0	0	0	0	0	0	0	0	0	0	... and admirals, 21 endorsing me, 21 congressional Medal of Honor recipients.
+431	TRUMP	0	0	0	0	0	0	0	0	0	0	and admirals, 21 endorsing me, 21 congressional Medal of Honor recipients.
 432	TRUMP	0	0	0	0	0	0	0	0	0	0	As far as Japan and other countries, we are being ripped off by everybody in the -- we're defending other countries.
 433	TRUMP	0	0	0	0	0	0	0	0	0	0	We are spending a fortune doing it.
 434	TRUMP	0	0	0	0	0	0	0	0	0	0	They have the bargain of the century.
@@ -442,10 +442,10 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 440	CLINTON	0	0	0	0	0	0	0	0	0	0	Well, I'm just quoting you when you were asked...
 441	TRUMP	1	0	0	1	0	0	0	0	0	0	There's no quote.
 442	TRUMP	2	0	0	1	0	0	0	0	0	1	You're not going to find a quote from me.
-443	CLINTON	1	0	0	0	0	0	0	0	0	1	... about a potential nuclear -- nuclear competition in Asia, you said, you know, go ahead, enjoy yourselves, folks.
+443	CLINTON	1	0	0	0	0	0	0	0	0	1	about a potential nuclear -- nuclear competition in Asia, you said, you know, go ahead, enjoy yourselves, folks.
 444	CLINTON	0	0	0	0	0	0	0	0	0	0	That kind...
 445	TRUMP	1	0	0	0	0	0	0	0	0	1	And defend yourselves.
-446	CLINTON	0	0	0	0	0	0	0	0	0	0	... of language -- well...
+446	CLINTON	0	0	0	0	0	0	0	0	0	0	of language -- well...
 447	TRUMP	1	0	0	0	0	0	0	0	0	1	And defend yourselves.
 448	TRUMP	3	0	0	1	0	0	0	1	0	1	I didn't say nuclear.
 449	TRUMP	1	0	0	0	0	0	0	0	0	1	And defend yourself.
@@ -533,13 +533,13 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 531	TRUMP	0	0	0	0	0	0	0	0	0	0	They're going to start hiring people.
 532	TRUMP	0	0	0	0	0	0	0	0	0	0	We're going to bring the $2.5 trillion...
 533	WALLACE	0	0	0	0	0	0	0	0	0	0	Time, Mr. Trump.
-534	TRUMP	0	0	0	0	0	0	0	0	0	0	... that's offshore back into the country.
+534	TRUMP	0	0	0	0	0	0	0	0	0	0	that's offshore back into the country.
 535	TRUMP	0	0	0	0	0	0	0	0	0	0	We are going to start the engine rolling again, because...
 536	WALLACE	0	0	0	0	0	0	0	0	0	0	Mr. Trump?
-537	TRUMP	0	0	0	0	0	0	0	0	0	0	... right now, our country is dying at 1 percent GDP.
+537	TRUMP	0	0	0	0	0	0	0	0	0	0	right now, our country is dying at 1 percent GDP.
 538	CLINTON	0	0	0	0	0	0	0	0	0	0	Well, let me translate that, if I can, Chris, because...
 539	TRUMP	0	0	0	0	0	0	0	0	0	0	You can't.
-540	CLINTON	2	0	0	0	0	1	1	0	0	0	... the fact is, he's going to advocate for the largest tax cuts we've ever seen, three times more than the tax cuts under the Bush administration.
+540	CLINTON	2	0	0	0	0	1	1	0	0	0	the fact is, he's going to advocate for the largest tax cuts we've ever seen, three times more than the tax cuts under the Bush administration.
 541	CLINTON	0	0	0	0	0	0	0	0	0	0	I have said repeatedly throughout this campaign: I will not raise taxes on anyone making $250,000 or less.
 542	CLINTON	6	1	1	1	0	0	0	1	1	1	I also will not add a penny to the debt.
 543	CLINTON	1	0	0	1	0	0	0	0	0	0	I have costed out what I'm going to do.
@@ -575,7 +575,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 573	CLINTON	0	0	0	0	0	0	0	0	0	0	We've got to do more to get the whole economy moving, and that's what I believe I will be able to do.
 574	WALLACE	0	0	0	0	0	0	0	0	0	0	Mr. Trump, even conservative economists who have looked at your plan say that the numbers don't add up, that your idea, and you've talked about 25 million jobs created, 4 percent...
 575	TRUMP	0	0	0	0	0	0	0	0	0	0	Over a 10-year period.
-576	WALLACE	0	0	0	0	0	0	0	0	0	0	... growth is unrealistic.
+576	WALLACE	0	0	0	0	0	0	0	0	0	0	growth is unrealistic.
 577	WALLACE	0	0	0	0	0	0	0	0	0	0	And they say -- you talk a lot about growing the energy industry.
 578	WALLACE	0	0	0	0	0	0	0	0	0	0	They say with oil prices as low as they are right now, that's unrealistic, as well.
 579	WALLACE	0	0	0	0	0	0	0	0	0	0	Your response, sir?
@@ -612,7 +612,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 610	TRUMP	0	0	0	0	0	0	0	0	0	0	I was so honored.
 611	WALLACE	0	0	0	0	0	0	0	0	0	0	I want you to give you a chance to briefly speak to that, and then I want to pivot to one-sixth of the economy...
 612	TRUMP	0	0	0	0	0	0	0	0	0	0	And that will be as bad as NAFTA.
-613	WALLACE	0	0	0	0	0	0	0	0	0	0	... which is Obamacare.
+613	WALLACE	0	0	0	0	0	0	0	0	0	0	which is Obamacare.
 614	WALLACE	0	0	0	0	0	0	0	0	0	0	But go ahead, briefly.
 615	CLINTON	1	0	0	0	0	0	1	0	0	0	Well, first, let me say, number one, when I saw the final agreement for TPP, I said I was against it.
 616	CLINTON	1	1	0	0	0	0	0	0	0	0	It didn't meet my test.
@@ -671,7 +671,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 669	CLINTON	0	0	0	0	0	0	0	0	0	0	In the 1990s, I went to Beijing and I said women's rights are human rights.
 670	CLINTON	0	0	0	0	0	0	0	0	0	0	He insulted a former Miss Universe, Alicia Machado, called her an eating machine.
 671	TRUMP	0	0	0	0	0	0	0	0	0	0	Give me a break.
-672	CLINTON	0	0	0	0	0	0	0	0	0	0	And on the day when I was in the Situation Room, monitoring the raid that brought Osama bin Laden to justice, he was hosting the "Celebrity Apprentice."
+672	CLINTON	0	0	0	0	0	0	0	0	0	0	"And on the day when I was in the Situation Room, monitoring the raid that brought Osama bin Laden to justice, he was hosting the ""Celebrity Apprentice."""
 673	CLINTON	0	0	0	0	0	0	0	0	0	0	So I'm happy to compare my 30 years of experience, what I've done for this country, trying to help in every way I could, especially kids and families get ahead and stay ahead, with your 30 years, and I'll let the American people make that decision.
 674	TRUMP	0	0	0	0	0	0	0	0	0	0	Well, I think I did a much better job.
 675	TRUMP	1	0	0	0	0	1	0	0	0	0	I built a massive company, a great company, some of the greatest assets anywhere in the world, worth many, many billions of dollars.
@@ -727,12 +727,12 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 725	CLINTON	0	0	0	0	0	0	0	0	0	0	In fact, he went on to say...
 726	WALLACE	0	0	0	0	0	0	0	0	0	0	Her two minutes -- sir, her two minutes.
 727	WALLACE	0	0	0	0	0	0	0	0	0	0	Her two minutes.
-728	TRUMP	0	0	0	0	0	0	0	0	0	0	I did not say that.
+728	TRUMP	4	0	0	1	0	1	0	1	0	1	I did not say that.
 729	WALLACE	0	0	0	0	0	0	0	0	0	0	It's her two minutes.
-730	CLINTON	0	0	0	0	0	0	0	0	0	0	He went on to say, "Look at her.
-731	CLINTON	0	0	0	0	0	0	0	0	0	0	I don't think so."
-732	CLINTON	0	0	0	0	0	0	0	0	0	0	About another woman, he said, "That wouldn't be my first choice."
-733	CLINTON	0	0	0	0	0	0	0	0	0	0	He attacked the woman reporter writing the story, called her "disgusting," as he has called a number of women during this campaign.
+730	CLINTON	0	0	0	0	0	0	0	0	0	0	"He went on to say, ""Look at her."
+731	CLINTON	0	0	0	0	0	0	0	0	0	0	"I don't think so."""
+732	CLINTON	0	0	0	0	0	0	0	0	0	0	"About another woman, he said, ""That wouldn't be my first choice."""
+733	CLINTON	0	0	0	0	0	0	0	0	0	0	"He attacked the woman reporter writing the story, called her ""disgusting,"" as he has called a number of women during this campaign."
 734	CLINTON	0	0	0	0	0	0	0	0	0	0	Donald thinks belittling women makes him bigger.
 735	CLINTON	0	0	0	0	0	0	0	0	0	0	He goes after their dignity, their self-worth, and I don't think there is a woman anywhere who doesn't know what that feels like.
 736	CLINTON	0	0	0	0	0	0	0	0	0	0	So we now know what Donald thinks and what he says and how he acts toward women.
@@ -741,7 +741,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 739	CLINTON	0	0	0	0	0	0	0	0	0	0	America is great, because America is good.
 740	CLINTON	0	0	0	0	0	0	0	0	0	0	And it really is up to all of us to make that true, now and in the future, and particularly for our children and our grandchildren.
 741	WALLACE	0	0	0	0	0	0	0	0	0	0	Mr. Trump...
-742	TRUMP	0	0	0	0	0	0	0	0	0	0	Nobody has more respect for women than I do.
+742	TRUMP	1	0	0	0	0	1	0	0	0	0	Nobody has more respect for women than I do.
 743	TRUMP	0	0	0	0	0	0	0	0	0	0	Nobody.
 744	SYSTEM	0	0	0	0	0	0	0	0	0	0	(LAUGHTER)
 745	TRUMP	0	0	0	0	0	0	0	0	0	0	Nobody has more respect...
@@ -766,7 +766,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 764	CLINTON	2	0	0	0	1	0	1	0	0	0	But he also went after a disabled reporter, mocked and mimicked him on national television.
 765	TRUMP	2	0	0	0	1	0	1	0	0	0	Wrong.
 766	CLINTON	1	0	0	0	0	0	1	0	0	0	He went after Mr. and Mrs. Khan, the parents of a young man who died serving our country, a Gold Star family, because of their religion.
-767	CLINTON	1	0	0	0	0	0	1	0	0	0	He went after John McCain, a prisoner of war, said he prefers "people who aren't captured."
+767	CLINTON	1	0	0	0	0	0	1	0	0	0	"He went after John McCain, a prisoner of war, said he prefers ""people who aren't captured."""
 768	CLINTON	1	0	0	0	0	0	1	0	0	0	He went after a federal judge, born in Indiana, but who Donald said couldn't be trusted to try the fraud and racketeering case against Trump University because his parents were Mexican.
 769	CLINTON	0	0	0	0	0	0	0	0	0	0	So it's not one thing.
 770	CLINTON	0	0	0	0	0	0	0	0	0	0	This is a pattern, a pattern of divisiveness, of a very dark and in many ways dangerous vision of our country, where he incites violence, where he applauds people who are pushing and pulling and punching at his rallies.
@@ -778,7 +778,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 776	WALLACE	0	0	0	0	0	0	0	0	0	0	During the last...
 777	TRUMP	0	0	0	0	0	0	0	0	0	0	The other things are false, but honestly, I'd love to talk about getting rid of ISIS, and I'd love to talk about other things...
 778	WALLACE	0	0	0	0	0	0	0	0	0	0	OK.
-779	TRUMP	0	0	0	0	0	0	0	0	0	0	... but those other charges, as she knows, are false.
+779	TRUMP	0	0	0	0	0	0	0	0	0	0	but those other charges, as she knows, are false.
 780	WALLACE	0	0	0	0	0	0	0	0	0	0	In this bucket about fitness to be president, there's been a lot of developments over the last 10 days since the last debate.
 781	WALLACE	0	0	0	0	0	0	0	0	0	0	I'd like to ask you about them.
 782	WALLACE	0	0	0	0	0	0	0	0	0	0	These are questions that the American people have.
@@ -794,7 +794,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 792	CLINTON	1	0	0	0	0	0	1	0	0	0	But just briefly, the Clinton Foundation made it possible for 11 million people around the world with HIV-AIDS to afford treatment, and that's about half all the people in the world who are getting treatment.
 793	CLINTON	0	0	0	0	0	0	0	0	0	0	In partnership with the American Health Association...
 794	WALLACE	0	0	0	0	0	0	0	0	0	0	Secretary Clinton...
-795	CLINTON	0	0	0	0	0	0	0	0	0	0	... we have made environments in schools healthier for kids, including healthier lunches...
+795	CLINTON	0	0	0	0	0	0	0	0	0	0	we have made environments in schools healthier for kids, including healthier lunches...
 796	WALLACE	0	0	0	0	0	0	0	0	0	0	Secretary Clinton, respectfully, this is -- this is an open discussion.
 797	CLINTON	0	0	0	0	0	0	0	0	0	0	Well, it is an open discussion.
 798	CLINTON	0	0	0	0	0	0	0	0	0	0	And you...
@@ -806,10 +806,10 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 804	WALLACE	0	0	0	0	0	0	0	0	0	0	Let's ask Mr. Trump.
 805	CLINTON	0	0	0	0	0	0	0	0	0	0	There is a lot of evidence about the very good work...
 806	TRUMP	0	0	0	0	0	0	0	0	0	0	It's been very well studied.
-807	CLINTON	0	0	0	0	0	0	0	0	0	0	... and the high rankings...
+807	CLINTON	0	0	0	0	0	0	0	0	0	0	and the high rankings...
 808	SYSTEM	0	0	0	0	0	0	0	0	0	0	(CROSSTALK)
 809	WALLACE	0	0	0	0	0	0	0	0	0	0	Please let me Mr. Trump speak.
-810	TRUMP	1	0	0	0	0	0	0	1	0	0	... and it's a criminal enterprise, and so many people know it.
+810	TRUMP	1	0	0	0	0	0	0	1	0	0	and it's a criminal enterprise, and so many people know it.
 811	WALLACE	0	0	0	0	0	0	0	0	0	0	Please let Mr. Trump speak.
 812	SYSTEM	0	0	0	0	0	0	0	0	0	0	(CROSSTALK)
 813	TRUMP	1	0	0	0	0	0	0	1	0	0	It's a criminal enterprise.
@@ -840,7 +840,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 838	CLINTON	0	0	0	0	0	0	0	0	0	0	We have done things to help small businesses, agriculture, and so much else.
 839	CLINTON	0	0	0	0	0	0	0	0	0	0	And we're going to keep working to help Haiti...
 840	WALLACE	0	0	0	0	0	0	0	0	0	0	All right.
-841	CLINTON	0	0	0	0	0	0	0	0	0	0	... because it's an important part of the American experience.
+841	CLINTON	0	0	0	0	0	0	0	0	0	0	because it's an important part of the American experience.
 842	TRUMP	0	0	0	0	0	0	0	0	0	0	They don't want you to help them anymore.
 843	SYSTEM	0	0	0	0	0	0	0	0	0	0	(CROSSTALK)
 844	TRUMP	0	0	0	0	0	0	0	0	0	0	I'd like to mention one thing.
@@ -861,8 +861,8 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 859	TRUMP	0	0	0	0	0	0	0	0	0	0	There was.
 860	TRUMP	0	0	0	0	0	0	0	0	0	0	There was.
 861	TRUMP	0	0	0	0	0	0	0	0	0	0	And, by the way...
-862	WALLACE	0	0	0	0	0	0	0	0	0	0	... instead of Mar-a-Lago or yourself, sir.
-863	TRUMP	3	0	0	1	0	1	0	0	0	1	... the money -- the money went to Fisher House, where they build houses -- the money that you're talking about went to Fisher House, where they build houses for veterans and disabled vets.
+862	WALLACE	0	0	0	0	0	0	0	0	0	0	instead of Mar-a-Lago or yourself, sir.
+863	TRUMP	3	0	0	1	0	1	0	0	0	1	the money -- the money went to Fisher House, where they build houses -- the money that you're talking about went to Fisher House, where they build houses for veterans and disabled vets.
 864	WALLACE	0	0	0	0	0	0	0	0	0	0	I want to get into one...
 865	CLINTON	0	0	0	0	0	0	0	0	0	0	But, of course, there's no way we can know whether any of that is true, because he hasn't released his tax returns.
 866	CLINTON	1	0	0	0	0	0	1	0	0	0	He is the first candidate ever to run for president in the last 40-plus years who has not released his tax returns, so everything he says about charity or anything else, we can't prove it.
@@ -885,7 +885,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 883	WALLACE	0	0	0	0	0	0	0	0	0	0	Folks, we heard this...
 884	TRUMP	0	0	0	0	0	0	0	0	0	0	And you know, Hillary, what you should have done, you should have changed the law when you were a United States senator...
 885	WALLACE	0	0	0	0	0	0	0	0	0	0	Folks, we heard this...
-886	TRUMP	0	0	0	0	0	0	0	0	0	0	... because your donors and your special interests are doing the same thing as I do, except even more so.
+886	TRUMP	0	0	0	0	0	0	0	0	0	0	because your donors and your special interests are doing the same thing as I do, except even more so.
 887	CLINTON	0	0	0	0	0	0	0	0	0	0	Well, you know...
 888	TRUMP	0	0	0	0	0	0	0	0	0	0	You should have changed the law.
 889	TRUMP	0	0	0	0	0	0	0	0	0	0	But you won't change the law, because you take in so much money.
@@ -893,14 +893,14 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 891	CLINTON	0	0	0	0	0	0	0	0	0	0	Made with Chinese steel.
 892	TRUMP	0	0	0	0	0	0	0	0	0	0	But I will tell you, I sat there...
 893	SYSTEM	0	0	0	0	0	0	0	0	0	0	(LAUGHTER)
-894	TRUMP	0	0	0	0	0	0	0	0	0	0	... I sat there watching ad after ad after ad, false ad.
+894	TRUMP	0	0	0	0	0	0	0	0	0	0	I sat there watching ad after ad after ad, false ad.
 895	TRUMP	0	0	0	0	0	0	0	0	0	0	All paid for by your friends on Wall Street that gave so much money because they know you're going to protect them.
 896	TRUMP	0	0	0	0	0	0	0	0	0	0	And, frankly, you should have changed the laws.
 897	WALLACE	0	0	0	0	0	0	0	0	0	0	Mr. Trump...
 898	TRUMP	0	0	0	0	0	0	0	0	0	0	If you don't like what I did, you should have changed the laws.
 899	WALLACE	0	0	0	0	0	0	0	0	0	0	Mr. Trump, I want to ask you about one last question in this topic.
 900	WALLACE	1	0	0	0	0	0	1	0	0	0	You have been warning at rallies recently that this election is rigged and that Hillary Clinton is in the process of trying to steal it from you.
-901	WALLACE	0	0	0	0	0	0	0	0	0	0	Your running mate, Governor Pence, pledged on Sunday that he and you -- his words -- "will absolutely accept the result of this election."
+901	WALLACE	0	0	0	0	0	0	0	0	0	0	"Your running mate, Governor Pence, pledged on Sunday that he and you -- his words -- ""will absolutely accept the result of this election."""
 902	WALLACE	0	0	0	0	0	0	0	0	0	0	Today your daughter, Ivanka, said the same thing.
 903	WALLACE	0	0	0	0	0	0	0	0	0	0	I want to ask you here on the stage tonight: Do you make the same commitment that you will absolutely -- sir, that you will absolutely accept the result of this election?
 904	TRUMP	0	0	0	0	0	0	0	0	0	0	I will look at it at the time.
@@ -957,7 +957,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 955	WALLACE	0	0	0	0	0	0	0	0	0	0	Hold on.
 956	WALLACE	0	0	0	0	0	0	0	0	0	0	Hold on, folks.
 957	WALLACE	0	0	0	0	0	0	0	0	0	0	Hold on, folks.
-958	CLINTON	0	0	0	0	0	0	0	0	0	0	... it just shows you're not up to doing the job.
+958	CLINTON	0	0	0	0	0	0	0	0	0	0	it just shows you're not up to doing the job.
 959	CLINTON	0	0	0	0	0	0	0	0	0	0	And let's -- you know, let's be clear about what he is saying and what that means.
 960	CLINTON	0	0	0	0	0	0	0	0	0	0	He is denigrating -- he's talking down our democracy.
 961	CLINTON	0	0	0	0	0	0	0	0	0	0	And I, for one, am appalled that somebody who is the nominee of one of our two major parties would take that kind of position.
@@ -1039,13 +1039,13 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 1037	CLINTON	0	0	0	0	0	0	0	0	0	0	I've said that years ago.
 1038	CLINTON	0	0	0	0	0	0	0	0	0	0	He has consistently denied what is...
 1039	TRUMP	3	0	0	0	0	0	1	1	0	1	Wrong.
-1040	CLINTON	0	0	0	0	0	0	0	0	0	0	... a very clear fact that...
-1041	TRUMP	0	0	0	0	0	0	0	0	0	0	Wrong.
-1042	CLINTON	0	0	0	0	0	0	0	0	0	0	... before the invasion, he supported it.
+1040	CLINTON	0	0	0	0	0	0	0	0	0	0	a very clear fact that...
+1041	TRUMP	3	0	0	0	0	0	1	1	0	1	Wrong.
+1042	CLINTON	0	0	0	0	0	0	0	0	0	0	before the invasion, he supported it.
 1043	CLINTON	0	0	0	0	0	0	0	0	0	0	And, you know, I just want everybody to go Google it.
-1044	CLINTON	0	0	0	0	0	0	0	0	0	0	Google "Donald Trump Iraq."
+1044	CLINTON	0	0	0	0	0	0	0	0	0	0	"Google ""Donald Trump Iraq."""
 1045	CLINTON	0	0	0	0	0	0	0	0	0	0	And you will see the dozens of sources which verify that he was for the invasion of Iraq.
-1046	TRUMP	0	0	0	0	0	0	0	0	0	0	Wrong.
+1046	TRUMP	3	0	0	0	0	0	1	1	0	1	Wrong.
 1047	CLINTON	0	0	0	0	0	0	0	0	0	0	And you can actually hear the audio of him saying that.
 1048	CLINTON	0	0	0	0	0	0	0	0	0	0	Now, why does that matter?
 1049	CLINTON	0	0	0	0	0	0	0	0	0	0	Well, it matters because he has not told the truth about that position.
@@ -1053,7 +1053,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 1051	CLINTON	0	0	0	0	0	0	0	0	0	0	But what's really important here is to understand all the interplay.
 1052	CLINTON	0	0	0	0	0	0	0	0	0	0	Mosul is a Sunni city.
 1053	CLINTON	0	0	0	0	0	0	0	0	0	0	Mosul is on the border of Syria.
-1054	CLINTON	0	0	0	0	0	0	0	0	0	0	And, yes, we do need to go after Baghdadi, and -- just like we went after bin Laden, while you were doing "Celebrity Apprentice," and we brought him to justice.
+1054	CLINTON	0	0	0	0	0	0	0	0	0	0	"And, yes, we do need to go after Baghdadi, and -- just like we went after bin Laden, while you were doing ""Celebrity Apprentice,"" and we brought him to justice."
 1055	CLINTON	0	0	0	0	0	0	0	0	0	0	We need to go after the leadership.
 1056	CLINTON	0	0	0	0	0	0	0	0	0	0	But we need to get rid of them, get rid of their fighters.
 1057	CLINTON	0	0	0	0	0	0	0	0	0	0	There are an estimated several thousand fighters in Mosul.
@@ -1080,7 +1080,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 1078	SYSTEM	0	0	0	0	0	0	0	0	0	0	(CROSSTALK)
 1079	TRUMP	0	0	0	0	0	0	0	0	0	0	We could have gained if they did it by surprise.
 1080	WALLACE	0	0	0	0	0	0	0	0	0	0	Secretary, please let Mr. Trump speak.
-1081	CLINTON	0	0	0	0	0	0	0	0	0	0	... unfit, and he proves it every time he talks.
+1081	CLINTON	0	0	0	0	0	0	0	0	0	0	unfit, and he proves it every time he talks.
 1082	TRUMP	0	0	0	0	0	0	0	0	0	0	No, you are the one that's unfit.
 1083	TRUMP	0	0	0	0	0	0	0	0	0	0	You know, WikiLeaks just actually came out -- John Podesta said some horrible things about you, and, boy, was he right.
 1084	TRUMP	0	0	0	0	0	0	0	0	0	0	He said some beauties.
@@ -1094,7 +1094,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 1092	CLINTON	0	0	0	0	0	0	0	0	0	0	Well, you should ask Bernie Sanders who he's supporting for president.
 1093	CLINTON	0	0	0	0	0	0	0	0	0	0	And he has said...
 1094	TRUMP	0	0	0	0	0	0	0	0	0	0	Which is a big mistake.
-1095	CLINTON	0	0	0	0	0	0	0	0	0	0	... as he has campaigned for me around the country, you are the most dangerous person to run for president in the modern history of America.
+1095	CLINTON	0	0	0	0	0	0	0	0	0	0	as he has campaigned for me around the country, you are the most dangerous person to run for president in the modern history of America.
 1096	CLINTON	0	0	0	0	0	0	0	0	0	0	I think he's right.
 1097	WALLACE	0	0	0	0	0	0	0	0	0	0	Let's turn to Aleppo.
 1098	WALLACE	0	0	0	0	0	0	0	0	0	0	Mr. Trump, in the last debate, you were both asked about the situation in the Syrian city of Aleppo.
@@ -1104,7 +1104,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 1102	TRUMP	0	0	0	0	0	0	0	0	0	0	It's a catastrophe.
 1103	TRUMP	0	0	0	0	0	0	0	0	0	0	I mean...
 1104	WALLACE	0	0	0	0	0	0	0	0	0	0	It's a catastrophe, but there...
-1105	TRUMP	0	0	0	0	0	0	0	0	0	0	... it's a mess.
+1105	TRUMP	0	0	0	0	0	0	0	0	0	0	it's a mess.
 1106	WALLACE	0	0	0	0	0	0	0	0	0	0	There are a quarter of...
 1107	TRUMP	0	0	0	0	0	0	0	0	0	0	Have you seen it?
 1108	TRUMP	0	0	0	0	0	0	0	0	0	0	Have you seen it?
@@ -1117,7 +1117,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 1115	TRUMP	0	0	0	0	0	0	0	0	0	0	That's right.
 1116	TRUMP	0	0	0	0	0	0	0	0	0	0	And they are being slaughtered...
 1117	WALLACE	0	0	0	0	0	0	0	0	0	0	Yes.
-1118	TRUMP	0	0	0	0	0	0	0	0	0	0	... because of bad decisions.
+1118	TRUMP	0	0	0	0	0	0	0	0	0	0	because of bad decisions.
 1119	WALLACE	0	0	0	0	0	0	0	0	0	0	If I may just finish here, and you also said that -- that Syria and Russia are busy fighting ISIS.
 1120	WALLACE	0	0	0	0	0	0	0	0	0	0	In fact, they have been the ones who've been bombing and shelling eastern Aleppo, and they just announced a humanitarian pause, in effect, admitting that they have been bombing and shelling Aleppo.
 1121	WALLACE	0	0	0	0	0	0	0	0	0	0	Would you like to clear that up, sir?
@@ -1146,7 +1146,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 1144	TRUMP	0	0	0	0	0	0	0	0	0	0	If she did nothing, we'd be in much better shape.
 1145	TRUMP	1	0	0	0	0	0	0	0	1	0	And this is what's caused the great migration, where she's taking in tens of thousands of Syrian refugees, who probably in many cases -- not probably, who are definitely...
 1146	WALLACE	0	0	0	0	0	0	0	0	0	0	Let me...
-1147	TRUMP	2	0	0	0	0	1	0	0	1	0	... in many cases, ISIS-aligned, and we now have them in our country, and wait until you see -- this is going to be the great Trojan horse.
+1147	TRUMP	2	0	0	0	0	1	0	0	1	0	in many cases, ISIS-aligned, and we now have them in our country, and wait until you see -- this is going to be the great Trojan horse.
 1148	TRUMP	1	0	0	0	0	1	0	0	0	0	And wait until you see what happens in the coming years.
 1149	TRUMP	0	0	0	0	0	0	0	0	0	0	Lots of luck, Hillary.
 1150	TRUMP	0	0	0	0	0	0	0	0	0	0	Thanks a lot for doing a great job.
@@ -1223,11 +1223,11 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 1221	TRUMP	0	0	0	0	0	0	0	0	0	0	And people, Chris, will again go back to work and they'll make a lot of money.
 1222	TRUMP	0	0	0	0	0	0	0	0	0	0	And we'll have companies that will grow and expand and start from new.
 1223	WALLACE	0	0	0	0	0	0	0	0	0	0	Secretary Clinton?
-1224	CLINTON	0	0	0	0	0	0	0	0	0	0	Well, first, when I hear Donald talk like that and know that his slogan is "Make America Great Again," I wonder when he thought America was great.
-1225	CLINTON	0	0	0	0	0	0	0	0	0	0	And before he rushes and says, "You know, before you and President Obama were there," I think it's important to recognize that he has been criticizing our government for decades.
+1224	CLINTON	0	0	0	0	0	0	0	0	0	0	"Well, first, when I hear Donald talk like that and know that his slogan is ""Make America Great Again,"" I wonder when he thought America was great."
+1225	CLINTON	0	0	0	0	0	0	0	0	0	0	"And before he rushes and says, ""You know, before you and President Obama were there,"" I think it's important to recognize that he has been criticizing our government for decades."
 1226	CLINTON	0	0	0	0	0	0	0	0	0	0	You know, back in 1987, he took out a $100,000 ad in the New York Times, during the time when President Reagan was president, and basically said exactly what he just said now, that we were the laughingstock of the world.
 1227	CLINTON	0	0	0	0	0	0	0	0	0	0	He was criticizing President Reagan.
-1228	CLINTON	0	0	0	0	0	0	0	0	0	0	This is the way Donald thinks about himself, puts himself into, you know, the middle and says, "You know, I alone can fix it," as he said on the convention stage.
+1228	CLINTON	0	0	0	0	0	0	0	0	0	0	"This is the way Donald thinks about himself, puts himself into, you know, the middle and says, ""You know, I alone can fix it,"" as he said on the convention stage."
 1229	CLINTON	1	0	0	0	0	1	0	0	0	0	But if you look at the debt, which is the issue you asked about, Chris, I pay for everything I'm proposing.
 1230	CLINTON	7	1	1	1	0	1	0	1	1	1	I do not add a penny to the national debt.
 1231	CLINTON	0	0	0	0	0	0	0	0	0	0	I take that very seriously, because I do think it's one of the issues we've got to come to grips with.
@@ -1287,7 +1287,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 1285	CLINTON	0	0	0	0	0	0	0	0	0	0	My Social Security payroll contribution will go up, as will Donald's, assuming he can't figure out how to get out of it.
 1286	CLINTON	0	0	0	0	0	0	0	0	0	0	But what we want to do is to replenish the Social Security Trust Fund...
 1287	TRUMP	0	0	0	0	0	0	0	0	0	0	Such a nasty woman.
-1288	CLINTON	0	0	0	0	0	0	0	0	0	0	... by making sure that we have sufficient resources, and that will come from either raising the cap and/or finding other ways to get more money into it.
+1288	CLINTON	0	0	0	0	0	0	0	0	0	0	by making sure that we have sufficient resources, and that will come from either raising the cap and/or finding other ways to get more money into it.
 1289	CLINTON	0	0	0	0	0	0	0	0	0	0	I will not cut benefits.
 1290	CLINTON	0	0	0	0	0	0	0	0	0	0	I want to enhance benefits for low-income workers and for women who have been disadvantaged by the current Social Security system.
 1291	CLINTON	0	0	0	0	0	0	0	0	0	0	But what Donald is proposing with these massive tax cuts will result in a $20 trillion additional national debt.
@@ -1297,7 +1297,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 1295	CLINTON	0	0	0	0	0	0	0	0	0	0	So if repeals it, our Medicare problem gets worse.
 1296	CLINTON	0	0	0	0	0	0	0	0	0	0	What we need to do is go after...
 1297	TRUMP	1	0	0	0	0	0	1	0	0	0	Your husband disagrees with you.
-1298	CLINTON	0	0	0	0	0	0	0	0	0	0	... the long-term health care drivers.
+1298	CLINTON	0	0	0	0	0	0	0	0	0	0	the long-term health care drivers.
 1299	CLINTON	0	0	0	0	0	0	0	0	0	0	We've got to get costs down, increase value, emphasize wellness.
 1300	CLINTON	0	0	0	0	0	0	0	0	0	0	I have a plan for doing that.
 1301	CLINTON	0	0	0	0	0	0	0	0	0	0	And I think that we will be able to get entitlement spending under control by with more resources and harder decisions.
@@ -1321,7 +1321,7 @@ ID	Speaker	ALL	CT	ABC	CNN	WP	NPR	PF	TG	NYT	FC	Text
 1319	TRUMP	0	0	0	0	0	0	0	0	0	0	She's raising the money from the people she wants to control.
 1320	TRUMP	0	0	0	0	0	0	0	0	0	0	Doesn't work that way.
 1321	TRUMP	0	0	0	0	0	0	0	0	0	0	But when I started this campaign, I started it very strongly.
-1322	TRUMP	0	0	0	0	0	0	0	0	0	0	It's called "Make America Great Again."
+1322	TRUMP	0	0	0	0	0	0	0	0	0	0	"It's called ""Make America Great Again."""
 1323	TRUMP	0	0	0	0	0	0	0	0	0	0	We're going to make America great.
 1324	TRUMP	0	0	0	0	0	0	0	0	0	0	We have a depleted military.
 1325	TRUMP	0	0	0	0	0	0	0	0	0	0	It has to be helped, has to be fixed.
