@@ -39,7 +39,7 @@ def get_experimential_pipeline(train, to_matrix=True):
         ('sent_len', counting_feat.SentenceLength()),  # cb
         ('ner', alchemy_feat.NER()),  # cb
         ('pos', nltk_feat.POS()),  # cb
-        ('syn', dict_feat.SyntacticParse()),
+        # ('syn', dict_feat.SyntacticParse()),
         # ('tfidfn', counting_feat.BagOfTfIDFN(train)),
         ('tfidf', counting_feat.BagOfTfIDF(train)),
         ('chunks', counting_feat.ChunkLen()),
@@ -47,22 +47,11 @@ def get_experimential_pipeline(train, to_matrix=True):
         ('neg_chunk', dict_feat.NegationNextChunk()),
         ('lda', topics.LDATopics()),
         ('lda_sim', topics.LDAVectorSim()),
-        ('textblob', textblob_feat.TextBlobSentiment()),
+        # ('textblob', textblob_feat.TextBlobSentiment()),
         ('discourse', discourse.DiscourseInfo()),
         ('opponent', metadata_feat.TalkingAboutTheOther())
     ]
     return get_pipeline(feats, to_matrix)
-
-
-def get_serialized_pipeline(train):
-    from src.features import counting_feat, knn_similarity
-    config = get_config()
-    feature_names = [file_name for file_name in listdir(config['features_dump_dir'])]
-    return Pipeline([('read', ReadFeatures(feature_names)),
-                    ("train_search", knn_similarity.TrainSearch(train=train)),
-                     ('tfidf', counting_feat.BagOfTfIDF(train)),  # cb
-                     ('transform', ToMatrix(features=feature_names)),
-                     ('norm', MinMaxScaler())])
 
 
 def get_pipeline(features, to_matrix=True):
@@ -77,3 +66,20 @@ def get_pipeline(features, to_matrix=True):
         return Pipeline(features + [('transform', ToMatrix(features=feature_names)), ('norm', MinMaxScaler())])
     else:
         return Pipeline(features)
+
+
+def get_serialized_pipeline(train):
+    from src.features import counting_feat, knn_similarity
+    config = get_config()
+
+    read_feature_names = [file_name for file_name in listdir(config['features_dump_dir'])]
+    all_feature_names = read_feature_names + counting_feat.BagOfTfIDFN.FEATS + knn_similarity.TrainSearch.FEATS
+
+    black_list = ['polarity', 'subjectivity', 'syntactic_parse']
+    all_feature_names = [feat for feat in all_feature_names if feat not in black_list]
+
+    return Pipeline([('read', ReadFeatures(read_feature_names)),
+                     ("train_search", knn_similarity.TrainSearch(train=train)),
+                     ('tfidf', counting_feat.BagOfTfIDFN(train)),  # cb
+                     ('transform', ToMatrix(features=all_feature_names)),
+                     ('norm', MinMaxScaler())])
