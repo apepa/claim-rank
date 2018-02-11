@@ -11,11 +11,12 @@ def run(test, train):
     feats = get_serialized_pipeline(train)
 
     train_x = feats.fit_transform(train)
-    test_x = feats.transform(test)
+    test_x = feats.fit_transform(test)
+
     # train
     train_y = [1 if sent.label_test > 0 else 0 for sent in train]
     clf = MLPClassifier(max_iter=300, solver='sgd', alpha=4, hidden_layer_sizes=(200, 50),
-                        random_state=42, activation='relu', learning_rate_init=0.03, batch_size=550)
+                        random_state=42, activation='relu', learning_rate_init=0.04, batch_size=550)
 
     clf.fit(train_x, train_y)
 

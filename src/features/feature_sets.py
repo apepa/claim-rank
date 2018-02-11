@@ -72,11 +72,14 @@ def get_serialized_pipeline(train):
     from src.features import counting_feat, knn_similarity
     config = get_config()
 
-    read_feature_names = [file_name for file_name in listdir(config['features_dump_dir'])]
-    all_feature_names = read_feature_names + counting_feat.BagOfTfIDFN.FEATS + knn_similarity.TrainSearch.FEATS
+    black_list = ['polarity', 'subjectivity', 'sent_nrc',
+                  'discourse_rel', 'discourse_it',
+                  'in_chunk_last_it', 'in_chunk_last_rel', 'in_chunk_first_it', 'in_chunk_first_rel'
+                  ]
+    read_feature_names = [file_name for file_name in listdir(config['features_dump_dir']) if file_name not in black_list]
 
-    black_list = ['polarity', 'subjectivity', 'syntactic_parse']
-    all_feature_names = [feat for feat in all_feature_names if feat not in black_list]
+    all_feature_names = read_feature_names + counting_feat.BagOfTfIDFN.FEATS + knn_similarity.TrainSearch.FEATS
+    print(all_feature_names)
 
     return Pipeline([('read', ReadFeatures(read_feature_names)),
                      ("train_search", knn_similarity.TrainSearch(train=train)),
