@@ -4,7 +4,7 @@ import os
 
 from sklearn.metrics import precision_score, recall_score, average_precision_score, roc_auc_score
 from src.features import counting_feat, knn_similarity
-from src.features.feature_sets import get_experimential_pipeline
+from src.features.feature_sets import get_experimental_pipeline
 from src.data.debates import get_for_crossvalidation, DEBATES, read_debates
 from src.utils.config import get_config
 from operator import itemgetter, attrgetter
@@ -190,7 +190,6 @@ def get_metrics_for_plot(agreement, ranks):
 
     return av_p, precision, recall, thresholds
 
-
 if __name__ == '__main__':
         serialize = False
         if serialize:
@@ -220,3 +219,5 @@ if __name__ == '__main__':
                 results.append(split_results)
                 get_all_metrics(copy.deepcopy([split_results]), agreement=1)
             get_all_metrics(results, agreement=1)
+
+

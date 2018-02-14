@@ -20,7 +20,7 @@ def get_cb_pipeline(train):
     return get_pipeline(features)
 
 
-def get_experimential_pipeline(train, to_matrix=True):
+def get_experimental_pipeline(train, to_matrix=True):
     from src.features import alchemy_feat, counting_feat, \
         dict_feat, metadata_feat, nltk_feat, topics, \
         knn_similarity, discourse, textblob_feat, embeddings_feat
