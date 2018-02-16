@@ -9,8 +9,8 @@ from keras import regularizers
 import time
 
 class MultilayerModel(KerasModel):
-  def __init__(self, prefix='model_multitask', epochs=100, focus=-1,
-            focus_value=3.5, lr=0.08, layers=1, size=1100, momentum=0.7, nestorov=True, batch_size=700,
+  def __init__(self, prefix='model_multitask', epochs=100, focus=1,
+            focus_value=3.5, lr=0.08, layers=1, size=1100, momentum=0.7, nesterov=True, batch_size=700,
             size_2=700, dropout_1=0.6, dropout_2=0, l2_1 = 0.002, l2_2=0.006, decay=1e-4
       ):
       KerasModel.__init__(self, prefix=prefix, 
@@ -21,7 +21,7 @@ class MultilayerModel(KerasModel):
           layers=layers,
           size=size,
           momentum=momentum,
-          nestorov=nestorov,
+          nesterov=nesterov,
           batch_size=batch_size,
           decay=decay)
       self.size_2 = size_2
@@ -52,7 +52,7 @@ class MultilayerModel(KerasModel):
                            kernel_initializer=lecun_normal(seed=42), kernel_regularizer=regularizers.l2(self.l2_2))(drop)
           out_layers.append(pred)
 
-      opt=SGD(nesterov=self.nestorov, momentum=self.momentum, lr=self.lr, decay=self.decay)
+      opt=SGD(nesterov=self.nesterov, momentum=self.momentum, lr=self.lr, decay=self.decay)
         
       model = Model(inputs=[input_layer], outputs=out_layers)
       model.compile(optimizer=opt, 
@@ -62,15 +62,16 @@ class MultilayerModel(KerasModel):
       return model
 
   def get_callbacks(self):
-      timestamp = int(time.time())
-      if (self.focus == -1):
-        monitor_name = 'val_loss';
-      else:
-        monitor_name = 'pred_' + str(self.focus) + '_loss';
+      # timestamp = int(time.time())
+      # if (self.focus == -1):
+      #   monitor_name = 'val_loss';
+      # else:
+      #   monitor_name = 'pred_' + str(self.focus) + '_loss';
 
-      weights_filename = self.prefix + str(timestamp)
-      # tensor_board_cb = TensorBoard(log_dir='./logs/'+run_name+str(timestamp))
-      model_checkpoint = ModelCheckpoint('./'+weights_filename, monitor=monitor_name, 
-                                         save_best_only=True, verbose=0, save_weights_only=True)
-      early_stopping = EarlyStopping(monitor=monitor_name, patience=20, verbose=0)
-      return [model_checkpoint, early_stopping]
+      # weights_filename = self.prefix + str(timestamp)
+      # # tensor_board_cb = TensorBoard(log_dir='./logs/'+run_name+str(timestamp))
+      # model_checkpoint = ModelCheckpoint('./'+weights_filename, monitor=monitor_name, 
+      #                                    save_best_only=True, verbose=0, save_weights_only=True)
+      # early_stopping = EarlyStopping(monitor=monitor_name, patience=20, verbose=0)
+      # return [model_checkpoint, early_stopping]
+      return []

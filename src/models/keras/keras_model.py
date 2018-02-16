@@ -9,8 +9,8 @@ import time
 
 class KerasModel:
     def __init__(self, prefix='model_multitask', epochs=100, focus=1,
-            focus_value=1, lr=0.1, layers=1, size=500, momentum=0.7, nesterov=True, batch_size=500,
-            decay=1e-4, l2=0.002, loss_weights = None, dropout=0):
+            focus_value=1, lr=0.08, layers=1, size=300, momentum=0.7, nesterov=True, batch_size=500,
+            decay=0, l2=0, loss_weights = None, dropout=0):
         self.prefix = prefix
         self.epochs = epochs
         self.focus = focus
@@ -66,18 +66,20 @@ class KerasModel:
 
 
     def get_callbacks(self):
-        timestamp = int(time.time())
-        if (self.focus == -1):
-            monitor_name = 'val_loss'
-        else:
-            monitor_name = 'val_pred_' + str(self.focus) + '_loss'
+        # timestamp = int(time.time())
+        # if (self.focus == -1):
+        #     monitor_name = 'val_loss'
+        # else:
+        #     monitor_name = 'val_pred_' + str(self.focus) + '_loss'
 
-        self.weights_filename = self.prefix + str(timestamp)
-        tensor_board_cb = TensorBoard(log_dir='./logs/tfboard' + str(timestamp))
-        model_checkpoint = ModelCheckpoint('./'+self.weights_filename, monitor=monitor_name, 
-                                         save_best_only=True, verbose=1, save_weights_only=True)
-        # early_stopping = EarlyStopping(monitor=monitor_name, patience=20, verbose=0)
-        return [tensor_board_cb]
+        # self.weights_filename = self.prefix + str(timestamp)
+        # tensor_board_cb = TensorBoard(log_dir='./logs/tfboard' + str(timestamp))
+        # model_checkpoint = ModelCheckpoint('./'+self.weights_filename, monitor=monitor_name, 
+        #                                  save_best_only=True, verbose=1, save_weights_only=True)
+        # # early_stopping = EarlyStopping(monitor=monitor_name, patience=20, verbose=0)
+        # return [tensor_board_cb]
+
+        return [] 
 
 
     def fit(self, X_train, train_targets):
