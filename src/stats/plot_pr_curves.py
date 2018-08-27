@@ -37,6 +37,7 @@ def pr_one_curve(agreement, ranks, color='navy', rank_name='CB'):
 
     plt.savefig(CONFIG['pr_curves_dir']+"pr_cb_{}_agreement.png".format(agreement))
 
+
 def plot_multiple_predictors(ranks, names):
     """
     :param ranks: list of ranks, given by several ranking engines
@@ -49,10 +50,12 @@ def plot_multiple_predictors(ranks, names):
             pr_one_curve(ranks=rank, agreement=i, color=color, rank_name=name)
         plt.clf()
 
+
 if __name__ == '__main__':
     cb = []
     rank_svm = []
-    for test_debate, test, train in get_for_crossvalidation():
+    for test, train in get_for_crossvalidation():
+        test_debate = test[0].debate
         cb.append(read_cb_scores(test_debate))
         rank_svm.append(read_svm_pred(test, join(CONFIG['svm_rank'], test_debate.name)))
 

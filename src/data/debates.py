@@ -47,6 +47,7 @@ class Sentence(object):
         self.tokens = word_tokenize(text)
         self.labels = labels
 
+
 def read_all_debates(source='ann'):
     """
     :param source:
@@ -114,5 +115,5 @@ def get_for_crossvalidation():
         test = read_debate(debate)
         for train_debate in train_debates:
             train += read_debate(train_debate)
-        data_sets.append((debate, test, train))
+        data_sets.append((test, train))
     return data_sets

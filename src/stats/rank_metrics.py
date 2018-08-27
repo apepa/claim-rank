@@ -190,6 +190,7 @@ def get_metrics_for_plot(agreement, ranks):
 
     return av_p, precision, recall, thresholds
 
+
 if __name__ == '__main__':
         serialize = False
         if serialize:
@@ -198,7 +199,7 @@ if __name__ == '__main__':
 
             for debate in DEBATES:
                 all_debates += read_debate(debate)
-            all_feats = get_experimential_pipeline(all_debates, to_matrix=False).fit_transform(all_debates)
+            all_feats = get_experimental_pipeline(all_debates, to_matrix=False).fit_transform(all_debates)
             for feat_name in all_feats[0].features.keys():
                 if feat_name in trainable_feats:
                     continue
@@ -214,7 +215,7 @@ if __name__ == '__main__':
                     out.write(json.dumps(old_dict))
         else:
             results = []
-            for test_deb, test, train in get_for_crossvalidation():
+            for test, train in get_for_crossvalidation():
                 split_results = run(test, train)
                 results.append(split_results)
                 get_all_metrics(copy.deepcopy([split_results]), agreement=1)
