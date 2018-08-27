@@ -64,17 +64,6 @@ class BagOfCounts(Feature):
         return X
 
 
-class TokenStat(Feature):
-    """Adds specific token counts."""
-    FEATS = ['America', 'Reagan', 'Mexico', 'tax', 'i ', 'said', 'have to', 'you ']
-
-    def transform(self, X):
-        for sent in X:
-            for word in self.FEATS:
-                sent.features[word] = sent.text.count(word)
-        return X
-
-
 class SentenceLength(Feature):
     FEATS = ['tokens_num', 'text_len']
 

@@ -48,27 +48,6 @@ class Tense(Feature):
         return X
 
 
-class SentimentLexicons(Feature):
-    """
-    Adds as feature the number of words in each sentence that appear in each of the sentiment lexicons.
-    """
-    FEATS = ['lexicons']
-
-    def __init__(self):
-        qatar_lexicon_files = ["negative-words-Liu05.txt", "negations.txt", "bias-lexicon-RecasensACL13.txt"]
-        self.lexicons = []
-        for lexicon in qatar_lexicon_files:
-            self.lexicons.append(set(open(join(CONFIG['sentiment_lexicons'], lexicon), encoding='iso-8859-1').
-                                     read().split("\n")))
-
-    def transform(self, X):
-        for sent in X:
-            sent.features['lexicons'] = []
-            for lexicon in self.lexicons:
-                sent.features['lexicons'].append(sum([sent.tokens.count(lex_word) for lex_word in lexicon]))
-        return X
-
-
 class Negatives(Feature):
     """Adds negative words and contradictions counts in current and next sentence."""
     FEATS = ['negs', 'contras', 'negs_next', 'contras_next']
