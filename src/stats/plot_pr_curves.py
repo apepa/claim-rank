@@ -1,4 +1,4 @@
-from src.data.debates import get_for_crossvalidation, read_debates, read_cb_scores
+from src.data.debates import get_for_crossvalidation, read_cb_scores
 from src.models.svm_rank import run_svm_rank
 from os.path import join
 from src.data.svm_converter import read_svm_pred

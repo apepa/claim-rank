@@ -41,10 +41,10 @@ def read_all_debates(source='ann'):
     """
     sentences = []
     if source == 'ann':
-        sentences += read_debates(Debate.FIRST)
-        sentences += read_debates(Debate.VP)
-        sentences += read_debates(Debate.SECOND)
-        sentences += read_debates(Debate.THIRD)
+        sentences += read_debate(Debate.FIRST)
+        sentences += read_debate(Debate.VP)
+        sentences += read_debate(Debate.SECOND)
+        sentences += read_debate(Debate.THIRD)
 
     elif source == 'cb':
         sentences += read_cb_scores(Debate.FIRST)
@@ -54,21 +54,7 @@ def read_all_debates(source='ann'):
     return sentences
 
 
-def read_debates(debate, use_label='sum_all'):
-    """
-    Reads the debate transcripts data.
-    :param debate: debates (Debate enum) to return the sentences for.
-    :param use_label: how to form the gold label for the sentences
-    - sum_all : label is the number of annotators that have agreed
-    - lambda function : a custom function for a label, with input - the columns from file
-    :return:
-
-    Examples:
-    1. Take for claims only those that more than one annotator agrees on it
-    #>>> read_debates(Debate.FIRST, lambda x: 1 if int(x[2])>1 else 0)
-    2. Take the number of annotators that have agreed on it
-    #>>> read_debates(Debate.FIRST)
-    """
+def read_debate(debate):
     sentences = []
     debate_file_name = join(CONFIG['tr_all_anns'], CONFIG[debate.name] + FILE_EXT)
     debate_file = open(debate_file_name)
@@ -77,10 +63,7 @@ def read_debates(debate, use_label='sum_all'):
         line = line.strip()
         columns = line.split(SEP)
 
-        if use_label == 'sum_all':
-            label = int(columns[2].strip())
-        else:
-            label = use_label(columns)
+        label = int(columns[2].strip())
         labels = columns[3:-1]
         s = Sentence(columns[0], columns[-1], label, columns[1], debate, dabates_dates[debate.value], labels)
         s.label_test = label
@@ -90,7 +73,7 @@ def read_debates(debate, use_label='sum_all'):
 
 
 def read_cb_scores(debate):
-    sentences = read_debates(debate)
+    sentences = read_debate(debate)
     debate_file_name = join(CONFIG['tr_cb_anns'], CONFIG[debate.name] + CB_FILE_EXT)
     debate_file = open(debate_file_name)
     debate_file.readline()
@@ -113,8 +96,8 @@ def get_for_crossvalidation():
         train_debates = DEBATES[:]
         train_debates.pop(i)
         train = []
-        test = read_debates(debate)
+        test = read_debate(debate)
         for train_debate in train_debates:
-            train += read_debates(train_debate)
+            train += read_debate(train_debate)
         data_sets.append((debate, test, train))
     return data_sets

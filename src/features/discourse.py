@@ -1,4 +1,4 @@
-from src.data.debates import read_all_debates, read_debates, Debate
+from src.data.debates import read_all_debates, Debate
 from pyparsing import nestedExpr
 from src.features.features import Feature
 from src.utils.config import get_config

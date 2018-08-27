@@ -3,7 +3,7 @@ from selenium.common.exceptions import NoSuchElementException
 from os.path import join
 
 from src.data.debates import Debate
-from src.data.debates import read_debates
+from src.data.debates import read_debate
 from src.utils.config import get_config
 from src.utils.timing import timing
 
@@ -75,7 +75,7 @@ class ClaimBusterAnnotate(object):
         """
         :param debate: debate (Debate enum) to get scores of sentences for.
         """
-        debate_sentences = read_debates(debate)
+        debate_sentences = read_debate(debate)
 
         cb_output_name = join(CONFIG['tr_cb_anns'], CONFIG[debate.name] + self.FILE_EXT)
 

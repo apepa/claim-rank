@@ -5,7 +5,7 @@ import os
 from sklearn.metrics import precision_score, recall_score, average_precision_score, roc_auc_score
 from src.features import counting_feat, knn_similarity
 from src.features.feature_sets import get_experimental_pipeline
-from src.data.debates import get_for_crossvalidation, DEBATES, read_debates
+from src.data.debates import get_for_crossvalidation, DEBATES, read_debate
 from src.utils.config import get_config
 from operator import itemgetter, attrgetter
 import numpy as np
@@ -197,7 +197,7 @@ if __name__ == '__main__':
             trainable_feats = counting_feat.BagOfTfIDF.FEATS + knn_similarity.TrainSearch.FEATS
 
             for debate in DEBATES:
-                all_debates += read_debates(debate)
+                all_debates += read_debate(debate)
             all_feats = get_experimential_pipeline(all_debates, to_matrix=False).fit_transform(all_debates)
             for feat_name in all_feats[0].features.keys():
                 if feat_name in trainable_feats:

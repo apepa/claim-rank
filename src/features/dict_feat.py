@@ -6,7 +6,7 @@ from os import listdir
 from src.utils.dicts import *
 from src.features.features import Feature
 from nltk import pos_tag
-from src.data.debates import DEBATES, read_debates
+from src.data.debates import DEBATES, read_debate
 
 class Sentiment_NRC(Feature):
     """Adds sentiment of the text with NRC emotion lexicon"""
@@ -136,7 +136,7 @@ class SyntacticParse(Feature):
 
         for debate in DEBATES:
             parsed = open("../../data/parses/" + CONFIG[debate.name] + "_parsed.txt")
-            sentences = read_debates(debate)
+            sentences = read_debate(debate)
             for sentence in sentences:
                 parse = [float(x) for x in parsed.readline().strip().split()[1:]]
 
