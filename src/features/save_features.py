@@ -27,7 +27,7 @@ def save_data(debate_sentences, crossvalidation_indices, getPipeline, name='cros
         Xs = get_features(debate_sentences, indices, getPipeline)
         ys = get_targets(debate_results, indices)
         folds.append(Xs + ys)
-        np.save('folds/' + name, np.array(folds))
+    np.save('folds/' + name, np.array(folds))
 
 
 def load_data(name='crossval'):
