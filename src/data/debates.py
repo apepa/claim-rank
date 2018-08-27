@@ -1,7 +1,7 @@
 from enum import Enum
 from os.path import join
-from src.data.models import Sentence
 from src.utils.config import get_config
+from nltk.tokenize import word_tokenize
 
 CONFIG = get_config()
 FILE_EXT = "_ann.tsv"
@@ -18,6 +18,7 @@ dabates_dates = {1: "2016-04-14T00:00:00",
                  7: "2016-07-28T00:00:00",
                  8: "2017-01-20T00:00:00"}
 
+
 class Debate(Enum):
     NinthDem = 1
     FIRST = 2
@@ -31,6 +32,20 @@ class Debate(Enum):
 
 DEBATES = [Debate.FIRST, Debate.VP, Debate.SECOND, Debate.THIRD]
 
+
+class Sentence(object):
+    def __init__(self, id, text, label, speaker, debate, date, labels):
+        self.id = id
+        self.text = text
+        self.label = label
+        self.all_labels = []
+        self.label_test = label
+        self.speaker = speaker
+        self.debate = debate
+        self.features = {}
+        self.date = date
+        self.tokens = word_tokenize(text)
+        self.labels = labels
 
 def read_all_debates(source='ann'):
     """
