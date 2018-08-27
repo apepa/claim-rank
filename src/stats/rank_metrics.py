@@ -23,11 +23,6 @@ def precision(y_true, y_pred):
     return tp/tp+fp
 
 
-def r_precision(true, pred_probas, agreement=1):
-    R = sum([1 if label >= agreement else 0 for label in true])
-    return precision_at_n(true, pred_probas, n=R, agreement=agreement)
-
-
 def f1(y_true, y_pred):
     precision = precision_score(y_true, y_pred)
     recall = recall_score(y_true, y_pred)
@@ -39,51 +34,56 @@ def accuracy(y_true, y_pred):
     return num_correct/len(y_true)
 
 
-def average_precision(true, pred_probs, agreement=1):
-    sorted_indexes = np.argsort(pred_probs)[::-1]
-    relevant = sum([1 if _label >= agreement else 0 for _label in true])
+def r_precision(y_true, pred_probas, agreement=1):
+    r = sum([1 if label >= agreement else 0 for label in y_true])
+    return precision_at_n(y_true, pred_probas, n=r, agreement=agreement)
+
+
+def average_precision(y_true, pred_probas, agreement=1):
+    sorted_indexes = np.argsort(pred_probas)[::-1]
+    relevant = sum([1 if _label >= agreement else 0 for _label in y_true])
     avg_p = 0
     for i, ind in enumerate(sorted_indexes):
-        if true[ind] >= agreement:
-            avg_p += precision_at_n(true, pred_probs, n=i+1, agreement=agreement)
+        if y_true[ind] >= agreement:
+            avg_p += precision_at_n(y_true, pred_probas, n=i + 1, agreement=agreement)
     return avg_p/relevant
 
 
-def precision_at_n(true, pred_probas, n=10, agreement=1):
+def precision_at_n(y_true, pred_probas, n=10, agreement=1):
     sorted_indexes = np.argsort(pred_probas)[::-1]
-    relevant = sum([1 if true[ind] >= agreement else 0 for ind in sorted_indexes[:n]])
+    relevant = sum([1 if y_true[ind] >= agreement else 0 for ind in sorted_indexes[:n]])
     return relevant / n
 
 
-def recall_at_n(true, pred_probas, n=10, agreement=1):
+def recall_at_n(y_true, pred_probas, n=10, agreement=1):
     sorted_indexes = np.argsort(pred_probas)[::-1]
-    relevant = sum([1 if true[ind] >= agreement else 0 for ind in sorted_indexes[:n]])
-    all_relevant = sum([1 if true[ind] >= agreement else 0 for ind in sorted_indexes])
+    relevant = sum([1 if y_true[ind] >= agreement else 0 for ind in sorted_indexes[:n]])
+    all_relevant = sum([1 if y_true[ind] >= agreement else 0 for ind in sorted_indexes])
     return relevant / all_relevant
 
 
-def dcg(true, pred_probas, agreement=1):
+def dcg(y_true, pred_probas, agreement=1):
     sorted_indexes = np.argsort(pred_probas)[::-1]
     result = 0
     for i, ind in enumerate(sorted_indexes):
-        reli = 2**(1 if true[ind] >= agreement else 0) - 1
+        reli = 2 ** (1 if y_true[ind] >= agreement else 0) - 1
         denom = log2(i+2)
         result += reli / denom
     return result
 
 
-def ndcg(true, pred_probas, agreement=1):
-    result = dcg(true, pred_probas)
-    idcg = dcg(true, true, agreement=agreement)
+def ndcg(y_true, pred_probas, agreement=1):
+    result = dcg(y_true, pred_probas)
+    idcg = dcg(y_true, y_true, agreement=agreement)
     return result/idcg
 
 
-def get_mrr(true, pred_probas, agreement=1):
+def get_mrr(y_true, pred_probas, agreement=1):
     mrr = 0
 
     sorted_indexes = np.argsort(pred_probas)[::-1]
     for i, ind in enumerate(sorted_indexes):
-        if true[ind] >= agreement:
+        if y_true[ind] >= agreement:
             mrr += 1/(i+1)
     return mrr
 
