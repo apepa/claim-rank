@@ -7,11 +7,10 @@ from src.features import counting_feat, knn_similarity
 from src.features.feature_sets import get_experimental_pipeline
 from src.data.debates import get_for_crossvalidation, DEBATES, read_debate
 from src.utils.config import get_config
-from operator import itemgetter, attrgetter
+from operator import itemgetter
 import numpy as np
-from math import log2
-from copy import deepcopy
 from src.models.sklearn_nn import run
+from math import log2
 
 CONFIG = get_config()
 
@@ -24,9 +23,9 @@ def precision(y_true, y_pred):
     return tp/tp+fp
 
 
-def r_precision(dataset, agreement=1):
-    R = sum([1 if sent.label_test >= agreement else 0 for sent in dataset])
-    return precision_at_n(dataset, n=R, agreement=agreement)
+def r_precision(true, pred_probas, agreement=1):
+    R = sum([1 if label >= agreement else 0 for label in true])
+    return precision_at_n(true, pred_probas, n=R, agreement=agreement)
 
 
 def f1(y_true, y_pred):
@@ -40,65 +39,54 @@ def accuracy(y_true, y_pred):
     return num_correct/len(y_true)
 
 
-def average_precision(dataset, agreement):
-    sorted_dataset = sorted(dataset, key=attrgetter("pred"), reverse=True)
-    relevant = sum([1 if i.label_test >= agreement else 0 for i in dataset])
+def average_precision(true, pred_probs, agreement=1):
+    sorted_indexes = np.argsort(pred_probs)[::-1]
+    relevant = sum([1 if _label >= agreement else 0 for _label in true])
     avg_p = 0
-    for i, inst in enumerate(sorted_dataset):
-        if inst.label_test >= agreement:
-            avg_p += precision_at_n(dataset, n=i+1, agreement=agreement)
+    for i, ind in enumerate(sorted_indexes):
+        if true[ind] >= agreement:
+            avg_p += precision_at_n(true, pred_probs, n=i+1, agreement=agreement)
     return avg_p/relevant
 
 
-def precision_at_n(dataset, n=10, agreement=1):
-    """
-    Return precision of first n top ranked results.
-    :param dataset: Sentences to get PR@N for
-    :param n: number of top sentences to measure precision for.
-    :return: PR@N
-    """
-    dataset = sorted(dataset, key=attrgetter('pred'), reverse=True)
-    relevant = sum([1 if instance.label_test >= agreement else 0 for instance in dataset[:n]])
-    return relevant/n
+def precision_at_n(true, pred_probas, n=10, agreement=1):
+    sorted_indexes = np.argsort(pred_probas)[::-1]
+    relevant = sum([1 if true[ind] >= agreement else 0 for ind in sorted_indexes[:n]])
+    return relevant / n
 
 
-def recall_at_n(dataset, n=10, agreement=1):
-    dataset = sorted(dataset, key=attrgetter('pred'), reverse=True)
-    relevant = sum([1 if instance.label_test >= agreement else 0 for instance in dataset[:n]])
-    all_relevant = sum([1 if instance.label_test >= agreement else 0 for instance in dataset])
+def recall_at_n(true, pred_probas, n=10, agreement=1):
+    sorted_indexes = np.argsort(pred_probas)[::-1]
+    relevant = sum([1 if true[ind] >= agreement else 0 for ind in sorted_indexes[:n]])
+    all_relevant = sum([1 if true[ind] >= agreement else 0 for ind in sorted_indexes])
     return relevant / all_relevant
 
 
-def dcg(dataset, agreement=True, agreement_num=1):
-    dataset = sorted(dataset, key=attrgetter('pred'), reverse=True)
+def dcg(true, pred_probas, agreement=1):
+    sorted_indexes = np.argsort(pred_probas)[::-1]
     result = 0
-    for i, instance in enumerate(dataset):
-        if agreement:
-            reli = 2**instance.label_test- 1
-        else:
-            reli = 2**(1 if instance.label_test>= agreement_num else 0) - 1
-
+    for i, ind in enumerate(sorted_indexes):
+        reli = 2**(1 if true[ind] >= agreement else 0) - 1
         denom = log2(i+2)
-
         result += reli / denom
     return result
 
-def ndcg(dataset, agreement=True, agreement_num=1):
-    result = dcg(dataset, agreement)
 
-    idataset = deepcopy(dataset)
-    for data in idataset:
-        data.pred = data.label_test
-    idcg = dcg(idataset, agreement, agreement_num=agreement_num)
+def ndcg(true, pred_probas, agreement=1):
+    result = dcg(true, pred_probas)
+    idcg = dcg(true, true, agreement=agreement)
     return result/idcg
 
-def get_mrr(sentences, agreement=1):
+
+def get_mrr(true, pred_probas, agreement=1):
     mrr = 0
-    sorted_res = sorted(sentences, key=attrgetter("pred"), reverse=True)
-    for i, res in enumerate(sorted_res):
-        if res.label_test>= agreement:
+
+    sorted_indexes = np.argsort(pred_probas)[::-1]
+    for i, ind in enumerate(sorted_indexes):
+        if true[ind] >= agreement:
             mrr += 1/(i+1)
     return mrr
+
 
 def mean(numbers):
     return float(sum(numbers)) / max(len(numbers), 1)
@@ -110,33 +98,31 @@ def get_all_metrics(sentences, agreement=1):
     :param sentences:
     :return:
     """
-    metrics = {'RR': [], 'AvgP': [], 'ROC': [], 'R_Prec':[],
-               'nDCG_A': [], 'nDCG': [], 'Precision': [], 'Recall': [], 'Accuracy':[], 'F1':[],
+    metrics = {'RR': [], 'AvgP': [], 'ROC': [], 'R_Prec':[], 'nDCG': [],
+               'Precision': [], 'Recall': [], 'Accuracy':[], 'F1':[],
                'Recall@10': [], 'Recall@100': [],'Recall@150': [], 'Recall@200': [], 'Recall@50':[],
                'PR@1': [], 'PR@3': [], 'PR@5': [],'PR@20': [], 'PR@10': [], 'PR@50': [], 'PR@100': [], 'PR@200': []}
 
     for sentence_set in sentences:
-        sentence_set = sorted(sentence_set, key=attrgetter("pred"), reverse=True)
         y_true = copy.deepcopy([1 if t.label_test >= agreement else 0 for t in sentence_set])
-        y_pred = copy.deepcopy([s.pred for s in sentence_set])
+        y_pred = copy.deepcopy([s.pred[0] for s in sentence_set])
         y_pred_label = copy.deepcopy([s.pred_label for s in sentence_set])
 
-        metrics['AvgP'].append(average_precision(sentence_set, agreement=agreement))
+        metrics['AvgP'].append(average_precision(y_true, y_pred, agreement=agreement))
         metrics['ROC'].append(roc_auc_score(y_true, y_pred))
-        metrics['RR'].append(get_mrr(sentence_set, agreement=agreement))
-        metrics['nDCG_A'].append(ndcg(deepcopy(sentence_set), agreement=True, agreement_num=agreement))
-        metrics['nDCG'].append(ndcg(deepcopy(sentence_set), agreement=False, agreement_num=agreement))
-        metrics['R_Prec'].append(r_precision(sentence_set, agreement=agreement))
+        metrics['RR'].append(get_mrr(y_true, y_pred, agreement=agreement))
+        metrics['nDCG'].append(ndcg(y_true, y_pred, agreement=agreement))
+        metrics['R_Prec'].append(r_precision(y_true, y_pred, agreement=agreement))
         metrics['Precision'].append(precision_score(y_true, y_pred_label))
         metrics['Recall'].append(recall_score(y_true, y_pred_label))
         metrics['F1'].append(f1(y_true, y_pred_label))
         metrics['Accuracy'].append(accuracy(y_true, y_pred_label))
 
         for i in [1, 3, 5, 10, 20, 50, 100, 200]:
-            metrics['PR@'+str(i)].append(precision_at_n(sentence_set, i, agreement=agreement))
+            metrics['PR@'+str(i)].append(precision_at_n(y_true, y_pred, i, agreement=agreement))
 
         for i in [10, 50, 100, 150, 200]:
-            metrics['Recall@'+str(i)].append(recall_at_n(sentence_set, i, agreement=agreement))
+            metrics['Recall@'+str(i)].append(recall_at_n(y_true, y_pred, i, agreement=agreement))
 
     for key, value in sorted(metrics.items(), key=itemgetter(0)):
         print("{0}\t\t {1:.4f}".format(key, mean(value)))
